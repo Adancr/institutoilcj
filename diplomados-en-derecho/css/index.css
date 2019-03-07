@@ -19,7 +19,7 @@ body {
 }
 
 .btn-ilcj {
-  background-color: #97c93e;
+  background-color: #00ab52;
   color: white;
   display: block;
   /* width: 50%; */
@@ -42,7 +42,7 @@ body {
 }
 
 .btn-ilcj:hover {
-  background-color: #638821;
+  background-color: #0f8447;
 }
 
 #header img {
@@ -140,7 +140,7 @@ font-family: 'Lato', sans-serif;
 /* email_form */
 .hero {
   
-  height: 900px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   /* filter: grayscale(50%); */
