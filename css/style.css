@@ -1,0 +1,148 @@
+body { 
+  overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+}
+/* /diplomados */
+div.curso {
+  width: 100%;
+  background-color: #E8E8E8;
+  background-image: url(http://i63.tinypic.com/2e3tw12.png);
+  background-position: left;
+  border-radius: 10px 10px 0 0;
+  display: inline-block;
+}
+
+div.curso div.imagen {
+  float: left;
+  width: 30%;
+}
+
+div.curso div.description {
+  float: left;
+  width: 70%;
+  padding: 15px 10px;
+}
+
+div.description h1, div.description h1 a {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: #951519;
+  margin: 0;
+}
+
+div.cursow {
+  margin: 20px 0;
+  min-height: 315px;
+}
+/* diplomados */
+
+@media (min-width: 992px){
+  .col-md-6 {
+    width: 50%;
+}
+}
+
+/* carousel */
+
+#main .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(50%)
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+
+.soles {
+  color: #33b1ff;
+font-size: 1.2em;
+font-weight: 400;
+font-family: 'Lato', sans-serif;
+}
+
+#t2x1, .tpromo  {
+  color: #33b1ff;
+  font-size: 2.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+/* btn whatsapp */
+.float-floatingButtonCenter {
+  top: 46%;
+  z-index: 9999999;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.float-right {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+
+}
+
+.float .flaticon-charlar:before {
+  font-size: xx-large;
+  top: 5px;
+  right: 8.5px;
+  position: relative;
+}
+
+/* /btn whatsapp */
+
+/* sobre nosotros */
+.nosotros {
+  background-color: aqua;
+}
+
+
+
+/*inicio header */
+footer {
+  background-color: #135B80;
+  color: white;
+}
+
+#copyright {
+  color: white;
+}
+/* fin header */
+
+
+/* page diplomados */
+.container-fluid {
+  max-width: 1400px;
+}
