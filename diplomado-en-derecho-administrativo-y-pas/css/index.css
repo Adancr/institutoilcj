@@ -1,0 +1,272 @@
+.text-ilcj {
+  color: #97c93e !important;
+  font-family: 'Lato', sans-serif;
+}
+
+#tel {
+  font-size: 1.2em;
+  color: #97c93e !important;
+}
+
+@media (max-width: 575px) {
+  #tel {
+    font-size: 0.7em;
+  }
+}
+
+.btn-ilcj {
+  background-color: #97c93e;
+  color: white;
+  display: block;
+  /* width: 50%; */
+  margin-bottom: 10px;
+}
+.btn-ilcj-d {
+  background-color: #97c93e;
+  color: white;
+  display: block;
+  /* width: 50%; */
+  margin-bottom: 10px;
+}
+
+.btn-reseva-d {
+  font-size: 1em;
+}
+.btn-reseva {
+  font-size: 1.3em;
+  width: 70%;
+}
+
+.btn-ilcj:hover {
+  background-color: #638821;
+}
+
+#header img {
+  width: 160px;
+  padding-top: -2;
+  }
+
+#main .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(50%)
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+}
+
+#t2x1, .tpromo  {
+  color: #33b1ff;
+  font-size: 2.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.soles {
+  color: #33b1ff;
+font-size: 1.2em;
+font-weight: 400;
+font-family: 'Lato', sans-serif;
+
+}
+
+#p2x1, ppromo {
+  font-size: 18px;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+/* start main  */
+.img-dc {
+  width: 120px;
+}
+
+.c-btn-ilcj {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.btn-ilcj {
+  margin: 0 auto;
+}
+
+
+
+#footer, #header {
+  background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
+  color: white;
+}
+
+.c-lfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 70%;
+}
+
+#footer a {
+  color: #FFFFFF;
+}
+
+/* diplomado admin */
+.c-lfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* /diplomado admin */
+
+/* email_form */
+.hero {
+  
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: grayscale(50%); */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: #FFFFFF;
+}
+.cont-form {
+    background-color: #fff;
+    max-width: 450px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px 0px rgba(4, 2, 4, 0.3);
+    margin: 15px 0;
+    border-radius: 5px;
+    color: #000;
+    
+  }
+
+  #submit {
+    background: #00ab52;
+    border: none;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: all .5s;
+  }
+  .incio-hora {
+    background-color: #00ab52;
+    border: 1px solid #e0e0e0;
+  }
+
+.btn-inicio {
+  width: 90%;
+}
+  .incio-hora p {
+    padding-top: 10px;
+  }
+
+.metodologia {
+  border: 1px solid #DDDBDB;
+}
+
+  #submit:hover{
+    background: #0f8447;
+    color: #e0e0e0; 
+  }
+
+  .p_name {
+    margin-bottom: 0;
+  }
+/* #submit {
+  background-color: #97c93e;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+} */
+
+.pt_hero {
+  padding-top: 50px;
+}
+.label-name {
+  margin-bottom: 0;
+}
+
+dd {
+  margin-bottom: 1rem !important;
+}
+
+.form-admin {
+  background-color: #fff;
+  color: #000;
+}
+
+input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 0;
+}
+
+.certificacion {
+  background-color: #f8f9fa;
+}
+
+.box-logos {
+  border-style:dotted;
+  border-width: 1px;
+  border-color: #33b1ff;
+}
+.prof-img{
+  display: flex;
+   /* justify-content: center; */
+   align-items: center;
+}
+.box-testimobio {
+  background-color: #f8f9fa;
+  border-style:dotted;
+  border-width: 1px;
+  border-color: #33b1ff;
+}
+
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+  }
+  .btn-inicio {
+    width: 100%;
+  }
+  .btn-reseva {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .img-testimmonio {
+    width: 50% !important;
+  }
+}
+
+/* page tanks */
+
+.conf1, .conf2 {
+    border: solid 1px red;
+    padding: 5px;
+}

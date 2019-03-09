@@ -129,6 +129,17 @@ font-family: 'Lato', sans-serif;
   color: #FFFFFF;
 }
 
+/* diplomados */
+.text-title-diplomados {
+  text-transform: uppercase;
+}
+
+.li-border-tem li {
+  border-bottom-style: dotted;
+  border-color: #33b1ff;
+  border-width: 1.2px;
+}
+
 /* diplomado admin */
 .c-lfooter {
   display: flex;
@@ -140,7 +151,7 @@ font-family: 'Lato', sans-serif;
 /* email_form */
 .hero {
   
-  height: 600px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   /* filter: grayscale(50%); */
@@ -295,7 +306,7 @@ input {
     width: 100%;
   }
   .pt_hero h5,
-  .flaticon-premio,
+  .flaticon-premio
        {
     display: none;
   }
@@ -304,12 +315,20 @@ input {
     padding: 0 12px;
   }
 
+
 }
+
+
+
 @media (min-width: 576px) {
   .logo-sm {
     display: none;
   }
+  
+  
 }
+
+@media (max-width )
 
 /* page tanks */
 
