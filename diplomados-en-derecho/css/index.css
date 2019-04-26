@@ -329,11 +329,13 @@ input {
   
 }
 
-@media (max-width )
+@media (max-width ){
 
 /* page tanks */
 
 .conf1, .conf2 {
-    border: solid 1px red;
+  border: solid 1px red;
     padding: 5px;
+}
+    
 }
