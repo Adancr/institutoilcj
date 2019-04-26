@@ -208,6 +208,7 @@ font-family: 'Lato', sans-serif;
 
   .p_name {
     margin-bottom: 0;
+    padding: 0 2px 0 2px;
   }
 /* #submit {
   background-color: #97c93e;
@@ -238,7 +239,7 @@ dd {
 input {
   border-radius: 5px;
   width: 100%;
-  padding: 7px 0;
+  padding: 7px 10px;
 }
 
 .certificacion {
