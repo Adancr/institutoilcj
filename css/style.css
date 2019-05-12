@@ -132,8 +132,9 @@ font-family: 'Lato', sans-serif;
 
 /*inicio header */
 footer {
-  background-color: #135B80;
+  background-color: #222222;
   color: white;
+  display: block;
 }
 
 #copyright {
@@ -152,3 +153,109 @@ footer {
     display: none;
   }
 }
+
+/* Landing penal */
+.card-img-overlay {
+  top: 60%;
+}
+
+.btn-success-penal {
+  color: #fff;
+  background-color: #00517C;
+  border-color: #ffffff;
+}
+
+.btn-success-penal:hover {
+ color: rgb(251, 255, 0);
+}
+
+
+
+/* .titulo {
+  height: 300px;
+  background: #666;
+  border: 1px solid #333;
+}
+
+.dato {
+  height: 150px;
+  background: #666;
+  border: 1px solid #333;
+}
+
+.row {
+  display: block !important;
+}
+
+[class*="col-md-"] {
+  float: right;
+} */
+
+.bgimg {
+  background-image: url('../../assets/images/penal-images/portada-penal.png');
+  height: 250px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bgimg h2{
+  text-shadow: 3px 3px 3px #000000;
+  display: block;
+}
+.bgimg h5 {
+  text-shadow: 3px 3px 3px #000000;
+  display: block;
+}
+
+.bgimg h2 {
+  font-size: 2.5rem;
+}
+
+.bgimg h5 {
+  font-size: 1.8rem;
+}
+
+.navbar-nav li {
+  border-right: 1px solid  white;
+  border-right: 1px solid rgba(102, 102, 102, 0.7) ;
+}
+
+/* reglas CSS para formulario */
+.form-consulta {
+  background: #eee;
+  padding: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.campo-form { 
+  width:400px;
+  height:36px;
+  margin:2px 0 6px;
+  padding-left:6px;
+  box-sizing: border-box;
+  border-radius:3px;
+  border:0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:1em;}
+label span {
+  color: #f00
+}
+textarea { 
+  min-height: 150px!important;
+}
+.btn-form {
+  display: inline-block;
+  border:0;
+  background: #00517C;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 20px;
+  border-radius: 6px;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+.btn-form:hover {background: #444}
