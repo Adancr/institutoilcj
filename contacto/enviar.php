@@ -8,7 +8,7 @@
       $email = $_POST['email'];
       $phone = $_POST['phone'];   
       $message = $_POST['message'];
-      $para = 'ilcj@institutojuridico.edu.pe';
+      $para = 'ilcj.capacitaciones@gmail.com';
 
       //Creamos cabecera.
       $headers = 'From' . " " . $email . "\r\n";
@@ -18,6 +18,8 @@
       $msjCorreo = "Nombre: " . $nombre;
       $msjCorreo .= "\r\n";
       $msjCorreo .= "Email: " . $email;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Telefono: " . $phone;
       $msjCorreo .= "\r\n";
       $msjCorreo .= "Mensaje: " . $message;
       $msjCorreo .= "\r\n";
