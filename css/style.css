@@ -192,7 +192,7 @@ footer {
 } */
 
 .bgimg {
-  background-image: url('../../assets/images/penal-images/portada-penal.png');
+  background-image: url('../assets/images/penal-images/penal.jpg');
   height: 250px;
   color: white;
   display: flex;
