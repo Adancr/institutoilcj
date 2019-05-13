@@ -141,23 +141,23 @@
 				</div>
 				<div class="col-12 col-md-5 mt-4">
 					<!-- formulario de contacto -->
-
-					<form action="envia.php" method="post" class="form-consulta">
+					<div class="alert">Gracias Su Mensaje Fue enviado</div>
+					<form id="contactForm" class="form-consulta" name="contact-form" action="enviar.php" method="POST">
 						<h5 class=" mb-3">¿Necesitas contactarte con nosotros?</h5>
 						<label>Nombre y apellido: <span>*</span>
-							<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+							<input type="text" name="name" id="name" placeholder="Nombre y apellido" class="campo-form" required>
 						</label>
 
 						<label>Email: <span>*</span>
-							<input type="email" name="email" placeholder="Email" class="campo-form" required>
+							<input type="email" name="email" id="email" placeholder="Email" class="campo-form" required>
 						</label>
 
 						<label>Celular: <span>*</span>
-							<input type="celular" name="celular" placeholder="Celular" class="campo-form" required>
+							<input type="text" name="phone" id="phone" placeholder="Celular" class="campo-form" required>
 						</label>
 
 						<label>Consulta:
-							<textarea name="consulta" class="campo-form"></textarea>
+							<textarea name="message" id="message" class="campo-form"></textarea>
 						</label>
 						<div>
 							<input type="submit" value="Enviar" class="btn-form">
@@ -255,5 +255,14 @@
 		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 		crossorigin="anonymous"></script>
 </body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+		 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+		 <script src="main.js"></script>
 
 </html>

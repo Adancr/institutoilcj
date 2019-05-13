@@ -259,3 +259,14 @@ textarea {
   letter-spacing: 1px
 }
 .btn-form:hover {background: #444}
+
+/* alerta de evio exitoso mensaje de formulario */
+
+.alert{
+  text-align: center;
+  padding:15px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
