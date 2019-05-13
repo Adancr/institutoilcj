@@ -152,6 +152,14 @@ footer {
   .promop {
     display: none;
   }
+  .title-penal {
+    font-size: 1.8rem !important;
+  }
+  .title-penal-d {
+    display: none !important;
+  }
+
+
 }
 
 /* Landing penal */
@@ -163,6 +171,7 @@ footer {
   color: #fff;
   background-color: #00517C;
   border-color: #ffffff;
+
 }
 
 .btn-success-penal:hover {
