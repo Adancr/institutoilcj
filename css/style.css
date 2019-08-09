@@ -86,11 +86,7 @@ font-family: 'Lato', sans-serif;
   font-weight: 900;
 }
 
-/* btn whatsapp */
-.float-floatingButtonCenter {
-  top: 46%;
-  z-index: 9999999;
-}
+
 
 .fa {
   display: inline-block;
@@ -146,6 +142,52 @@ footer {
 /* page diplomados */
 .container-fluid {
   max-width: 1400px;
+}
+
+@media (min-width: 576px) {
+  .movil-contac,
+  .textwidget {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /*++++++++++++++++ iconos moviles ++++++++++++++++*/
+  .main-btn-phone-movil,
+  .main-btn-whatsapp-movil {
+    position: fixed;
+    bottom: 5%;
+    padding: .2rem 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #004D79;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px #646464;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-btn-whatsapp-movil {
+    right: 2%;
+  }
+  .main-btn-phone-movil {
+    left: 2%;
+  }
+  .main-btn-whatsapp-movil [class^="icon"],
+  .main-btn-phone-movil [class^="icon"] {
+    color: #000;
+    font-size: 2rem;
+  }
+
+  .flaticon-telefono-1   {
+    padding-right: 18px;
+  }
+
+  .main-icon-whatsapp {
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 576px) {
