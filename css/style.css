@@ -151,42 +151,61 @@ footer {
   }
 }
 
+
+
+
 @media screen and (max-width: 680px) {
-  /*++++++++++++++++ iconos moviles ++++++++++++++++*/
-  .main-btn-phone-movil,
+  /*++++++++++++++++ btn de whtsapp a la derecha ++++++++++++++++*/
   .main-btn-whatsapp-movil {
     position: fixed;
-    bottom: 5%;
+    top: 50%;
     padding: .2rem 0;
     width: 60px;
     height: 60px;
     cursor: pointer;
-    background-color: #004D79;
+    background-color: #25d366;
     border-radius: 50%;
     box-shadow: 4px 4px 10px #646464;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
   }
   .main-btn-whatsapp-movil {
     right: 2%;
   }
-  .main-btn-phone-movil {
-    left: 2%;
-  }
-  .main-btn-whatsapp-movil [class^="icon"],
-  .main-btn-phone-movil [class^="icon"] {
-    color: #000;
+
+ 
+  .main-btn-whatsapp-movil [class^="icon"] {
+    color: var(--main-color-white);
     font-size: 2rem;
   }
-
-  .flaticon-telefono-1   {
-    padding-right: 18px;
+  .main-btn-phone-movil {
+    display: block;
   }
-
-  .main-icon-whatsapp {
-    padding-right: 20px;
+  .main-btns-bottom {
+    display: flex;
+    padding: .3rem 0;
+    width: 100%;
+    box-shadow: 0 0 5px grey;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+  }
+  .main-btn-phone-movil,
+  .main-btn-location-movil {
+    width: 50%;
+  }
+  .main-btn-phone-movil .textwidget a,
+  .main-btn-location-movil .textwidget a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .main-btn-phone-movil .textwidget a span,
+  .main-btn-location-movil .textwidget a span {
+    font-size: .9rem;
   }
 }
 

@@ -22,11 +22,11 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-        font-size: 20px;
-font-style: normal;
-margin-left: 20px;
+  font-size: 30px;
+  font-style: normal;
+  margin-left: 20px;
 }
 
 .flaticon-facebook:before { content: "\f100"; }
@@ -52,6 +52,11 @@ margin-left: 20px;
 .flaticon-premio:before {
   font-size: 60px;
   color: #1a80b6;
+  }
+
+  .flaticon-charlar:before {
+    font-size: 30px;
+    color: white;
   }
 
   .flaticon-facebook:before,
