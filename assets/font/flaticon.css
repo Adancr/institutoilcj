@@ -48,3 +48,17 @@ margin-left: 20px;
 .flaticon-university:before { content: "\f10f"; }
 .flaticon-win:before { content: "\f110"; }
 .flaticon-instructor:before { content: "\f111"; }
+
+/* css icons movil */
+
+
+.flaticon-whatsapp:before {
+  font-size: 35px;
+  color: white;
+  margin-left: -0.5px;
+}
+
+.flaticon-periscope:before,
+.flaticon-phone:before {
+  color: #00517C;
+}

@@ -3,6 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* inicio lp diplomados */
+
+.f1 {
+  color: red;
+}
+/* fin lp diplomados */
 /* /diplomados */
 div.curso {
   width: 100%;
@@ -168,7 +175,7 @@ footer {
     box-shadow: 4px 4px 10px #646464;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
   }
   .main-btn-whatsapp-movil {
