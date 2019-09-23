@@ -29,7 +29,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -52,11 +52,98 @@
 </head>
 
 <body>
- <h2 class="f1">hola</h2>
+  <main id="main">
+    <div class="hero" style="background-image: url(../assets/images/derecho-penal-web3.jpg)">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+
+          <a class="navbar-brand" href="https://institutojuridico.edu.pe">
+            <img src="../assets/images/logo_ilcj_white_70.png" alt="ilcj logo">
+          </a>
+
+        </nav>
+        <div class="row align-items-center pt_hero">
+          <div class="col-12 col-md-7 text-center">
+            <h1 >Diplomado Especializado Beneficios Penitenciarios</h1>
+            <h5>ASUME LOS NUEVOS RETOS DE NUESTRO SISTEMA DE JUSTICIA</h5>
+            <div class="row">
+              <div class="col text-center">
+                <h5>PRESENCIAL y VIRTUAL</h5>
+              </div>
+            </div>
+            <div class="row btn-inicio">
+              <div class="col text-center incio-hora">
+                <p><strong>Inicio: 18 de Mayo</strong></p>
+              </div>
+              <div class="col text-center incio-hora">
+                <p><strong>Horas académicas: 240 horas</strong></p>
+              </div>
+            </div>
+          </div>
+         
+            <div class="col-12 col-md-5 pr-md-0">
+              <h2 class="font-weight-bold text-md-right mb-3"></h2>
+              <form action="" id="mi-formulario" method="post" novalidate="">
+
+                <!-- Campo #nombre -->
+                <div class="form-group">
+
+                  <div class="col-12 col-md-9 mx-auto">
+                    <h2 class="mb-3 pl-4 mx-auto">Informes aquí</h2>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Ingrese su nombre"
+                      data-parsley-required="" data-parsley-required-message="Este campo no puede estar vacio.">
+                  </div>
+                </div>
+
+                <!-- Campo #email -->
+                <div class="form-group">
+
+                  <div class="col-12 col-md-9 mx-auto">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su Correo"
+                      data-parsley-required="" data-parsley-type="email"
+                      data-parsley-required-message="Este campo no puede estar vacio."
+                      data-parsley-type-message="Ingrese un email en un formato válido.">
+                    <input type="hidden" name="curso" value="Derecho Administrativo y PAS">
+                    <input type="hidden" name="pdf" value="deadm/pdf/deadm.pdf">
+                  </div>
+                </div>
+
+                <!-- Campo #celular -->
+                <div class="form-group">
+
+                  <div class="col-12 col-md-9 mx-auto">
+                    <input type="text" class="form-control" name="celular" id="celular" placeholder="Ingrese su celular/whatsapp"
+                      data-parsley-required="" data-parsley-length="[9, 9]" data-parsley-type="digits"
+                      data-parsley-required-message="Este campo no puede estar vacio."
+                      data-parsley-length-message="El número telefónico debe tener 9 Numeros."
+                      data-parsley-type-message="Solo debe ingresar Numeros.">
+
+                  </div>
+                </div>
+
+
+                <!-- Campo Enviar -->
+                <div class="form-group">
+                  <div class="col-12 col-md-9 offset-md-3 mx-auto">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" name="submit"
+                      id="btn-ingresar">Información</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+         
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </main>
 
 
 
- 
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
