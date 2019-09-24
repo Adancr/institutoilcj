@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es"> 
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -52,7 +52,7 @@
 </head>
 
 <body>
-  <header style="color:#F2F2F2" id="main">
+  <header class="masthead" style="color:#F2F2F2" id="main">
     <div class="hero" style="background-image: url(../assets/images/derecho-penal-web3.jpg)">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
@@ -64,10 +64,18 @@
         </nav>
         <div class="pt-5 pb-5 row  pt_hero">
           <div class="col-12 col-md-7 text-center">
-            <h1>DERECHO PROCESAL PENAL Y LITIGACIÓN AVANZADA EN EL NCPP </h1>
+            <h1 class="">DERECHO PROCESAL PENAL Y LITIGACIÓN AVANZADA EN EL NCPP </h1>
             <h5>DIPLOMADO DE ALTA ESPECIALIZACIÓN</h5>
             <div class="col-12 col-md-8 pt-md-5">
-                <p class="mt-5 pt-0 h4">CERTIFICA:  <img src="img/logo_abogados.png" alt="Logo del sitio" width="200" class="img-fluid ml-md-5"></p>
+              <div class="row">
+                <div class="col-xs-6 col-md-3"><p class="h4 mt-4">CERTIFICA:</p></div>
+                <div class="col-xs-6 col-md-3"><img src="../assets/images/logo_cac.png" alt="Logo del sitio" height="80" class="img-fluid ml-md-5"></div>
+                <div class="col-3 cel_logo"><img src="../assets/images/logo_cel.png" alt="Logo del sitio" height="75" class="img-fluid ml-md-5"></div>
+                <div class="col-3 ilcj_logo"><img src="../assets/images/logo_ilcj.png" alt="Logo del sitio" height="80" class="img-fluid ml-md-5"></div>
+                
+              </div>
+                <!-- <p class="mt-5 pt-0 h4">CERTIFICA:  <img src="../assets/images/logo_cac.png" alt="Logo del sitio" height="80" class="img-fluid ml-md-5">
+                  <img src="../assets/images/logo_cac.png" alt="Logo del sitio" height="80" class="img-fluid ml-md-5"> <img src="../assets/images/logo_cac.png" alt="Logo del sitio" height="80" class="img-fluid ml-md-5"></p> -->
             </div>
             <!-- <div class="row">
               <div class="col text-center">
@@ -95,7 +103,7 @@
                 <div class="col-12 col-md-9 mx-auto">
                   <h2 class="mb-3 pl-4 mx-auto">Informes aquí</h2>
                   <input type="text" class="form-control" data-inputmask="" name="fields[name]" value=""  placeholder="Ingrese su nombre"
-                    data-parsley-required="" data-parsley-required-message="Este campo no puede estar vacio.">
+                    data-parsley-required="" data-parsley-required-message="Este campo no puede estar vacio. " required>
                 </div>
               </div>
 
@@ -104,9 +112,8 @@
 
                 <div class="col-12 col-md-9 mx-auto">
                     <input type="email" class="form-control" data-inputmask="" name="fields[email]" value=""  placeholder="Ingrese su Correo"
-                    data-parsley-required="" data-parsley-type="email"
-                    data-parsley-required-message="Este campo no puede estar vacio."
-                    data-parsley-type-message="Ingrese un email en un formato válido.">
+                    data-parsley-required="" data-parsley-type="email" data-parsley-required-message="Este campo no puede estar vacio."
+                    data-parsley-type-message="Ingrese un email en un formato válido." required>
                
                 </div>
               </div>
@@ -119,7 +126,7 @@
                     placeholder="Ingrese su celular/whatsapp" data-parsley-required="" data-parsley-length="[9, 9]"
                     data-parsley-type="digits" data-parsley-required-message="Este campo no puede estar vacio."
                     data-parsley-length-message="El número telefónico debe tener 9 Numeros."
-                    data-parsley-type-message="Solo debe ingresar Numeros.">
+                    data-parsley-type-message="Solo debe ingresar Numeros." required>
 
                 </div>
               </div>
