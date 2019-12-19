@@ -1,9 +1,42 @@
-body { 
-  overflow-x:hidden;
+body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-/* /diplomados */
+
+/* Esitlos header  */
+.header img {
+  position: absolute;
+  left: 260px;
+  width: 142px;
+  top: 40px;
+}
+
+.header nav {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  left: 403px;
+  align-items: center;
+  top: 85px;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.baner figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
 div.curso {
   width: 100%;
   background-color: #E8E8E8;
@@ -24,7 +57,8 @@ div.curso div.description {
   padding: 15px 10px;
 }
 
-div.description h1, div.description h1 a {
+div.description h1,
+div.description h1 a {
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
@@ -37,12 +71,13 @@ div.cursow {
   margin: 20px 0;
   min-height: 315px;
 }
+
 /* diplomados */
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .col-md-6 {
     width: 50%;
-}
+  }
 }
 
 /* carousel */
@@ -74,12 +109,13 @@ div.cursow {
 
 .soles {
   color: #33b1ff;
-font-size: 1.2em;
-font-weight: 400;
-font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 
-#t2x1, .tpromo  {
+#t2x1,
+.tpromo {
   color: #33b1ff;
   font-size: 2.5em;
   font-family: 'Lato', sans-serif;
@@ -136,6 +172,7 @@ footer {
 #copyright {
   color: white;
 }
+
 /* fin header */
 
 
@@ -145,6 +182,7 @@ footer {
 }
 
 @media (min-width: 576px) {
+
   .movil-contac,
   .textwidget {
     display: none;
@@ -155,6 +193,7 @@ footer {
 
 
 @media screen and (max-width: 680px) {
+
   /*++++++++++++++++ btn de whtsapp a la derecha ++++++++++++++++*/
   .main-btn-whatsapp-movil {
     position: fixed;
@@ -171,18 +210,21 @@ footer {
     /* align-items: center; */
     justify-content: center;
   }
+
   .main-btn-whatsapp-movil {
     right: 2%;
   }
 
- 
+
   .main-btn-whatsapp-movil [class^="icon"] {
     color: var(--main-color-white);
     font-size: 2rem;
   }
+
   .main-btn-phone-movil {
     display: block;
   }
+
   .main-btns-bottom {
     display: flex;
     padding: .3rem 0;
@@ -192,10 +234,12 @@ footer {
     bottom: 0;
     background-color: white;
   }
+
   .main-btn-phone-movil,
   .main-btn-location-movil {
     width: 50%;
   }
+
   .main-btn-phone-movil .textwidget a,
   .main-btn-location-movil .textwidget a {
     display: flex;
@@ -203,6 +247,7 @@ footer {
     text-align: center;
     font-size: 1.4rem;
   }
+
   .main-btn-phone-movil .textwidget a span,
   .main-btn-location-movil .textwidget a span {
     font-size: .9rem;
@@ -213,9 +258,11 @@ footer {
   .promop {
     display: none;
   }
+
   .title-penal {
     font-size: 1.8rem !important;
   }
+
   .title-penal-d {
     display: none !important;
   }
@@ -236,7 +283,7 @@ footer {
 }
 
 .btn-success-penal:hover {
- color: rgb(251, 255, 0);
+  color: rgb(251, 255, 0);
 }
 
 
@@ -271,10 +318,11 @@ footer {
   text-align: center;
 }
 
-.bgimg h2{
+.bgimg h2 {
   text-shadow: 3px 3px 3px #000000;
   display: block;
 }
+
 .bgimg h5 {
   text-shadow: 3px 3px 3px #000000;
   display: block;
@@ -289,8 +337,8 @@ footer {
 }
 
 .navbar-nav li {
-  border-right: 1px solid  white;
-  border-right: 1px solid rgba(102, 102, 102, 0.7) ;
+  border-right: 1px solid white;
+  border-right: 1px solid rgba(102, 102, 102, 0.7);
 }
 
 /* reglas CSS para formulario */
@@ -299,44 +347,52 @@ footer {
   padding: 25px;
   font-family: 'Source Sans Pro', sans-serif;
 }
-.campo-form { 
-  width:400px;
-  height:36px;
-  margin:2px 0 6px;
-  padding-left:6px;
+
+.campo-form {
+  width: 400px;
+  height: 36px;
+  margin: 2px 0 6px;
+  padding-left: 6px;
   box-sizing: border-box;
-  border-radius:3px;
-  border:0;
+  border-radius: 3px;
+  border: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size:1em;}
+  font-size: 1em;
+}
+
 label span {
   color: #f00
 }
-textarea { 
-  min-height: 150px!important;
+
+textarea {
+  min-height: 150px !important;
 }
+
 .btn-form {
   display: inline-block;
-  border:0;
+  border: 0;
   background: #00517C;
   height: 46px;
   line-height: 46px;
   padding: 0 20px;
   border-radius: 6px;
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px
 }
-.btn-form:hover {background: #444}
+
+.btn-form:hover {
+  background: #444
+}
 
 /* alerta de evio exitoso mensaje de formulario */
 
-.alert{
+.alert {
   text-align: center;
-  padding:15px;
-  background:#79c879;
-  color:#fff;
-  margin-bottom:10px;
-  display:none;
+  padding: 15px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
 }
