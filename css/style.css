@@ -1,30 +1,9 @@
-<<<<<<< HEAD
-body { 
-  overflow-x:hidden;
-  margin: 0;
-  padding: 0;
-}
-
-/* inicio lp diplomados */
-
-
-/* fin lp diplomados */
-/* /diplomados */
-div.curso {
-  width: 100%;
-  background-color: #E8E8E8;
-  background-image: url(http://i63.tinypic.com/2e3tw12.png);
-  background-position: left;
-  border-radius: 10px 10px 0 0;
-  display: inline-block;
-=======
 body {
   /* overflow-x: hidden; */
 
   font-family: 'Montserrat', sans-serif;
   /* background-color: rebeccapurple; */
 
->>>>>>> new
 }
 
 h1 {
@@ -196,28 +175,6 @@ section .services {
   right: 0;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 680px) {
-  /*++++++++++++++++ btn de whtsapp a la derecha ++++++++++++++++*/
-  .main-btn-whatsapp-movil {
-    position: fixed;
-    top: 50%;
-    padding: .2rem 0;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    background-color: #25d366;
-    border-radius: 50%;
-    box-shadow: 4px 4px 10px #646464;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .main-btn-whatsapp-movil {
-    right: 2%;
-  }
-=======
 /* beneficios  */
 .container-benefit {
   display: grid;
@@ -228,7 +185,6 @@ section .services {
     "b4 b4 b4";
   margin-top: 2rem;
 }
->>>>>>> new
 
 .b {
   grid-area: b;
