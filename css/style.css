@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body { 
   overflow-x:hidden;
   margin: 0;
@@ -16,149 +17,186 @@ div.curso {
   background-position: left;
   border-radius: 10px 10px 0 0;
   display: inline-block;
+=======
+body {
+  /* overflow-x: hidden; */
+
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: rebeccapurple; */
+
+>>>>>>> new
 }
 
-div.curso div.imagen {
-  float: left;
-  width: 30%;
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-div.curso div.description {
-  float: left;
-  width: 70%;
-  padding: 15px 10px;
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-div.description h1, div.description h1 a {
-  font-size: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 20px;
-  color: #951519;
-  margin: 0;
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-div.cursow {
-  margin: 20px 0;
-  min-height: 315px;
-}
-/* diplomados */
+a {
+  text-decoration: none;
 
-@media (min-width: 992px){
-  .col-md-6 {
-    width: 50%;
-}
 }
 
-/* carousel */
-
-#main .carousel-inner img {
-  max-height: 70vh;
-  object-fit: cover;
-  filter: grayscale(50%)
+li {
+  list-style-type: none;
 }
 
-#carousel {
+/* Esitlos header  */
+.baner {
+  max-width: 1920px;
+  margin: auto;
   position: relative;
 }
 
-#carousel .overlay {
+.header {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+.header a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.header img {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #FFFFFF;
+  left: 260px;
+  width: 142px;
+  top: 40px;
+  z-index: 99;
 }
 
-#carousel .overlay .container,
-#carousel .overlay .row {
-  height: 100%;
+.header nav {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  left: 403px;
+  align-items: center;
+  top: 85px;
+  z-index: 99;
 }
 
-.soles {
-  color: #33b1ff;
-font-size: 1.2em;
-font-weight: 400;
-font-family: 'Lato', sans-serif;
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#t2x1, .tpromo  {
-  color: #33b1ff;
-  font-size: 2.5em;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
+/* estilos a text baner  */
+
+.baner h1 {
+  color: #fff;
+}
+
+.baner figure {
+  margin: 0;
+  padding: 0;
+}
+
+.baner h1 {
+  position: absolute;
+  top: 450px;
+  left: 295px;
+}
+
+.text-title-peru {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-top: -0.5rem;
+}
+
+.text-title-profesinal {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: -1.2rem;
+  margin-top: -0.2rem;
+}
+
+.text-title-campo {
+  display: flex;
+  margin-top: -10px;
+}
+
+.text-title-campo {
+  margin-top: -0.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.baner-text-title-law {
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+/* main section principal  */
+main {
+  max-width: 1540px;
+  margin: auto;
 }
 
 
-
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+section .services {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template: 1fr / repeat(3, 1fr);
+  /* grid-column-gap: 60px; */
+  /* grid-template-areas: "header" "contenido" "footer"; */
+  grid-gap: 0 60px;
+  margin-top: 2rem;
+  align-items: center;
 }
 
-.float-right {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: 2px 2px 3px #999;
-
+.services span {
+  text-decoration-line: underline;
 }
 
-.float .flaticon-charlar:before {
-  font-size: xx-large;
-  top: 5px;
-  right: 8.5px;
+/* .header {
+  grid-area: header;
+} */
+
+.services article {
+  height: 490px;
+  color: #fff;
+  background-color: #004E77;
   position: relative;
 }
 
-/* /btn whatsapp */
-
-/* sobre nosotros */
-.nosotros {
-  background-color: aqua;
+.services-img img {
+  width: 100%;
 }
 
-
-
-/*inicio header */
-footer {
-  background-color: #222222;
-  color: white;
-  display: block;
+.services p,
+.services h2 {
+  padding: 0.5rem 1rem;
 }
 
-#copyright {
-  color: white;
-}
-/* fin header */
-
-
-/* page diplomados */
-.container-fluid {
-  max-width: 1400px;
+.services p {
+  line-height: 1.2;
 }
 
-@media (min-width: 576px) {
-  .movil-contac,
-  .textwidget {
-    display: none;
-  }
+.services a {
+  position: absolute;
+  bottom: 1.2rem;
+  background-color: #fff;
+  padding: 0.8rem 4rem 0.8rem 2rem;
+  color: #004E77;
+  font-weight: 600;
+  font-size: 1.1rem;
+  right: 0;
 }
 
-
-
-
+<<<<<<< HEAD
 @media screen and (max-width: 680px) {
   /*++++++++++++++++ btn de whtsapp a la derecha ++++++++++++++++*/
   .main-btn-whatsapp-movil {
@@ -179,169 +217,136 @@ footer {
   .main-btn-whatsapp-movil {
     right: 2%;
   }
-
- 
-  .main-btn-whatsapp-movil [class^="icon"] {
-    color: var(--main-color-white);
-    font-size: 2rem;
-  }
-  .main-btn-phone-movil {
-    display: block;
-  }
-  .main-btns-bottom {
-    display: flex;
-    padding: .3rem 0;
-    width: 100%;
-    box-shadow: 0 0 5px grey;
-    position: fixed;
-    bottom: 0;
-    background-color: white;
-  }
-  .main-btn-phone-movil,
-  .main-btn-location-movil {
-    width: 50%;
-  }
-  .main-btn-phone-movil .textwidget a,
-  .main-btn-location-movil .textwidget a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.4rem;
-  }
-  .main-btn-phone-movil .textwidget a span,
-  .main-btn-location-movil .textwidget a span {
-    font-size: .9rem;
-  }
+=======
+/* beneficios  */
+.container-benefit {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 1rem 2rem;
+  grid-template-areas: "b b b "
+    "b1 b2 b3"
+    "b4 b4 b4";
+  margin-top: 2rem;
 }
+>>>>>>> new
 
-@media (max-width: 576px) {
-  .promop {
-    display: none;
-  }
-  .title-penal {
-    font-size: 1.8rem !important;
-  }
-  .title-penal-d {
-    display: none !important;
-  }
-
-
-}
-
-/* Landing penal */
-.card-img-overlay {
-  top: 60%;
-}
-
-.btn-success-penal {
-  color: #fff;
-  background-color: #00517C;
-  border-color: #ffffff;
-
-}
-
-.btn-success-penal:hover {
- color: rgb(251, 255, 0);
-}
-
-
-
-/* .titulo {
-  height: 300px;
-  background: #666;
-  border: 1px solid #333;
-}
-
-.dato {
-  height: 150px;
-  background: #666;
-  border: 1px solid #333;
-}
-
-.row {
-  display: block !important;
-}
-
-[class*="col-md-"] {
-  float: right;
-} */
-
-.bgimg {
-  background-image: url('../assets/images/penal-images/penal.jpg');
-  height: 250px;
-  color: white;
+.b {
+  grid-area: b;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.bgimg h2{
-  text-shadow: 3px 3px 3px #000000;
-  display: block;
-}
-.bgimg h5 {
-  text-shadow: 3px 3px 3px #000000;
-  display: block;
+.b1 {
+  grid-area: b1;
 }
 
-.bgimg h2 {
+.b2 {
+  grid-area: b2;
+}
+
+.b3 {
+  grid-area: b3;
+}
+
+.b4 {
+  grid-area: b4;
+  margin: auto;
+  max-width: 492px;
+}
+
+.b1,
+.b2,
+.b3,
+.b4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-benefit img {
+  padding-right: 1rem;
+}
+
+.container-benefit h3 {
+  padding-bottom: 0.5rem;
+  color: #004E77;
+}
+
+.container-benefit h2 {
+  padding-left: 2rem;
   font-size: 2.5rem;
+  font-weight: 700;
+  color: #004E77;
 }
 
-.bgimg h5 {
-  font-size: 1.8rem;
+.container-benefit p {
+  color: #666666;
 }
 
-.navbar-nav li {
-  border-right: 1px solid  white;
-  border-right: 1px solid rgba(102, 102, 102, 0.7) ;
-}
-
-/* reglas CSS para formulario */
-.form-consulta {
-  background: #eee;
-  padding: 25px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.campo-form { 
-  width:400px;
-  height:36px;
-  margin:2px 0 6px;
-  padding-left:6px;
-  box-sizing: border-box;
-  border-radius:3px;
-  border:0;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size:1em;}
-label span {
-  color: #f00
-}
-textarea { 
-  min-height: 150px!important;
-}
-.btn-form {
-  display: inline-block;
-  border:0;
-  background: #00517C;
-  height: 46px;
-  line-height: 46px;
-  padding: 0 20px;
-  border-radius: 6px;
-  color:#fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px
-}
-.btn-form:hover {background: #444}
-
-/* alerta de evio exitoso mensaje de formulario */
-
-.alert{
+/* section cursos  */
+.courses_title {
+  background-color: #004E77;
+  color: #fff;
   text-align: center;
-  padding:15px;
-  background:#79c879;
-  color:#fff;
-  margin-bottom:10px;
-  display:none;
+  padding: 1rem 0;
+  margin-top: 0.8rem;
 }
+
+.courses_title h2 {
+  font-size: 2rem;
+}
+
+.courser .courses_college {
+  display: flex;
+  justify-content: space-evenly;
+  height: 191px;
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* courser verano  */
+section .courses-verano {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 2rem 2.5rem;
+}
+
+.courses-verano article {
+  background-color: #004E77;
+  color: #fff;
+  
+}
+.courses-verano img {
+  width: 100%;
+  
+}
+.courses-verano h3,
+.courses-verano ul {
+  padding: 1rem 1.5rem;
+}
+
+.courses-verano h3 {
+  font-weight: 500;
+}
+
+.courses-verano ul {
+  padding-top: 2rem;
+}
+
+.courses-verano a {
+  position: absolute;
+  bottom: 1.2rem;
+  background-color: #fff;
+  padding: 0.8rem 4rem 0.8rem 2rem;
+  color: #004E77;
+  font-weight: 600;
+  font-size: 1.1rem;
+  right: 0;
+}
+.courses-verano article {
+  position: relative;
+  height: 520px;
+  
+}
+
