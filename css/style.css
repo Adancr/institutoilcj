@@ -174,3 +174,68 @@ section .services {
   font-size: 1.1rem;
   right: 0;
 }
+
+/* beneficios  */
+.container-benefit {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 1rem 2rem;
+  grid-template-areas: "b b b "
+    "b1 b2 b3"
+    "b4 b4 b4";
+    margin-top: 2rem;
+}
+
+.b {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+}
+
+.b1 {
+  grid-area: b1;
+}
+
+.b2 {
+  grid-area: b2;
+}
+
+.b3 {
+  grid-area: b3;
+}
+
+.b4 {
+  grid-area: b4;
+  margin: auto;
+  max-width: 492px;
+}
+
+.b1,
+.b2,
+.b3,
+.b4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-benefit img {
+  padding-right: 1rem;
+}
+
+.container-benefit h3 {
+  padding-bottom: 0.5rem;
+  color: #004E77;
+}
+
+.container-benefit h2 {
+  padding-left: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004E77;
+}
+
+.container-benefit p {
+  color: #666666;
+}
+
