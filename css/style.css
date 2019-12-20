@@ -183,7 +183,7 @@ section .services {
   grid-template-areas: "b b b "
     "b1 b2 b3"
     "b4 b4 b4";
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .b {
@@ -237,5 +237,72 @@ section .services {
 
 .container-benefit p {
   color: #666666;
+}
+
+/* section cursos  */
+.courses_title {
+  background-color: #004E77;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 0.8rem;
+}
+
+.courses_title h2 {
+  font-size: 2rem;
+}
+
+.courser .courses_college {
+  display: flex;
+  justify-content: space-evenly;
+  height: 191px;
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* courser verano  */
+section .courses-verano {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 2rem 2.5rem;
+}
+
+.courses-verano article {
+  background-color: #004E77;
+  color: #fff;
+  
+}
+.courses-verano img {
+  width: 100%;
+  
+}
+.courses-verano h3,
+.courses-verano ul {
+  padding: 1rem 1.5rem;
+}
+
+.courses-verano h3 {
+  font-weight: 500;
+}
+
+.courses-verano ul {
+  padding-top: 2rem;
+}
+
+.courses-verano a {
+  position: absolute;
+  bottom: 1.2rem;
+  background-color: #fff;
+  padding: 0.8rem 4rem 0.8rem 2rem;
+  color: #004E77;
+  font-weight: 600;
+  font-size: 1.1rem;
+  right: 0;
+}
+.courses-verano article {
+  position: relative;
+  height: 520px;
+  
 }
 
