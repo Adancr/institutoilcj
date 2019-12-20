@@ -119,7 +119,7 @@ li {
 }
 
 /* main section principal  */
-main {
+.main {
   max-width: 1540px;
   margin: auto;
 }
@@ -128,7 +128,7 @@ main {
 section .services {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template: 1fr / repeat(3, 1fr);
+  grid-template: 1fr / repeat(auto-fit, minmax(320px, 1fr));
   /* grid-column-gap: 60px; */
   /* grid-template-areas: "header" "contenido" "footer"; */
   grid-gap: 0 60px;
@@ -264,7 +264,8 @@ section .services {
 /* courser verano  */
 section .courses-verano {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 2rem 2.5rem;
 }
 
@@ -306,3 +307,11 @@ section .courses-verano {
   
 }
 
+.footer {
+  background-color: #666666;
+}
+footer .main-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
