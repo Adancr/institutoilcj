@@ -1,6 +1,6 @@
 body {
   /* overflow-x: hidden; */
-  
+
   font-family: 'Montserrat', sans-serif;
   /* background-color: rebeccapurple; */
 
@@ -31,6 +31,17 @@ li {
 }
 
 /* Esitlos header  */
+.baner {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
 
 .header a {
   color: #fff;
@@ -43,6 +54,7 @@ li {
   left: 260px;
   width: 142px;
   top: 40px;
+  z-index: 99;
 }
 
 .header nav {
@@ -52,6 +64,7 @@ li {
   left: 403px;
   align-items: center;
   top: 85px;
+  z-index: 99;
 }
 
 .header ul {
@@ -115,13 +128,18 @@ main {
 section .services {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template:1fr / repeat(3, 1fr);
+  grid-template: 1fr / repeat(3, 1fr);
   /* grid-column-gap: 60px; */
   /* grid-template-areas: "header" "contenido" "footer"; */
   grid-gap: 0 60px;
   margin-top: 2rem;
   align-items: center;
 }
+
+.services span {
+  text-decoration-line: underline;
+}
+
 /* .header {
   grid-area: header;
 } */
@@ -148,11 +166,11 @@ section .services {
 
 .services a {
   position: absolute;
-    bottom: 10px;
-    background-color: #fff;
-    padding: 0.8rem 4rem 0.8rem 2rem;
-    color: #004E77;
-    font-weight: 600;
-    font-size: 1.1rem;
-    right: 0;
+  bottom: 1.2rem;
+  background-color: #fff;
+  padding: 0.8rem 4rem 0.8rem 2rem;
+  color: #004E77;
+  font-weight: 600;
+  font-size: 1.1rem;
+  right: 0;
 }
