@@ -1,5 +1,124 @@
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header  */
+nav .logo img {
+  max-height: 4rem;
+}
+
+.navbar {
+  position: absolute;
+}
+
+/* button wp  */
+ul .wp {
+  background: #25D366;
+  color: #fff;
+}
+
+.pb-navbar {
+  position: absolute;
+  background: #ffffff !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* section principal  */
+.title-p {
+  background-image: url(../images/back_header.jpg);
+  background-size: cover;
+}
+
+.pt-contact {
+  padding-top: 5rem;
+}
+
+.title-p h3 {
+  font-weight: 400;
+}
+
+.title-p h2 {
+  font-size: 3rem;
+}
+
+.certifica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certifica img {
+  width: 100px;
+}
+
+/* formulario  */
+.form-contact {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 6px;
+}
+
+.form-contact h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+}
+
+.input-group-text {
+  display: flex;
+  padding: .6rem !important;
+}
+
+.form-group input {
+  position: relative;
+  flex: 1 1 auto;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius:0 !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.p-height-50 {
+  height: 3rem !important;
+}
+
+.input-group-prepend {
+  margin-right: -1px;
+}
