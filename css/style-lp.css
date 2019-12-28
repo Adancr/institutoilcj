@@ -46,13 +46,14 @@ ul .wp {
 
 .pt-contact {
   padding-top: 5rem;
-  
+
 }
+
 .title-p-child {
   align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
@@ -101,7 +102,7 @@ ul .wp {
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
   border-top-left-radius: 0 !important;
-  border-bottom-left-radius:0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 .form-control {
@@ -120,7 +121,7 @@ ul .wp {
   border-bottom-right-radius: .25rem;
   border-bottom-left-radius: 0 !important;
   border-top-left-radius: 0 !important;
-  
+
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
@@ -207,4 +208,83 @@ Estilos generales btn
   width: 130%;
   left: -20px;
 
+}
+
+/* details  */
+.row-start-date-title {
+  padding: 1.2rem 0;
+  background: #004E77;
+  color: #fff;
+}
+
+.row-start-date-details {
+  padding: 2rem 0;
+}
+
+.start-date-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #72B7DB;
+  padding: .4rem;
+}
+
+.start-date-details .fas {
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+  color: #72B7DB;
+}
+
+.date-details {
+  background-color: #004E77;
+  padding: .3rem 4rem;
+  color: #fff;
+}
+
+/* presentacion curso  */
+
+.presentation-course img {
+  width: 100%;
+}
+
+.presentation-course {
+  padding: 1rem 0;
+}
+
+.presentation-course h3,
+.curriculum-heading h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  position: relative;
+}
+.presentation-course h3::before {
+  content: "";
+  display: block;
+  background-color: #004E77;
+  height: 1.3rem;
+  width: .4rem;
+  margin-right: .4rem;
+}
+
+/* temary course */
+
+section .curriculum-wraper {
+  border: 1px solid red;
+    padding: 1rem 1rem;
+}
+
+section .curriculum-heading {
+  display: flex;
+  justify-content: space-between;
+}
+section .curriculum-heading h3::before {
+  content: "";
+  display: block;
+  background-color: #004E77;
+  height: 1.3rem;
+  width: .4rem;
+  margin-right: .4rem;
 }
