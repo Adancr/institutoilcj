@@ -224,7 +224,7 @@ Estilos generales btn
 .start-date-details {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   text-align: center;
   border: 1px solid #72B7DB;
@@ -260,6 +260,7 @@ Estilos generales btn
   align-items: baseline;
   position: relative;
 }
+
 .presentation-course h3::before {
   content: "";
   display: block;
@@ -272,14 +273,16 @@ Estilos generales btn
 /* temary course */
 
 section .curriculum-wraper {
-  border: 1px solid red;
-    padding: 1rem 1rem;
+  border: 1px solid #ced4da70;
+  padding: 1rem 1rem;
+  border-radius: 4px;
 }
 
 section .curriculum-heading {
   display: flex;
   justify-content: space-between;
 }
+
 section .curriculum-heading h3::before {
   content: "";
   display: block;
@@ -288,3 +291,61 @@ section .curriculum-heading h3::before {
   width: .4rem;
   margin-right: .4rem;
 }
+
+.course-curriculum h3,
+.course-curriculum h4 {
+  color: #004E77;
+}
+
+.course-curriculum ul {
+  margin-bottom: 0 !important;
+}
+
+.course-curriculum li {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: .3rem 0;
+}
+
+.course-curriculum h4 {
+  margin-bottom: .1rem;
+}
+
+/* section beneficios  */
+.benefits {
+  margin: .5rem 0;
+}
+section .benefits-title {
+  text-align: center;
+  background-color: #004e77;
+  color: #fff;
+  padding: .4rem 0;
+}
+
+section .row-benefits {
+  margin: 2rem 0;
+  text-align: center;
+}
+section .benefits-items {
+  border: 1px solid #72B7DB;
+  padding: .5rem;
+  height: 17rem;
+  border-radius: 3px;
+}
+
+section .benefits-items h4 {
+  margin-top: .5rem;
+}
+section .benefits-items img {
+  max-height: 60px;
+}
+
+/* Staff docentes  */
+
+section .staff-teacher-title {
+  text-align: center;
+  background-color: #004e77;
+  color: #fff;
+  padding: .4rem 0;
+}
+
