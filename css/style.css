@@ -31,16 +31,35 @@ li {
 }
 
 /* Esitlos header  */
-.baner {
+
+.wrapper {
+  background-image: url(../images/back_header.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+
+.banner {
   max-width: 1920px;
   margin: auto;
   position: relative;
 }
 
+.banner img {
+  width: 100%;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 27rem;
+  left: 21rem;
+  color: #fff;
+}
+
 .header {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: auto;
   position: relative;
+  height: 50vh;
 }
 
 .header a {
@@ -119,7 +138,7 @@ li {
 }
 
 /* main section principal  */
-main {
+.main {
   max-width: 1540px;
   margin: auto;
 }
@@ -128,7 +147,7 @@ main {
 section .services {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template: 1fr / repeat(3, 1fr);
+  grid-template: 1fr / repeat(auto-fit, minmax(320px, 1fr));
   /* grid-column-gap: 60px; */
   /* grid-template-areas: "header" "contenido" "footer"; */
   grid-gap: 0 60px;
@@ -143,6 +162,7 @@ section .services {
 /* .header {
   grid-area: header;
 } */
+
 
 .services article {
   height: 490px;
@@ -206,8 +226,8 @@ section .services {
 
 .b4 {
   grid-area: b4;
-  margin: auto;
-  max-width: 492px;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .b1,
@@ -264,19 +284,22 @@ section .services {
 /* courser verano  */
 section .courses-verano {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 2rem 2.5rem;
 }
 
 .courses-verano article {
   background-color: #004E77;
   color: #fff;
-  
+
 }
+
 .courses-verano img {
   width: 100%;
-  
+
 }
+
 .courses-verano h3,
 .courses-verano ul {
   padding: 1rem 1.5rem;
@@ -300,9 +323,62 @@ section .courses-verano {
   font-size: 1.1rem;
   right: 0;
 }
+
 .courses-verano article {
   position: relative;
   height: 520px;
-  
+
 }
 
+/* Style footer */
+.footer {
+  background-color: #666666;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+footer .main-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+footer .main-footer {
+  padding: 1rem 1rem;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.social p {
+  font-weight: 500;
+}
+
+.social ul {
+  display: flex;
+  justify-content: start;
+}
+
+.footer li {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  color: #666666;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+
+
+
+
+.footer p,
+.footer li {
+  line-height: 1.6;
+}
