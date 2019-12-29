@@ -315,6 +315,7 @@ section .curriculum-heading h3::before {
 .benefits {
   margin: .5rem 0;
 }
+
 section .benefits-title {
   text-align: center;
   background-color: #004e77;
@@ -326,6 +327,7 @@ section .row-benefits {
   margin: 2rem 0;
   text-align: center;
 }
+
 section .benefits-items {
   border: 1px solid #72B7DB;
   padding: .5rem;
@@ -336,11 +338,21 @@ section .benefits-items {
 section .benefits-items h4 {
   margin-top: .5rem;
 }
+
 section .benefits-items img {
   max-height: 60px;
 }
 
 /* Staff docentes  */
+
+section .row-staff-teacher {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.row-staff-teacher h3 {
+  font-size: 1.5rem !important;
+}
 
 section .staff-teacher-title {
   text-align: center;
@@ -349,3 +361,7 @@ section .staff-teacher-title {
   padding: .4rem 0;
 }
 
+section .row-staff-teacher img {
+  border-radius: 50%;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}
