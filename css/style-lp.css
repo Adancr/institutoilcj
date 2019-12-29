@@ -12,6 +12,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 /* header  */
 nav .logo img {
   max-height: 4rem;
@@ -179,7 +180,7 @@ Estilos generales btn
   font-weight: 900;
   content: "\f138";
   position: relative;
-  left: 0.9px;
+  left: 3px;
   top: 0.1rem;
   transition: left 0.3s ease;
 }
@@ -354,7 +355,8 @@ section .row-staff-teacher {
   font-size: 1.5rem !important;
 }
 
-section .staff-teacher-title {
+section .staff-teacher-title,
+section .investment-title {
   text-align: center;
   background-color: #004e77;
   color: #fff;
@@ -364,4 +366,46 @@ section .staff-teacher-title {
 section .row-staff-teacher img {
   border-radius: 50%;
   box-shadow: 0 5px 5px 0 #adb5bd;
+}
+
+/*  investment  */
+
+section .single-table {
+  border: 1px solid #72B7DB;
+}
+
+section .plan-header h3 {
+  padding: .5rem 0;
+  background-color: #010d269e;
+  color: #fff;
+  margin-bottom: 1px;
+}
+
+section .plan-header-price {
+  background-color: #010d269e;
+  color: #fff;
+  padding: .5rem 0;
+}
+
+section .single-table ul {
+  padding: .8rem 0;
+  margin-bottom: 0;
+}
+
+/*  section inversion  */
+
+section .buy a,
+section .info-wp a {
+  width: 50%;
+  margin: .5rem 0;
+  padding: .5rem 0;
+  font-weight: bold;
+}
+
+/* footer  */
+footer {
+  background-color: #495057;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
