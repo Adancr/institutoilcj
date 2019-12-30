@@ -12,6 +12,48 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Color Theme Swatches in Hex */
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-1-hex {
+  color: #003E66;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-2-hex {
+  color: #006DB3;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-3-hex {
+  color: #265D80;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-4-hex {
+  color: #3682B3;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-5-hex {
+  color: #009CFF;
+}
+
+/* Color Theme Swatches in RGBA */
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-1-rgba {
+  color: rgba(0, 62, 102, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-2-rgba {
+  color: rgba(0, 108, 178, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-3-rgba {
+  color: rgba(38, 92, 127, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-4-rgba {
+  color: rgba(53, 129, 178, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-5-rgba {
+  color: rgba(0, 155, 255, 1);
+}
+
 
 /* header  */
 nav .logo img {
@@ -41,7 +83,7 @@ ul .wp {
 
 /* section principal  */
 .title-p {
-  background-image: url(../images/back_header.jpg);
+  background-image: url(../images/back-penal.jpg);
   background-size: cover;
 }
 
@@ -146,18 +188,18 @@ Estilos generales btn
 
 .btn-primary {
   color: #fff;
-  background-color: #25D366 !important;
-  border-color: #25D366;
+  background-color: #006DB3 !important;
+  border-color: #006DB3;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border-color: #25D366 !important;
+  border-color: #006DB3 !important;
 }
 
 .btn-primary:hover {
   color: #000 !important;
   background-color: #fff;
-  border-color: #25D366 !important;
+  border-color: #006DB3 !important;
   font-weight: 500 !important;
 
 }
@@ -165,14 +207,14 @@ Estilos generales btn
 
 .btn-primary:active {
   color: #000 !important;
-  background-color: #25D366 !important;
-  border-color: #25D366 !important;
+  background-color: #006DB3 !important;
+  border-color: #006DB3 !important;
   font-weight: 500 !important;
 }
 
 .btn-primary:focus {
-  background-color: #25D366;
-  box-shadow: 0 0 0 0.2rem rgba(250, 169, 38, 0.5) !important;
+  background-color: #006DB3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5) !important;
 }
 
 .btn-primary:after {
@@ -235,7 +277,7 @@ Estilos generales btn
 .start-date-details .fas {
   font-size: 3rem;
   padding-bottom: 1.2rem;
-  color: #72B7DB;
+  color: #006DB3;
 }
 
 .date-details {
@@ -365,24 +407,45 @@ section .investment-title {
 
 section .row-staff-teacher img {
   border-radius: 50%;
-  box-shadow: 0 5px 5px 0 #adb5bd;
+ box-shadow:  0 5px 5px 0 rgba(0,123,255,.25);
 }
 
 /*  investment  */
 
 section .single-table {
   border: 1px solid #72B7DB;
+  position: relative;
+  overflow: hidden;
 }
 
 section .plan-header h3 {
   padding: .5rem 0;
-  background-color: #010d269e;
+  background-color: #265D80;
   color: #fff;
   margin-bottom: 1px;
 }
 
+section .plan-header-offer {
+  position: absolute;
+  width: 120px;
+  background-color: #c6cf52;
+  top: 12px;
+  right: -32px;
+  transform: rotate(45deg);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+section .plan-header-offer p {
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+
 section .plan-header-price {
-  background-color: #010d269e;
+  background-color: #265D80;
   color: #fff;
   padding: .5rem 0;
 }
