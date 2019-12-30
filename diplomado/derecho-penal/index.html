@@ -36,10 +36,10 @@
           <a class="nav-link active" href="#benefits">Beneficios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#mdo">Docentes</a>
+          <a class="nav-link active" href="#staff-teacher">Docentes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#mdo">Inversion</a>
+          <a class="nav-link active" href="#investment">Inversion</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle wp" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -81,21 +81,21 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-user"></i></span>
                 </div>
-                <input class="form-control p-height-50" type="text" name="name" id="name" placeholder="Nombre Completo">
+                <input class="form-control p-height-50" type="text" name="name" id="name" placeholder="Nombre Completo" required pattern="[A-Za-z]+">
                 <div class="error-nombre"></div>
               </div>
               <div class="form-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                 </div>
-                <input class="form-control p-height-50" type="text" name="email" id="email" placeholder="Correo Electrónico">
+                <input class="form-control p-height-50" type="email" name="email" id="email" placeholder="Correo Electrónico" required>
                 <div class="error-mail"></div>
               </div>
               <div class="form-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-phone-alt"></i></i></span>
                 </div>
-                <input class="form-control p-height-50" type="text" name="phone" id="phone" placeholder="Número Celular">
+                <input class="form-control p-height-50" type="text" name="phone" id="phone" placeholder="Número Celular" required minlenght="9">
                 <div class="error-phone"></div>
               </div>
 
@@ -290,7 +290,7 @@
       </div>
     </section>
     <!-- Staff docentes  -->
-    <section class="staff-teacher">
+    <section class="staff-teacher" id="staff-teacher">
       <div class="staff-teacher-title">
         <h2>PLANA DOCENTE</h2>
       </div>
@@ -328,10 +328,10 @@
       </div>
     </section>
     <!-- section inversion  -->
-    <section class="investment">
-      <h2 class="investment-title">Inversión</h2>
+    <section class="investment" id="investment">
+      <h2 class="investment-title">INVERSIÓN</h2>
       <div class="container">
-        <div class="row justify-content-center mb-4">
+        <div class="row row-investment">
           <div class="col-md-4 mb-2">
             <div class="single-table text-center">
               <div class="plan-header">

@@ -302,6 +302,7 @@ Estilos generales btn
   justify-content: flex-start;
   align-items: baseline;
   position: relative;
+  color: #004E77;
 }
 
 .presentation-course h3::before {
@@ -411,6 +412,11 @@ section .row-staff-teacher img {
 }
 
 /*  investment  */
+section .row-investment {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
 
 section .single-table {
   border: 1px solid #72B7DB;
