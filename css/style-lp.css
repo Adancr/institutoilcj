@@ -10,6 +10,7 @@ h5,
 h6,
 p {
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0 !important;
 }
 
 /* Color Theme Swatches in Hex */
@@ -292,6 +293,9 @@ Estilos generales btn
   width: 100%;
 }
 
+.presentation-course p {
+  text-align: justify;
+}
 .presentation-course {
   padding: 1rem 0;
 }
