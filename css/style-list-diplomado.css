@@ -16,6 +16,7 @@ p {
   line-height: 1.5;
 
 }
+
 a {
   text-decoration: none;
 }
@@ -94,8 +95,9 @@ h4 {
 
 /* header  */
 header {
-  height: 90px;
-  padding: 0.4rem 0;
+  position: fixed;
+  width: 100%;
+  background: #fff
 }
 
 header img {
@@ -116,14 +118,15 @@ header .child-attributes-header {
 
 header .widget_text {
   display: flex;
-    width: 50%;
-    justify-content: space-around;
+  width: 50%;
+  justify-content: space-around;
 }
 
 .widget_text a {
   display: flex;
   align-items: center;
 }
+
 .widget_text a:hover {
   text-decoration: none;
 }
@@ -134,7 +137,7 @@ header .widget_text {
 
 header .widget_text .fa-envelope,
 header .widget_text .fa-phone-alt {
-  background-color:#009CFF;
+  background-color: #009CFF;
   color: #fff;
   font-size: 1.7rem;
   padding: .4rem;
@@ -150,7 +153,8 @@ header .title-icon-date {
   background-image: url(../images/back-penal.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 546px;
+  padding-top: 5rem;
 }
 
 section .block-items {
@@ -159,16 +163,30 @@ section .block-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 section .title-h1 h1 {
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
+
 section .title-h1 h4 {
   font-weight: 400;
   color: #fff;
+  text-align: center;
+}
+
+.certifica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.certifica img {
+  height: 100px;
 }
 
 
@@ -306,11 +324,12 @@ section .title-h1 h4 {
 }
 
 /* section diplomados  */
-.title-programs {
+.title-programs,
+.title-contacts {
   background-color: #003E66;
   color: #fff;
- text-align: center;
- padding: 1rem 0;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .wrap-programs article figure img {
@@ -335,16 +354,30 @@ section .title-h1 h4 {
 
 .programs h4 {
   font-size: 1rem;
-    text-align: center;
-    background-color: #009CFF;
-    color: #fff;
-    padding: .5rem 0;
+  text-align: center;
+  background-color: #009CFF;
+  color: #fff;
+  padding: .5rem 0;
 }
 
 .programs h2 {
   font-size: 1.4rem;
-    text-align: center;
-    padding: 1rem .3rem;
+  text-align: center;
+  padding: 1rem .3rem;
+}
+
+.programs p {
+  padding: 0 .7rem;
+}
+
+.programs p:first-child {
+  padding: .4rem 0 .3rem .6rem;
+}
+
+.programs .fa-chalkboard-teacher,
+.programs .fa-calendar-alt,
+.programs strong {
+  color: #003E66;
 }
 
 .box-btn {
@@ -354,5 +387,35 @@ section .title-h1 h4 {
 }
 
 .wrap-programs .programs {
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+/*********************************
+*Contacts
+**********************************/
+section .wrap-contacts {
+  /* width: 1140px; */
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.icon-contacts .fas {
+  font-size: 3rem;
+  color: #003E66;
+  padding-bottom: .7rem;
+}
+
+/*********************************
+*Footer
+**********************************/
+
+footer {
+  background-color: #495057;
+  color: #fff;
+  text-align: center;
+  padding: .3rem 0;
 }
