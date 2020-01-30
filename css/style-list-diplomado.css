@@ -93,11 +93,51 @@ h4 {
   font-size: 1.3rem;
 }
 
+/* prices  */
+.container-price {
+
+  padding-bottom: 0.3rem;
+  max-width: 80%;
+  margin: auto;
+  display: none;
+}
+
+.container-price::after {
+
+  content: "";
+  top: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: red;
+}
+
+.container-price hr {
+  background-color: #009CFF;
+}
+
+.container-price-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding-bottom: 0.3rem;
+  color: #009CFF;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.container-price-items p:nth-child(2) {
+  font-size: 1.3rem;
+}
+
 /* header  */
 header {
   position: fixed;
   width: 100%;
-  background: #fff
+  background: #fff;
+  z-index: 2;
+
 }
 
 header img {
@@ -116,10 +156,34 @@ header .child-attributes-header {
   align-items: center;
 }
 
+.wp_header {
+  position: absolute;
+  right: 29px;
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .wp_header {
+    display: inline-block;
+  }
+}
+
+.wp_header a {
+  font-size: 3.8rem;
+  display: flex;
+  color: #25D366;
+}
+
 header .widget_text {
   display: flex;
   width: 50%;
   justify-content: space-around;
+}
+
+@media (max-width: 770px) {
+  .widget_text div {
+    display: none;
+  }
 }
 
 .widget_text a {
@@ -153,7 +217,7 @@ header .title-icon-date {
   background-image: url(../images/back-penal.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 546px;
+  height: 590px;
   padding-top: 5rem;
 }
 
@@ -191,6 +255,11 @@ section .title-h1 h4 {
 
 
 /* form contact  */
+
+.main-form {
+  max-width: 500px;
+}
+
 .form-contact {
   background: #fff;
   padding: 1.2rem;
@@ -340,6 +409,7 @@ section .title-h1 h4 {
   max-width: 1440px;
   margin: auto;
   margin-top: 1.5rem;
+  padding: 0 .5rem
 }
 
 .wrap-programs {
@@ -350,6 +420,10 @@ section .title-h1 h4 {
 
 .programs figure {
   margin-bottom: 0;
+}
+
+.programs p:nth-child(1) {
+  padding-bottom: 3rem;
 }
 
 .programs h4 {
@@ -378,6 +452,7 @@ section .title-h1 h4 {
 .programs .fa-calendar-alt,
 .programs strong {
   color: #003E66;
+  margin-right: 3px;
 }
 
 .box-btn {
