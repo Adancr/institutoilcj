@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,UAAU;CAExB;;AACA,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/_variables.scss",
+        "../../scss/_globals.scss",
+        "../../scss/_buttons.scss",
+        "../../scss/_header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
