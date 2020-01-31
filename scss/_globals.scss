@@ -1,7 +1,57 @@
+/********************
+**** GLOBALS 
+*********************/
+html {
+  font-size: $font-size;
+}
 body {
-  font-family: Montserrat;
- 
+  font-family: $font-family;
+  // background-color: $color-primary;
+}
+
+* {
+  box-sizing: border-box;
 }
  h1 {
-   font-size: 2rem;
- }
+   font-size: 3rem;
+   font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1.6rem;
+  }
+
+  .bg-inverse {
+    background-color: black;
+  }
+
+  %container {
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  .container {
+    @extend %container;
+  }
