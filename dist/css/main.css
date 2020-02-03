@@ -95,47 +95,76 @@ li {
   width: 100px;
 }
 
-.header .logo-navegation ul {
+@media (max-width: 768px) {
+  .header {
+    height: 428px;
+  }
+  .header nav {
+    display: none;
+  }
+  .header .title-p {
+    top: 31%;
+    width: 99%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header .title-p {
+    top: 34%;
+  }
+  .header .title-p span:first-child {
+    font-size: 3.8rem;
+  }
+  .header .title-p .title-h1 {
+    font-size: 2rem;
+  }
+  .header .title-p span:last-child {
+    font-size: 3.4rem;
+  }
+}
+
+.header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .logo-navegation ul li {
+.header ul li {
   margin-right: 1.6rem;
   font-weight: bold;
   letter-spacing: .02rem;
   text-shadow: 2px 1px 2px #000000b5;
 }
 
-.header .logo-navegation ul li:hover {
+.header ul li:hover {
   text-decoration: underline;
 }
 
-.header .logo-navegation ul li:last-child {
+.header ul li:last-child {
   margin-right: 0;
 }
 
-.header .logo-navegation ul a {
+.header ul a {
   color: #ffffff;
   cursor: pointer;
 }
 
-.header .title-p {
+.title-p {
   position: absolute;
   top: 40%;
   width: 50%;
 }
 
-.header .title-p h1 {
+.title-p h1 {
   text-shadow: 3px 2px 6px #090909ad;
 }
 
-.header .title-p span:first-child {
+.title-p span:first-child {
   font-size: 5rem;
 }
 
-.header .title-p span:last-child {
+.title-p span:last-child {
   font-size: 4.5rem;
   text-decoration: underline;
 }
@@ -324,5 +353,17 @@ footer .footer-social .container-icons div {
 footer .footer-social .container-icons div a {
   color: inherit;
   font-size: inherit;
+}
+
+footer .container-footer .footer-navegation ul li {
+  margin: 1rem 0;
+}
+
+footer .container-footer .footer-navegation ul li a {
+  color: #ffffff;
+}
+
+footer .copyright p {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

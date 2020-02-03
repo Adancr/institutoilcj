@@ -41,4 +41,20 @@ footer {
 
 
   }
+
+  .container-footer .footer-navegation {
+    // color: $color-white;
+    ul li {
+      margin: 1rem 0;
+      a {
+        color: $color-white;
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 1.3rem;
+    }
+  }
 }
