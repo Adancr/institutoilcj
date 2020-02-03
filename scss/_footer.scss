@@ -43,11 +43,20 @@ footer {
   }
 
   .container-footer .footer-navegation {
-    // color: $color-white;
+
     ul li {
       margin: 1rem 0;
       a {
         color: $color-white;
+      }
+    }
+    
+  }
+  .container-footer {
+    @media (max-width: 768px) {
+      padding: 2rem 1rem;
+      .footer-navegation {
+        padding: 1.2rem 0;
       }
     }
   }
@@ -55,6 +64,10 @@ footer {
   .copyright {
     p {
       font-size: 1.3rem;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+      padding-bottom: .5rem;;
     }
   }
 }

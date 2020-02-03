@@ -363,7 +363,23 @@ footer .container-footer .footer-navegation ul li a {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  footer .container-footer {
+    padding: 2rem 1rem;
+  }
+  footer .container-footer .footer-navegation {
+    padding: 1.2rem 0;
+  }
+}
+
 footer .copyright p {
   font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  footer .copyright {
+    text-align: center;
+    padding-bottom: .5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
