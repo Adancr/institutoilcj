@@ -58,7 +58,7 @@ li {
 **** HEADER 
 *********************/
 .header {
-  background-image: url(/images/back_header.jpg);
+  background-image: url(./images/back_header.jpg);
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
