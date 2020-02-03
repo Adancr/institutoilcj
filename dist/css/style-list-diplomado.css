@@ -221,7 +221,7 @@ header .title-icon-date {
 
 /* section .slider  */
 .blok-slider {
-  background-image: url(../images/back-penal.jpg);
+  background-image: url(../../images/back-penal.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 590px;
@@ -392,7 +392,7 @@ section .title-h1 h4 {
   box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5) !important;
 }
 
-.btn-primary:after {
+/* .btn-primary:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   content: "\f054";
@@ -400,7 +400,7 @@ section .title-h1 h4 {
   left: 3px;
   top: 0.1rem;
   transition: left 0.3s ease;
-}
+} */
 
 .btn-primary:hover:after,
 .btn-primary:active:after,
