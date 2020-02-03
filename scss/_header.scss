@@ -1,0 +1,116 @@
+/********************
+**** HEADER 
+*********************/
+
+.header {
+  background-image: url(/images/back_header.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+
+  .logo-navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: .5rem 1rem;
+    position: fixed;
+    width: 100%;
+    max-width: 1140px;
+    z-index: 1;
+
+    .logo-header img {
+      width: 100px;
+    }
+
+
+  }
+
+  //  RWD 768 
+  @media (max-width: 768px) {
+
+    height: 428px;
+
+    nav {
+      display: none;
+    }
+
+    .title-p {
+      top: 31%;
+      width: 99%;
+      padding: 0 1rem;
+    }
+
+  }
+
+  // RWD 425 mobile L
+  @media (max-width: 425px) {
+    .title-p {
+      top: 34%;
+
+      span:first-child {
+        font-size: 3.8rem;
+      }
+
+      .title-h1 {
+        font-size: 2rem;
+      }
+
+      span:last-child {
+        font-size: 3.4rem;
+      }
+
+    }
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 1.6rem;
+      font-weight: bold;
+      letter-spacing: .02rem;
+      text-shadow: 2px 1px 2px #000000b5;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: $color-white;
+      cursor: pointer;
+
+    }
+
+  }
+}
+
+.title-p {
+  position: absolute;
+  top: 40%;
+  width: 50%;
+
+
+  h1 {
+    text-shadow: 3px 2px 6px #090909ad;
+  }
+
+  span:first-child {
+    font-size: 5rem;
+  }
+
+  span:last-child {
+    font-size: 4.5rem;
+    text-decoration: underline;
+  }
+
+}

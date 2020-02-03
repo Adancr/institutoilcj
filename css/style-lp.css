@@ -1,0 +1,484 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0 !important;
+}
+
+/* Color Theme Swatches in Hex */
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-1-hex {
+  color: #003E66;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-2-hex {
+  color: #006DB3;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-3-hex {
+  color: #265D80;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-4-hex {
+  color: #3682B3;
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-5-hex {
+  color: #009CFF;
+}
+
+/* Color Theme Swatches in RGBA */
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-1-rgba {
+  color: rgba(0, 62, 102, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-2-rgba {
+  color: rgba(0, 108, 178, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-3-rgba {
+  color: rgba(38, 92, 127, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-4-rgba {
+  color: rgba(53, 129, 178, 1);
+}
+
+.Paleta-BMPT-Azul-Oscuro---Monocromaticos-5-rgba {
+  color: rgba(0, 155, 255, 1);
+}
+
+
+/* header  */
+nav .logo img {
+  max-height: 4rem;
+}
+
+.navbar {
+  position: absolute;
+}
+
+/* button wp  */
+ul .wp {
+  background: #25D366;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.pb-navbar {
+  position: absolute;
+  background: #ffffff !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* section principal  */
+.title-p {
+  background-image: url(../images/back-penal.jpg);
+  background-size: cover;
+}
+
+.pt-contact {
+  padding-top: 5rem;
+
+}
+
+.title-p-child {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.title-p h3 {
+  font-weight: 400;
+}
+
+.title-p h2 {
+  font-size: 3rem;
+}
+
+.certifica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certifica img {
+  width: 100px;
+}
+
+/* formulario  */
+.form-contact {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 6px;
+}
+
+.form-contact h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+}
+
+.input-group-text {
+  display: flex;
+  padding: .6rem !important;
+}
+
+.form-group input {
+  position: relative;
+  flex: 1 1 auto;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 500 !important;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.p-height-50 {
+  height: 3rem !important;
+}
+
+.input-group-prepend {
+  margin-right: -1px;
+}
+
+/*------------------------------
+Estilos generales btn
+-------------------------------*/
+.btn {
+  border-radius: 0.7rem;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  font-size: 1.4rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #006DB3 !important;
+  border-color: #006DB3;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-color: #006DB3 !important;
+}
+
+.btn-primary:hover {
+  color: #000 !important;
+  background-color: #fff;
+  border-color: #006DB3 !important;
+  font-weight: 500 !important;
+
+}
+
+
+.btn-primary:active {
+  color: #000 !important;
+  background-color: #006DB3 !important;
+  border-color: #006DB3 !important;
+  font-weight: 500 !important;
+}
+
+.btn-primary:focus {
+  background-color: #006DB3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5) !important;
+}
+
+.btn-primary:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f138";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  transition: left 0.3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:active:after,
+.btn-primary:focus:after {
+  left: 0.3rem;
+}
+
+/* Insertar caja blanaca del boton principal */
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: skew(45deg, 0);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:before {
+  width: 130%;
+  left: -20px;
+
+}
+
+/* details  */
+.row-start-date-title {
+  padding: 1.2rem 0;
+  background: #004E77;
+  color: #fff;
+}
+
+.row-start-date-details {
+  padding: 2rem 0;
+}
+
+.start-date-details {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #72B7DB;
+  padding: .4rem;
+}
+
+.start-date-details .fas {
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+  color: #006DB3;
+}
+
+.date-details {
+  background-color: #004E77;
+  padding: .3rem 4rem;
+  color: #fff;
+}
+
+/* presentacion curso  */
+
+.presentation-course img {
+  width: 100%;
+}
+
+.presentation-course p {
+  text-align: justify;
+}
+.presentation-course {
+  padding: 1rem 0;
+}
+
+.presentation-course h3,
+.curriculum-heading h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  position: relative;
+  color: #004E77;
+}
+
+.presentation-course h3::before {
+  content: "";
+  display: block;
+  background-color: #004E77;
+  height: 1.3rem;
+  width: .4rem;
+  margin-right: .4rem;
+}
+
+/* temary course */
+
+section .curriculum-wraper {
+  border: 1px solid #ced4da70;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+}
+
+section .curriculum-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .curriculum-heading h3::before {
+  content: "";
+  display: block;
+  background-color: #004E77;
+  height: 1.3rem;
+  width: .4rem;
+  margin-right: .4rem;
+}
+
+.course-curriculum h3,
+.course-curriculum h4 {
+  color: #004E77;
+}
+
+.course-curriculum ul {
+  margin-bottom: 0 !important;
+}
+
+.course-curriculum li {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: .3rem 0;
+}
+
+.course-curriculum h4 {
+  margin-bottom: .1rem;
+}
+
+/* section beneficios  */
+.benefits {
+  margin: .5rem 0;
+}
+
+section .benefits-title {
+  text-align: center;
+  background-color: #004e77;
+  color: #fff;
+  padding: .4rem 0;
+}
+
+section .row-benefits {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+section .benefits-items {
+  border: 1px solid #72B7DB;
+  padding: .5rem;
+  height: 17rem;
+  border-radius: 3px;
+}
+
+section .benefits-items h4 {
+  margin-top: .5rem;
+}
+
+section .benefits-items img {
+  max-height: 60px;
+}
+
+/* Staff docentes  */
+
+section .row-staff-teacher {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.row-staff-teacher h3 {
+  font-size: 1.5rem !important;
+}
+
+section .staff-teacher-title,
+section .investment-title {
+  text-align: center;
+  background-color: #004e77;
+  color: #fff;
+  padding: .4rem 0;
+}
+
+section .row-staff-teacher img {
+  border-radius: 50%;
+ box-shadow:  0 5px 5px 0 rgba(0,123,255,.25);
+}
+
+/*  investment  */
+section .row-investment {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+section .single-table {
+  border: 1px solid #72B7DB;
+  position: relative;
+  overflow: hidden;
+}
+
+section .plan-header h3 {
+  padding: .5rem 0;
+  background-color: #265D80;
+  color: #fff;
+  margin-bottom: 1px;
+}
+
+section .plan-header-offer {
+  position: absolute;
+  width: 120px;
+  background-color: #c6cf52;
+  top: 12px;
+  right: -32px;
+  transform: rotate(45deg);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+section .plan-header-offer p {
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+
+section .plan-header-price {
+  background-color: #265D80;
+  color: #fff;
+  padding: .5rem 0;
+}
+
+section .single-table ul {
+  padding: .8rem 0;
+  margin-bottom: 0;
+}
+
+/*  section inversion  */
+
+section .buy a,
+section .info-wp a {
+  width: 50%;
+  margin: .5rem 0;
+  padding: .5rem 0;
+  font-weight: bold;
+}
+
+/* footer  */
+footer {
+  background-color: #495057;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}

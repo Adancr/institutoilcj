@@ -1,12 +1,13 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 04/01/2019 20:57
+    Creation date: 21/09/2019 23:53
     */
 
     @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -36,32 +37,40 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-facebook:before { content: "\f100"; }
-.flaticon-gorjeo:before { content: "\f101"; }
-.flaticon-marcas-y-logotipos:before { content: "\f102"; }
+    .flaticon-social:before { content: "\f100"; }
+.flaticon-whatsapp:before { content: "\f101"; }
+.flaticon-twitter:before { content: "\f102"; }
 .flaticon-instagram:before { content: "\f103"; }
-.flaticon-telegram:before { content: "\f104"; }
+.flaticon-phone:before { content: "\f104"; }
 .flaticon-periscope:before { content: "\f105"; }
-.flaticon-premio:before { content: "\f106"; }
-.flaticon-leccion:before { content: "\f107"; }
-.flaticon-escuela:before { content: "\f108"; }
-.flaticon-usuario:before { content: "\f109"; }
-.flaticon-evento:before { content: "\f10a"; }
-.flaticon-charlar:before { content: "\f10b"; }
-.flaticon-cartera:before { content: "\f10c"; }
-.flaticon-escudo:before { content: "\f10d"; }
+.flaticon-award:before { content: "\f106"; }
+.flaticon-lesson:before { content: "\f107"; }
+.flaticon-school:before { content: "\f108"; }
+.flaticon-event:before { content: "\f109"; }
+.flaticon-folder:before { content: "\f10a"; }
+.flaticon-calendar:before { content: "\f10b"; }
+.flaticon-clock:before { content: "\f10c"; }
+.flaticon-call:before { content: "\f10d"; }
+.flaticon-help:before { content: "\f10e"; }
+.flaticon-university:before { content: "\f10f"; }
+.flaticon-win:before { content: "\f110"; }
+.flaticon-instructor:before { content: "\f111"; }
     
-    $font-Flaticon-facebook: "\f100";
-    $font-Flaticon-gorjeo: "\f101";
-    $font-Flaticon-marcas-y-logotipos: "\f102";
+    $font-Flaticon-social: "\f100";
+    $font-Flaticon-whatsapp: "\f101";
+    $font-Flaticon-twitter: "\f102";
     $font-Flaticon-instagram: "\f103";
-    $font-Flaticon-telegram: "\f104";
+    $font-Flaticon-phone: "\f104";
     $font-Flaticon-periscope: "\f105";
-    $font-Flaticon-premio: "\f106";
-    $font-Flaticon-leccion: "\f107";
-    $font-Flaticon-escuela: "\f108";
-    $font-Flaticon-usuario: "\f109";
-    $font-Flaticon-evento: "\f10a";
-    $font-Flaticon-charlar: "\f10b";
-    $font-Flaticon-cartera: "\f10c";
-    $font-Flaticon-escudo: "\f10d";
+    $font-Flaticon-award: "\f106";
+    $font-Flaticon-lesson: "\f107";
+    $font-Flaticon-school: "\f108";
+    $font-Flaticon-event: "\f109";
+    $font-Flaticon-folder: "\f10a";
+    $font-Flaticon-calendar: "\f10b";
+    $font-Flaticon-clock: "\f10c";
+    $font-Flaticon-call: "\f10d";
+    $font-Flaticon-help: "\f10e";
+    $font-Flaticon-university: "\f10f";
+    $font-Flaticon-win: "\f110";
+    $font-Flaticon-instructor: "\f111";
