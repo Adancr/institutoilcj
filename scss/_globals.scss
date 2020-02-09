@@ -1,57 +1,60 @@
 /********************
 **** GLOBALS 
 *********************/
+
 html {
-  font-size: $font-size;
+    font-size: $font-size;
 }
+
 body {
-  font-family: $font-family;
-  // background-color: $color-primary;
+    font-family: $font-family;
+    // background-color: $color-primary;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
- h1 {
-   font-size: 3rem;
-   font-weight: bold;
-  }
 
-  h2 {
-    font-size: 2.2rem;
+h1 {
+    font-size: 3rem;
     font-weight: bold;
-    color: $color-primary;
-  }
+}
 
-  h3{
+h2 {
+    font-size: 2.3rem !important;
+    font-weight: bold;
+    color: $color-white;
+}
+
+h3 {
     font-size: 1.7rem;
     font-weight: bold;
-  }
+}
 
-  p {
+p {
     line-height: 1.5;
     font-size: 1.6rem;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
     font-size: 1.6rem;
-  }
+}
 
-  li {
+li {
     list-style: none;
     font-size: 1.6rem;
-  }
+}
 
-  .bg-inverse {
+.bg-inverse {
     background-color: black;
-  }
+}
 
-  %container {
+%container {
     max-width: 1140px;
     margin: auto;
-  }
+}
 
-  .container {
+.container {
     @extend %container;
-  }
+}
