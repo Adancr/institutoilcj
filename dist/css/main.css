@@ -21,9 +21,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem !important;
   font-weight: bold;
-  color: #004d79;
+  color: #ffffff;
 }
 
 h3 {
@@ -176,6 +176,74 @@ li {
   font-family: Montserrat;
   text-align: center;
   cursor: pointer;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #006db3;
+  border-color: #006db3;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-color: #006db3;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #006db3;
+  font-weight: 500;
+}
+
+.btn-primary:active {
+  color: #000000;
+  background-color: #006db3;
+  border-color: #006db3;
+  font-weight: 500;
+}
+
+.btn-primary:focus {
+  background-color: #006db3;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+}
+
+.btn-primary:after {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f054";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:active:after,
+.btn-primary:focus:after {
+  left: 0.3rem;
+}
+
+/* Insertar caja blanaca del boton principal */
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: skew(45deg, 0);
+          transform: skew(45deg, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:before {
+  width: 130%;
+  left: -20px;
 }
 
 /********************

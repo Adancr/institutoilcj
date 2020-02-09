@@ -1,7 +1,73 @@
 .btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  font-family: $font-family;
-  text-align: center;
-  cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: $font-family;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: $color-white;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-color: $color-secondary;
+}
+
+.btn-primary:hover {
+    color: $color-black;
+    background-color: $color-white;
+    border-color: $color-secondary;
+    font-weight: 500;
+}
+
+.btn-primary:active {
+    color: $color-black;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    font-weight: 500;
+}
+
+.btn-primary:focus {
+    background-color: $color-secondary;
+    box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+}
+
+.btn-primary:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    content: "\f054";
+    position: relative;
+    left: 3px;
+    top: 0.1rem;
+    transition: left 0.3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:active:after,
+.btn-primary:focus:after {
+    left: 0.3rem;
+}
+
+
+/* Insertar caja blanaca del boton principal */
+
+.btn-primary:before {
+    content: "";
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: $color-white;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: skew(45deg, 0);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover:before {
+    width: 130%;
+    left: -20px;
 }
