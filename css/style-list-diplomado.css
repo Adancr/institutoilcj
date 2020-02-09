@@ -301,28 +301,24 @@ section .title-h1 h4 {
 }
 
 .input-group-text {
-<<<<<<< HEAD
-  /* display: flex; */
-  padding: .6rem !important;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: .375rem .75rem;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-}
-=======
+    /* display: flex; */
+    padding: .6rem !important;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
     display: flex;
     padding: .6rem !important;
->>>>>>> feature-diplo
 }
 
 .form-group input {
