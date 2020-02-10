@@ -317,8 +317,6 @@ section .title-h1 h4 {
     background-color: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    display: flex;
-    padding: .6rem !important;
 }
 
 .form-group input {
