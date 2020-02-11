@@ -1,0 +1,290 @@
+/********************
+**** GLOBALS 
+*********************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Montserrat !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.3rem !important;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.bg-inverse {
+  background-color: black;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: Montserrat;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #006db3;
+  border-color: #006db3;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-color: #006db3;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #006db3;
+  font-weight: 500;
+}
+
+.btn-primary:active {
+  color: #000000;
+  background-color: #006db3;
+  border-color: #006db3;
+  font-weight: 500;
+}
+
+.btn-primary:focus {
+  background-color: #006db3;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+}
+
+.btn-primary:after {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f054";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:active:after,
+.btn-primary:focus:after {
+  left: 0.3rem;
+}
+
+/* Insertar caja blanaca del boton principal */
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: skew(45deg, 0);
+          transform: skew(45deg, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:before {
+  width: 130%;
+  left: -20px;
+}
+
+/********************
+**** HEADER
+*********************/
+nav .pb-navbar {
+  position: absolute;
+  background: #ffffff !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+nav .logo {
+  max-width: 6rem;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .wp {
+  background: #25D366;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/******
+*section principal
+*******/
+.title-p {
+  background-image: url(../../images/back-penal.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title-p .pt-contact {
+  padding-top: 8rem;
+}
+
+.title-p .pt-contact h1 {
+  font-size: 3rem;
+}
+
+.title-p .pt-contact h3 {
+  font-size: 2.2rem;
+}
+
+.title-p .title-p-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title-p .certifica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-p .certifica span {
+  font-size: 1.8rem;
+}
+
+.title-p .certifica img {
+  width: 100px;
+}
+
+/************
+** form contact
+***************/
+.form-contact {
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 6px;
+}
+
+.form-contact h2 {
+  font-size: 2.2rem !important;
+  text-align: center;
+  color: #004d79;
+}
+
+.form-contact .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-contact .form-group input {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.form-contact .form-group .form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 500 !important;
+  line-height: 1.5;
+  color: #363636;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.form-contact .form-group .p-height-50 {
+  height: 4rem !important;
+}
+
+.form-contact .form-group .input-group-prepend {
+  margin-right: -1px;
+}
+
+.form-contact .btn-primary {
+  background-color: #006db3;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.form-contact .btn-primary:hover {
+  color: #000000;
+  font-weight: 500;
+}
+/*# sourceMappingURL=lp-courses.css.map */
