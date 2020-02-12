@@ -287,4 +287,294 @@ nav .wp {
   color: #000000;
   font-weight: 500;
 }
+
+section .row-start-date-title {
+  padding: 1.6rem 0;
+  background-color: #004d79;
+  color: #ffffff;
+}
+
+section .row-start-date-title h2 {
+  font-size: 3.2rem !important;
+}
+
+div .start-date-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #006db3;
+  padding: .8rem;
+  text-align: center;
+}
+
+div .start-date-details h6 {
+  font-size: 1.4rem;
+}
+
+div .start-date-details .fas {
+  padding-bottom: 1.8rem;
+  color: #006db3;
+  font-size: 4rem;
+}
+
+div .start-date-details .date-details {
+  background-color: #004d79;
+  padding: .5rem 6rem;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+/******************
+*presentacion curso
+*******************/
+.presentation-course {
+  padding: 1.6rem 0;
+}
+
+.presentation-course p {
+  text-align: justify;
+}
+
+.presentation-course img {
+  width: 100%;
+}
+
+.presentation-course h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+  color: #004d79;
+  font-size: 2.6rem;
+}
+
+.presentation-course h3::before {
+  content: "";
+  display: block;
+  background-color: #004d79;
+  height: 1.8rem;
+  width: .8rem;
+  margin-right: .6rem;
+}
+
+/* temary course */
+section .curriculum-wraper {
+  border: 1px solid #ced4da70;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+}
+
+section .curriculum-wraper h4 {
+  color: #004d79;
+  font-size: 2rem;
+}
+
+section .curriculum-wraper ul {
+  margin-bottom: .6rem;
+}
+
+section .curriculum-wraper ul li {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: .5rem 0;
+}
+
+.curriculum-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.curriculum-heading h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+  color: #004d79;
+  font-size: 2.6rem;
+}
+
+.curriculum-heading h3::before {
+  content: "";
+  display: block;
+  background-color: #004d79;
+  height: 1.8rem;
+  width: .8rem;
+  margin-right: .6rem;
+}
+
+/* section beneficios  */
+.benefits {
+  margin: .8rem 0;
+}
+
+.benefits .benefits-title {
+  background-color: #004d79;
+  color: #ffffff;
+  padding: .6rem 0;
+  text-align: center;
+}
+
+.benefits .row-benefits {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.benefits .benefits-items {
+  border: 1px solid #72B7DB;
+  padding: .8rem;
+  border-radius: 3px;
+}
+
+.benefits .benefits-items h4 {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Staff docentes  */
+.row-staff-teacher {
+  padding: 2rem 0;
+}
+
+section .staff-teacher-title,
+section .investment-title {
+  text-align: center;
+  background-color: #004d79;
+  color: #ffffff;
+  padding: .4rem 0;
+}
+
+section .row-staff-teacher img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+          box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+}
+
+/*  investment  */
+section .row-investment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0;
+}
+
+section .row-investment ul li h5 {
+  font-weight: bold;
+}
+
+section .single-table {
+  border: 1px solid #72B7DB;
+  position: relative;
+  overflow: hidden;
+}
+
+section .single-table h3 {
+  padding: .8rem 0;
+  background-color: #004d79;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+section .single-table .plan-header-offer {
+  position: absolute;
+  width: 120px;
+  background-color: #c6cf52;
+  top: 12px;
+  right: -32px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+section .single-table .plan-header-offer p {
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+section .single-table ul {
+  padding: 1.2rem 0;
+  margin-bottom: 0;
+}
+
+section .single-table .btn-primary {
+  background-color: #006db3;
+  font-size: 1.4rem;
+  border: 1px solid #006db3;
+}
+
+section .single-table .btn-primary:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+section .single-table h3 {
+  font-size: 2.3rem;
+}
+
+section .plan-header-price {
+  background-color: #004d79;
+  color: #ffffff;
+  padding: .8rem 0;
+}
+
+section .plan-header-price h4 {
+  font-size: 2.5rem;
+}
+
+section .plan-header-price h5 {
+  font-size: 2rem;
+}
+
+section .plan-header-price ul li h5 {
+  font-weight: bold;
+}
+
+/*  butoon compra  */
+section .buy a,
+section .info-wp a {
+  width: 70%;
+  margin: .8rem 0;
+  padding: .8rem 0;
+  font-weight: bold;
+}
+
+/* footer  */
+footer {
+  background-color: #363636;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=lp-courses.css.map */
