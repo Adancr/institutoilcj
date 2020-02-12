@@ -3,6 +3,7 @@
 *********************/
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,8 +11,8 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
 }
 
 h1 {
@@ -133,6 +134,11 @@ li {
 /********************
 **** HEADER
 *********************/
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 nav .pb-navbar {
   position: absolute;
   background: #ffffff !important;
@@ -154,6 +160,7 @@ nav .wp {
   background: #25D366;
   color: #ffffff !important;
   font-weight: bold;
+  border-radius: 2px;
 }
 
 /******
@@ -229,6 +236,11 @@ nav .wp {
   color: #004d79;
 }
 
+.form-contact .fas {
+  font-size: 1.6rem;
+  padding: .3rem;
+}
+
 .form-contact .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +256,22 @@ nav .wp {
   border-bottom-right-radius: 5px !important;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+}
+
+.form-contact .form-group input::-webkit-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group input:-ms-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group input::-ms-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group input::placeholder {
+  font-size: 1.3rem;
 }
 
 .form-contact .form-group .form-control {

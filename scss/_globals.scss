@@ -4,6 +4,7 @@
 
 html {
     font-size: $font-size;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 h1 {
