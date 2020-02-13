@@ -171,7 +171,13 @@ nav .wp {
 *section principal
 *****************/
 .title-p {
-  background-image: url(../../images/back-penal.jpg);
+  background-image: url(../../images/bg-derecho-administrativo-pas.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -182,7 +188,9 @@ nav .wp {
 }
 
 .title-p .pt-contact h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
+  text-shadow: 1px 1px #000000;
+  font-weight: 600;
 }
 
 .title-p .pt-contact h3 {
@@ -237,12 +245,12 @@ nav .wp {
 .form-contact h2 {
   font-size: 2.2rem !important;
   text-align: center;
-  color: #002940;
+  color: #000000;
 }
 
 .form-contact .fas {
   font-size: 1.6rem;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .form-contact .form-group {
@@ -263,26 +271,30 @@ nav .wp {
 }
 
 .form-contact .form-group input::-webkit-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  padding: 2rem 0;
 }
 
 .form-contact .form-group input:-ms-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  padding: 2rem 0;
 }
 
 .form-contact .form-group input::-ms-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  padding: 2rem 0;
 }
 
 .form-contact .form-group input::placeholder {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  padding: 2rem 0;
 }
 
 .form-contact .form-group .form-control {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 500 !important;
   line-height: 1.5;
@@ -290,14 +302,14 @@ nav .wp {
   background-color: #ffffff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-top-right-radius: .25rem;
-  border-bottom-right-radius: .25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0 !important;
   border-top-left-radius: 0 !important;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .form-contact .form-group .p-height-50 {
@@ -309,22 +321,22 @@ nav .wp {
 }
 
 .form-contact .btn-primary {
-  background-color: #ff671f;
+  background-color: #AC1B06;
   padding: 1.2rem 0;
   font-size: 1.6rem;
   font-weight: 500;
-  border-color: #ff671f;
+  border: #AC1B06;
 }
 
 .form-contact .btn-primary:hover {
   color: #000000;
   font-weight: 500;
-  border-color: #ff671f;
+  border: 1px solid #AC1B06;
 }
 
 section .row-start-date-title {
   padding: 1.6rem 0;
-  background-color: #002940;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -343,26 +355,30 @@ div .start-date-details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #ff671f;
-  padding: .8rem;
+  border: 1px solid #AC1B06;
+  padding: 0.8rem;
   text-align: center;
 }
 
 div .start-date-details h6 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 div .start-date-details .fas {
   padding-bottom: 1.8rem;
-  color: #ff671f;
+  color: #AC1B06;
   font-size: 4rem;
 }
 
 div .start-date-details .date-details {
-  background-color: #002940;
-  padding: .5rem 6rem;
+  background-color: #000000;
+  padding: 0.5rem 6rem;
   color: #ffffff;
   font-size: 1.3rem;
+}
+
+div .start-date-details .date-details span {
+  font-weight: 500;
 }
 
 /******************
@@ -391,17 +407,17 @@ div .start-date-details .date-details {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  color: #002940;
+  color: #000000;
   font-size: 2.6rem;
 }
 
 .presentation-course h3::before {
   content: "";
   display: block;
-  background-color: #002940;
+  background-color: #000000;
   height: 1.8rem;
-  width: .8rem;
-  margin-right: .6rem;
+  width: 0.8rem;
+  margin-right: 0.6rem;
 }
 
 /* temary course */
@@ -412,18 +428,18 @@ section .curriculum-wraper {
 }
 
 section .curriculum-wraper h4 {
-  color: #002940;
+  color: #000000;
   font-size: 2rem;
 }
 
 section .curriculum-wraper ul {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 section .curriculum-wraper ul li {
   background-color: #f4f4f4;
   padding: 1rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .curriculum-heading {
@@ -446,34 +462,28 @@ section .curriculum-wraper ul li {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  color: #002940;
+  color: #000000;
   font-size: 2.6rem;
 }
 
 .curriculum-heading h3::before {
   content: "";
   display: block;
-  background-color: #002940;
+  background-color: #000000;
   height: 1.8rem;
-  width: .8rem;
-  margin-right: .6rem;
-}
-
-@media (max-width: 426px) {
-  .curriculum-heading h3 {
-    font-size: 2.4rem;
-  }
+  width: 0.8rem;
+  margin-right: 0.6rem;
 }
 
 /* section beneficios  */
 .benefits {
-  margin: .8rem 0;
+  margin: 0.8rem 0;
 }
 
 .benefits .benefits-title {
-  background-color: #002940;
+  background-color: #000000;
   color: #ffffff;
-  padding: .6rem 0;
+  padding: 0.6rem 0;
   text-align: center;
 }
 
@@ -483,8 +493,8 @@ section .curriculum-wraper ul li {
 }
 
 .benefits .benefits-items {
-  border: 1px solid #002940;
-  padding: .8rem;
+  border: 1px solid #AC1B06;
+  padding: 0.8rem;
   border-radius: 3px;
 }
 
@@ -502,15 +512,15 @@ section .curriculum-wraper ul li {
 section .staff-teacher-title,
 section .investment-title {
   text-align: center;
-  background-color: #002940;
+  background-color: #000000;
   color: #ffffff;
-  padding: .4rem 0;
+  padding: 0.4rem 0;
 }
 
 section .row-staff-teacher img {
   border-radius: 50%;
-  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
-          box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 /*  investment  */
@@ -529,14 +539,14 @@ section .row-investment ul li h5 {
 }
 
 section .single-table {
-  border: 1px solid #72B7DB;
+  border: 1px solid #000000;
   position: relative;
   overflow: hidden;
 }
 
 section .single-table h3 {
-  padding: .8rem 0;
-  background-color: #002940;
+  padding: 0.8rem 0;
+  background-color: #000000;
   color: #ffffff;
   margin-bottom: 0;
 }
@@ -544,7 +554,7 @@ section .single-table h3 {
 section .single-table .plan-header-offer {
   position: absolute;
   width: 120px;
-  background-color: #ff671f;
+  background-color: #AC1B06;
   top: 12px;
   right: -32px;
   -webkit-transform: rotate(45deg);
@@ -565,15 +575,14 @@ section .single-table ul {
 }
 
 section .single-table .btn-primary {
-  background-color: #ff671f;
+  background-color: #AC1B06;
   font-size: 1.4rem;
-  border: 1px solid #ff671f;
+  border: 1px solid #AC1B06;
 }
 
 section .single-table .btn-primary:hover {
   color: #000000;
   font-weight: bold;
-  border: 1px solid #ff671f;
 }
 
 section .single-table h3 {
@@ -581,9 +590,9 @@ section .single-table h3 {
 }
 
 section .plan-header-price {
-  background-color: #002940;
+  background-color: #000000;
   color: #ffffff;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
 }
 
 section .plan-header-price h4 {
@@ -598,18 +607,12 @@ section .plan-header-price ul li h5 {
   font-weight: bold;
 }
 
-@media (max-width: 766px) {
-  section .gap {
-    height: 2rem;
-  }
-}
-
 /*  butoon compra  */
 section .buy a,
 section .info-wp a {
   width: 70%;
-  margin: .8rem 0;
-  padding: .8rem 0;
+  margin: 0.8rem 0;
+  padding: 0.8rem 0;
   font-weight: bold;
 }
 
@@ -624,4 +627,4 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=lp-courses-civil.css.map */
+/*# sourceMappingURL=lp-courses-admin.css.map */
