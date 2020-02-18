@@ -1,0 +1,379 @@
+ @import "variables";
+ @import "globals";
+ @import "buttons";
+ /********************
+** HEADER
+*********************/
+ 
+ body {
+     overflow: hidden;
+     overflow-y: scroll;
+ }
+ 
+ nav {
+     .pb-navbar {
+         position: absolute;
+         background: $color-white !important;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         width: 100%;
+         // font-family: "Montserrat", Arial, sans-serif;
+     }
+     .logo {
+         max-width: 6rem;
+         img {
+             width: 100%;
+         }
+     }
+     .wp {
+         background: $color-wp;
+         color: $color-white !important;
+         font-weight: bold;
+         border-radius: 2px;
+     }
+ }
+ /***************
+*section principal
+*****************/
+ 
+ .title-p {
+     background-image: url(../../images/bg-laboral.jpg);
+     background-size: cover;
+     object-fit: cover;
+     .pt-contact {
+         padding-top: 8rem;
+         h1 {
+             font-size: 3.5rem;
+         }
+         h3 {
+             font-size: 2.2rem;
+         }
+     }
+     .title-p-child {
+         align-items: center;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+     .certifica {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         span {
+             font-size: 1.8rem;
+         }
+         img {
+             width: 100px;
+         }
+     }
+ }
+ /*************
+** form contact
+***************/
+ 
+ .form-contact {
+     background-color: $color-white;
+     padding: 1.8rem;
+     border-radius: 6px;
+     h2 {
+         font-size: 2.2rem !important;
+         text-align: center;
+         color: $color-primary-lab;
+     }
+     .fas {
+         font-size: 1.6rem;
+         padding: .3rem;
+     }
+     .form-group {
+         display: flex;
+         input {
+             position: relative;
+             flex: 1 1 auto;
+             border-top-right-radius: 5px !important;
+             border-bottom-right-radius: 5px !important;
+             border-top-left-radius: 0 !important;
+             border-bottom-left-radius: 0 !important;
+             &::placeholder {
+                font-size: 1.3rem;
+             }
+         }
+         .form-control {
+             display: block;
+             width: 100%;
+             height: calc(2.25rem + 2px);
+             padding: .375rem .75rem;
+             font-size: 1rem;
+             font-weight: 500 !important;
+             line-height: 1.5;
+             color: $color-footer;
+             background-color: $color-white;
+             background-clip: padding-box;
+             border: 1px solid #ced4da;
+             border-top-right-radius: .25rem;
+             border-bottom-right-radius: .25rem;
+             border-bottom-left-radius: 0 !important;
+             border-top-left-radius: 0 !important;
+             transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+         }
+         .p-height-50 {
+             height: 4rem !important;
+         }
+         .input-group-prepend {
+             margin-right: -1px;
+         }
+     }
+     .btn-primary {
+         background-color: $color-secondary-lab;
+         padding: 1.2rem 0;
+         font-size: 1.6rem;
+         font-weight: 500;
+         border-color: $color-secondary-lab;
+         &:hover {
+             color: $color-black;
+             font-weight: 500;
+             border-color: $color-secondary-lab;
+         }
+     }
+ }
+ 
+ section .row-start-date-title {
+     padding: 1.6rem 0;
+     background-color: $color-primary-lab;
+     color: $color-white;
+     h2 {
+         font-size: 3.2rem !important;
+     }
+ }
+ 
+ div .start-date-details {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     // align-items: center;
+     border: 1px solid $color-secondary-lab;
+     padding: .8rem;
+     text-align: center;
+     h6 {
+         font-size: 1.4rem;
+     }
+     .fas {
+         padding-bottom: 1.8rem;
+         color: $color-secondary-lab;
+         font-size: 4rem;
+     }
+     .date-details {
+         background-color: $color-primary-lab;
+         padding: .5rem 6rem;
+         color: $color-white;
+         font-size: 1.3rem;
+     }
+ }
+ /******************
+*presentacion curso
+*******************/
+ 
+ .presentation-course {
+     padding: 1.6rem 0;
+     p {
+         text-align: justify;
+     }
+     img {
+         width: 100%;
+     }
+     h3 {
+         display: flex;
+         justify-content: flex-start;
+         align-items: baseline;
+         position: relative;
+         color: $color-primary-lab;
+         font-size: 2.6rem;
+         &::before {
+             content: "";
+             display: block;
+             background-color: $color-primary-lab;
+             height: 1.8rem;
+             width: .8rem;
+             margin-right: .6rem;
+         }
+     }
+ }
+ /* temary course */
+ 
+ section .curriculum-wraper {
+     border: 1px solid #ced4da70;
+     padding: 1rem 1rem;
+     border-radius: 4px;
+     h4 {
+         color: $color-primary-lab;
+         font-size: 2rem;
+     }
+     ul {
+         margin-bottom: .6rem;
+         li {
+             background-color: #f4f4f4;
+             padding: 1rem;
+             margin: .5rem 0;
+         }
+     }
+ }
+ 
+ .curriculum-heading {
+     display: flex;
+     justify-content: space-between;
+     h3 {
+         display: flex;
+         justify-content: flex-start;
+         align-items: baseline;
+         position: relative;
+         color: $color-primary-lab;
+         font-size: 2.6rem;
+         &::before {
+             content: "";
+             display: block;
+             background-color: $color-primary-lab;
+             height: 1.8rem;
+             width: .8rem;
+             margin-right: .6rem;
+         }
+         @media (max-width: 426px) {
+             font-size: 2.4rem;
+         }
+     }
+ }
+ /* section beneficios  */
+ 
+ .benefits {
+     margin: .8rem 0;
+     .benefits-title {
+         background-color: $color-primary-lab;
+         color: $color-white;
+         padding: .6rem 0;
+         text-align: center;
+     }
+     .row-benefits {
+         margin: 3rem 0;
+         text-align: center;
+     }
+     .benefits-items {
+         border: 1px solid $color-primary-lab;
+         padding: .8rem;
+         // height: 17rem;
+         border-radius: 3px;
+         h4 {
+             margin-top: 1.2rem;
+             font-size: 1.8rem;
+             font-weight: 500;
+         }
+     }
+ }
+ /* Staff docentes  */
+ 
+ .row-staff-teacher {
+     padding: 2rem 0;
+ }
+ 
+ section .staff-teacher-title,
+ section .investment-title {
+     text-align: center;
+     background-color: $color-primary-lab;
+     color: $color-white;
+     padding: .4rem 0;
+ }
+ 
+ section .row-staff-teacher img {
+     border-radius: 50%;
+     box-shadow: 0 5px 5px 0 rgba(0, 123, 255, .25);
+ }
+ /*  investment  */
+ 
+ section {
+     .row-investment {
+         display: flex;
+         justify-content: center;
+         margin: 3rem 0;
+         ul li h5 {
+             font-weight: bold;
+         }
+     }
+     .single-table {
+         border: 1px solid #72B7DB;
+         position: relative;
+         overflow: hidden;
+         h3 {
+             padding: .8rem 0;
+             background-color: $color-primary-lab;
+             color: $color-white;
+             margin-bottom: 0;
+         }
+         .plan-header-offer {
+             //  display: none;
+             position: absolute;
+             width: 120px;
+             background-color: $color-secondary-lab;
+             top: 12px;
+             right: -32px;
+             transform: rotate(45deg);
+             font-size: 1.4rem;
+             font-weight: bold;
+             color: $color-white;
+             p {
+                 margin: 0;
+                 text-shadow: 1px 1px 1px #000;
+             }
+         }
+         ul {
+             padding: 1.2rem 0;
+             margin-bottom: 0;
+         }
+         .btn-primary {
+             background-color: $color-secondary-lab;
+             font-size: 1.4rem;
+             border: 1px solid $color-secondary-lab;
+             &:hover {
+                 color: $color-black;
+                 font-weight: bold;
+                 border: 1px solid $color-secondary-lab;
+             }
+         }
+         h3 {
+             font-size: 2.3rem;
+         }
+     }
+     .plan-header-price {
+         background-color: $color-primary-lab;
+         color: $color-white;
+         padding: .8rem 0;
+         h4 {
+             font-size: 2.5rem;
+         }
+         h5 {
+             font-size: 2rem;
+         }
+         ul li h5 {
+             font-weight: bold;
+         }
+     }
+     .gap {
+         @media (max-width: 766px){
+            height: 2rem;
+         }
+     }
+ }
+ /*  butoon compra  */
+ 
+ section .buy a,
+ section .info-wp a {
+     width: 70%;
+     margin: .8rem 0;
+     padding: .8rem 0;
+     font-weight: bold;
+ }
+ /* footer  */
+ 
+ footer {
+     background-color: $color-footer;
+     color: $color-white;
+     display: flex;
+     align-items: center;
+ }
