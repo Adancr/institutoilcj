@@ -11,6 +11,12 @@
   }
 }
 
+@media (max-width: 425px) {
+  .youtube-player {
+    height: 222px;
+  }
+}
+
 .youtube-player > div {
   width: 100%;
   height: 100%;
