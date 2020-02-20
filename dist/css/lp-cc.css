@@ -1,0 +1,112 @@
+/***embed yt inicio***/
+.youtube-player {
+  width: 100%;
+  height: 358px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .youtube-player {
+    height: 298px;
+  }
+}
+
+.youtube-player > div {
+  width: 100%;
+  height: 100%;
+}
+
+.youtube-player div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.youtube-player iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: -30px;
+  margin-left: -40px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png") center/contain no-repeat;
+}
+
+/***embed yt fin***/
+.title-p {
+  position: relative;
+}
+
+.title-p h1 {
+  padding-top: 1rem;
+}
+
+.title-p h3 {
+  padding-bottom: 1rem;
+}
+
+.title-p .bg-img-opacy {
+  counter-reset: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.contact-lp-wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wp {
+  color: white;
+  text-align: center;
+}
+
+.contact-wp p:nth-last-child(2) {
+  font-size: 5rem;
+}
+
+.contact-wp p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact-wp .wp-lp::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 700;
+  content: "\f232";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  font-size: 7rem;
+  color: white;
+  background-color: #25d366;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=lp-cc.css.map */
