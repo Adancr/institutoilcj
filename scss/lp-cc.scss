@@ -70,7 +70,11 @@
   text-align: center;
   p:nth-last-child(2) {
     font-size: 5rem;
+    @media (max-width: 425px) {
+      font-size: 4rem;
+    }
   }
+
   p {
     font-size: 2rem;
     font-weight: bold;

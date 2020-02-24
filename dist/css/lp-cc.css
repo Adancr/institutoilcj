@@ -95,6 +95,12 @@
   font-size: 5rem;
 }
 
+@media (max-width: 425px) {
+  .contact-wp p:nth-last-child(2) {
+    font-size: 4rem;
+  }
+}
+
 .contact-wp p {
   font-size: 2rem;
   font-weight: bold;
