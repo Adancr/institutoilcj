@@ -160,6 +160,16 @@ nav .logo img {
   width: 100%;
 }
 
+nav .wp-header::before {
+  font-family: 'Font Awesome 5 brands';
+  font-weight: 900;
+  content: "\f232";
+  position: relative;
+  left: -4px;
+  top: 1px;
+  color: #25D366;
+}
+
 nav .wp {
   background: #25D366;
   color: #ffffff !important;
@@ -182,7 +192,8 @@ nav .wp {
 }
 
 .title-p .pt-contact h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .title-p .pt-contact h3 {

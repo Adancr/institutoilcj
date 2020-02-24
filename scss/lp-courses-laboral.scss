@@ -26,6 +26,17 @@
              width: 100%;
          }
      }
+     .wp-header {
+         &::before {
+            font-family: 'Font Awesome 5 brands';
+            font-weight: 900;
+            content: "\f232";
+            position: relative;
+            left: -4px;
+            top: 1px;
+            color: $color-wp;
+         }
+     }
      .wp {
          background: $color-wp;
          color: $color-white !important;
@@ -44,7 +55,8 @@
      .pt-contact {
          padding-top: 8rem;
          h1 {
-             font-size: 3.5rem;
+             font-size: 4rem;
+             font-weight: 600;
          }
          h3 {
              font-size: 2.2rem;
@@ -56,6 +68,8 @@
          flex-direction: column;
          justify-content: center;
      }
+
+
      .certifica {
          display: flex;
          justify-content: center;
