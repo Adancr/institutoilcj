@@ -383,6 +383,70 @@
      padding: .8rem 0;
      font-weight: bold;
  }
+
+ .btn-mas-info {
+     text-align: center;
+     padding: 2rem 0;
+ }
+
+ .btn-infoFooter {
+     background-color: $color-secondary-lab;
+     color: $color-white;
+     padding: 1.2rem 2.5rem;
+     font-weight: 600;
+     font-size: 1.8rem;
+     border-radius: 3px;
+     &:hover {
+         color: $color-white;
+     }
+     &:after {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        content: "\f054";
+        position: relative;
+        left: 3px;
+        top: 0.1rem;
+        transition: left 0.3s ease;
+     }
+ }
+
+//  contact 
+.title-contacts {
+    background-color: $color-primary-lab;
+    color: $color-white;
+    text-align: center;
+    padding: 1rem 0;
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+.wrap-contacts {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    text-align: center;
+    .icon-contacts {
+        .fas {
+            font-size: 5rem;
+            color: $color-secondary-lab;
+            padding-bottom: 1.2rem !important;
+        }
+        h4 {
+            // font-weight: bold;
+            font-size: 2.5rem;
+            padding-bottom: .2rem;
+        }
+    }
+    @media (max-width: 425px) {
+        padding: 1.6rem 0;
+        flex-direction: column;
+        .icon-contacts:nth-child(2) {
+            padding: 2.8rem 0;
+        }
+    }
+}
+
  /* footer  */
  
  footer {

@@ -624,6 +624,82 @@ section .info-wp a {
   font-weight: bold;
 }
 
+.btn-mas-info {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn-infoFooter {
+  background-color: #85340D;
+  color: #ffffff;
+  padding: 1.2rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 3px;
+}
+
+.btn-infoFooter:hover {
+  color: #ffffff;
+}
+
+.btn-infoFooter:after {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f054";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.title-contacts {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.title-contacts h2 {
+  font-size: 3.5rem;
+}
+
+.wrap-contacts {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.wrap-contacts .icon-contacts .fas {
+  font-size: 5rem;
+  color: #85340D;
+  padding-bottom: 1.2rem !important;
+}
+
+.wrap-contacts .icon-contacts h4 {
+  font-size: 2.5rem;
+  padding-bottom: .2rem;
+}
+
+@media (max-width: 425px) {
+  .wrap-contacts {
+    padding: 1.6rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrap-contacts .icon-contacts:nth-child(2) {
+    padding: 2.8rem 0;
+  }
+}
+
 /* footer  */
 footer {
   background-color: #363636;
