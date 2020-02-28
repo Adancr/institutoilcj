@@ -59,6 +59,11 @@ input {
   margin: auto;
 }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
