@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: Montserrat !important;
+  font-family: Roboto !important;
 }
 
 * {
@@ -182,7 +182,7 @@ input {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  font-family: Montserrat;
+  font-family: Roboto;
   text-align: center;
   cursor: pointer;
 }
