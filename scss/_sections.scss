@@ -33,6 +33,9 @@
   img {
     width: 100%;
   }
+  @media (max-width: 1024px) {
+    padding: 0 1rem;
+}
 }
 
 /* benefits */
@@ -61,11 +64,18 @@
       padding: .5rem .5rem;
     }
   }
+
+  @media (max-width: 1024px) {
+    padding: 0 1rem;
+}
 }
 
 /* couses */
 .bg-courses {
   background-color: $color-background;
+  @media (max-width: 1024px) {
+    padding: 0 1rem;
+}
   
 }
 
@@ -84,40 +94,84 @@
   margin: 2rem 0;
 
   article {
-    height: 440px;
-    background-color: $color-primary;
-    color: $color-white;
+    height: 460px;
+    background-color: $color-white;
+    color: $color-primary;
     position: relative;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+    @media (max-width: 768px) {
+      height: 480px;
   }
+
+  @media (max-width: 425px) {
+    height: 500px;
+}
+  }
+
+  // figure {
+  //   padding-bottom: 1.5rem;
+  // }
 
   img {
     width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     margin: 1rem 0;
     line-height: 1.2;
   }
-
+  .firt-ul {
+    margin-bottom: 0;
+  }
   ul {
-    padding: 0 2rem;
+    padding: 1rem 1rem;
     line-height: 1.8;
     margin: 1rem 0;
 
-    .fas {
-      padding-right: 1rem;
-      font-size: 1.8rem;
+    li {
+      font-size: 1.4rem;
     }
 
+    .fas {
+      padding-right: 1rem;
+      font-size: 1.6rem;
+    }
+
+  }
+  .precio  {
+    padding: 0 1.5rem;
+    .descuento {
+      background-color: $color-red;
+      color: $color-white;
+      padding: .4rem .2rem;
+      font-size: 1.4rem;
+      border-radius: 4px;
+    }
+    p {
+      padding-top: .5rem;
+    }
+    .valor-actual {
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+    .valor-anterior {
+      text-decoration: line-through;
+    }
   }
 
   a {
     position: absolute;
-    bottom: .8rem;
-    right: 0;
+    bottom: 10px;
+    left: 4rem;
+    right: 4rem;
+    border-radius: 3px;
+    border: 1px solid $color-red;
     background-color: $color-white;
     color: $color-primary;
     font-weight: bold;
