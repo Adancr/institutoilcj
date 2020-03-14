@@ -243,10 +243,13 @@ li {
 }
 
 /* couses */
+.bg-courses {
+  background-color: #f1f1f1;
+}
+
 .courses-title {
-  background-color: #004d79;
-  color: #ffffff;
-  text-align: center;
+  color: #004d79;
+  text-align: left;
   padding: 1.5rem 0;
   font-size: 3rem;
 }
@@ -254,8 +257,8 @@ li {
 .container-courses {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
   margin: 2rem 0;
 }
