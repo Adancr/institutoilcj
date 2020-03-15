@@ -437,6 +437,12 @@ header .child-attributes-header .widget_text .title-icon-date {
   height: 500px;
 }
 
+@media (max-width: 425px) {
+  .wrap-programs article {
+    height: 545px;
+  }
+}
+
 .wrap-programs article .modalidad {
   position: absolute;
   right: 5px;
