@@ -67,22 +67,6 @@ input {
 /********************
 **** HEADER 
 *********************/
-.header {
-  background-image: url(../../images/back_header.jpg);
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  height: 600px;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .header .logo-navegation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,36 +89,61 @@ input {
   width: 100px;
 }
 
-.header .logo-navegation .active {
-  background-color: red;
+.header .logo-navegation .header2 {
+  background-color: #f02d00;
+}
+
+.header .logo-navegation .toggle-menu {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .header {
-    height: 428px;
+  .header .logo-navegation .header {
+    position: relative;
   }
-  .header nav {
+  .header .logo-navegation nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
   }
-  .header .title-p {
-    top: 31%;
-    width: 99%;
+  .header .logo-navegation nav.show-menu {
+    display: block;
+  }
+  .header .logo-navegation nav ul {
+    display: block;
+  }
+  .header .logo-navegation nav ul li {
+    margin-right: 0;
+    border-bottom: 1px solid #ffffff;
+  }
+  .header .logo-navegation nav ul a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  .header .logo-navegation .toggle-menu {
+    display: inline-block;
+    font-size: 3rem;
+    color: #ffffff;
     padding: 0 1rem;
   }
 }
 
-@media (max-width: 425px) {
-  .header .title-p {
-    top: 34%;
+@media (max-width: 768px) {
+  .header .toggle {
+    display: inline-block;
   }
-  .header .title-p span:first-child {
-    font-size: 3.8rem;
+  .header nav {
+    display: none;
   }
-  .header .title-p .title-h1 {
-    font-size: 2rem;
-  }
-  .header .title-p span:last-child {
-    font-size: 3.4rem;
+}
+
+@media (max-width: 768px) {
+  .header nav {
+    display: none;
   }
 }
 
@@ -164,9 +173,48 @@ input {
   cursor: pointer;
 }
 
+.banner {
+  background-image: url(../../images/back_header.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .banner .title-p {
+    top: 31%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner .title-p {
+    top: 50%;
+  }
+  .banner .title-p span:first-child {
+    font-size: 3.8rem;
+  }
+  .banner .title-p .title-h1 {
+    font-size: 2rem;
+  }
+  .banner .title-p span:last-child {
+    font-size: 3.4rem;
+  }
+}
+
 .title-p {
   position: absolute;
-  top: 40%;
+  top: 30%;
   width: 50%;
 }
 

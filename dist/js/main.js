@@ -36,13 +36,20 @@
 //     }
 //   });
 
+let toggle_menu = document.querySelector('.toggle-menu');
+let nav = document.querySelector('nav');
+
+toggle_menu.onclick = function() {
+  nav.classList.toggle('show-menu');
+  
+}
 
 
 
 // back color header
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 50) {
-      $(".header").addClass("active");
+      $(".header2").addClass("active");
   } else {
       //remove the background property so it comes transparent again (defined in your css)
      $(".logo-navegation").removeClass("active");
