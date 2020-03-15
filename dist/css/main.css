@@ -306,8 +306,8 @@ input {
 /* benefits */
 .benefits h2 {
   font-size: 3.5rem;
-  padding-left: 1.8rem;
-  margin-bottom: 1.5rem;
+  padding: 2rem 0;
+  color: #004d79;
 }
 
 .benefits .container-benefits {
@@ -322,6 +322,16 @@ input {
 
 .benefits .container-benefits .container-benfits-items {
   border: 1px solid #cdcdcd;
+  -webkit-box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+          box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+}
+
+.benefits .container-benefits .container-benfits-items h3 {
+  font-size: 1.6rem;
+}
+
+.benefits .container-benefits .container-benfits-items p {
+  font-size: 1.4rem;
 }
 
 .benefits .container-benefits img,
