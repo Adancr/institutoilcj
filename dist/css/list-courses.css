@@ -146,7 +146,7 @@ input {
 header {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   background-color: #ffffff;
 }
 
@@ -155,7 +155,7 @@ header img {
 }
 
 header .main-attributes-header {
-  padding: .8rem 0;
+  padding: 0.8rem 0;
 }
 
 header .child-attributes-header {
@@ -170,7 +170,7 @@ header .child-attributes-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 .8rem;
+  padding: 0 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -228,11 +228,11 @@ header .child-attributes-header .widget_text a:hover {
 
 header .child-attributes-header .widget_text .fa-envelope,
 header .child-attributes-header .widget_text .fa-phone-alt {
-  background-color: #5A98BF;
+  background-color: #009cff;
   color: #ffffff;
   font-size: 2.5rem;
-  padding: .6rem;
-  margin-right: .5rem;
+  padding: 0.6rem;
+  margin-right: 0.5rem;
 }
 
 header .child-attributes-header .widget_text .title-icon-date {
@@ -367,7 +367,7 @@ header .child-attributes-header .widget_text .title-icon-date {
   display: block;
   width: 100%;
   height: calc(3.4rem + 2px);
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   font-size: 1.6rem;
   font-weight: 500 !important;
   line-height: 1.5;
@@ -375,14 +375,14 @@ header .child-attributes-header .widget_text .title-icon-date {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-top-right-radius: .4rem;
-  border-bottom-right-radius: .4rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
   border-bottom-left-radius: 0 !important;
   border-top-left-radius: 0 !important;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .blok-slider .block-items .main-form .form-contact .form-group .p-height-50 {
@@ -412,31 +412,49 @@ header .child-attributes-header .widget_text .title-icon-date {
 }
 
 .section-programs {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: auto;
-  padding: 1.5rem .5rem;
+  padding: 1.5rem 0.5rem;
 }
 
 .wrap-programs {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem 1rem;
 }
 
 .wrap-programs article {
-  -webkit-box-shadow: 7px 7px 5px -4px rgba(0, 0, 0, 0.35);
-          box-shadow: 7px 7px 5px -4px rgba(0, 0, 0, 0.35);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+          box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 2px;
+  border-radius: 4px;
+  height: 500px;
+}
+
+.wrap-programs article .modalidad {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #006db3;
+  color: #ffffff;
+  padding: 5px 5px;
+  font-size: 1.4rem;
+  border-radius: 4px;
 }
 
 .wrap-programs article figure {
   margin-bottom: 0;
+}
+
+.wrap-programs article figure img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .wrap-programs article img {
@@ -448,66 +466,76 @@ header .child-attributes-header .widget_text .title-icon-date {
           transform: scale(1.1);
 }
 
-.wrap-programs article p:nth-child(1) {
-  padding-bottom: 3rem;
-}
-
 .wrap-programs article h2 {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   text-align: center;
-  padding: 1.5rem .6rem;
+  padding: 1.5rem 0.6rem;
   color: #004d79 !important;
 }
 
 .wrap-programs article h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
-  background-color: #5A98BF;
+  background-color: #009cff;
   color: #ffffff;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
 }
 
-.wrap-programs article p {
+.wrap-programs article .date-price {
   padding: 0 1rem;
+  position: absolute;
+  bottom: 5rem;
 }
 
-.wrap-programs article p {
-  padding: .4rem 0 .3rem .6rem;
-}
-
-.wrap-programs article .fa-chalkboard-teacher,
-.wrap-programs article .fa-calendar-alt,
-.wrap-programs article strong {
-  color: #003E66;
-  margin-right: 3px;
-}
-
-.wrap-programs article .box-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 1.6rem 1rem;
-}
-
-.wrap-programs article .box-btn .btn-primary {
-  background-color: #004d79;
-  padding: 1rem 2rem;
-  border: 1px solid transparent;
+.wrap-programs article .date-price li {
   font-size: 1.4rem;
 }
 
-.wrap-programs article .box-btn .btn-primary:hover {
-  color: #000000;
-  background-color: #ffffff;
-  border-color: #006db3;
-  font-weight: 500 !important;
+.wrap-programs article .date-price .precio p:nth-child(1) {
+  margin-bottom: 0 !important;
 }
 
-.wrap-programs article div:last-child {
-  display: none;
+.wrap-programs article .date-price .precio .descuento {
+  background-color: #f02d00;
+  color: #ffffff;
+  padding: .4rem .2rem;
+  font-size: 1.4rem;
+  border-radius: 4px;
+}
+
+.wrap-programs article .date-price .precio p {
+  padding-top: .5rem;
+}
+
+.wrap-programs article .date-price .precio .valor-actual {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #f02d00;
+}
+
+.wrap-programs article .date-price .precio .valor-anterior {
+  text-decoration: line-through;
+}
+
+.wrap-programs article .date-price .fa-chalkboard-teacher,
+.wrap-programs article .date-price .fa-calendar-alt,
+.wrap-programs article .date-price .fa-award,
+.wrap-programs article .date-price strong {
+  color: #003e66;
+  margin-right: 3px;
+}
+
+.wrap-programs article .box-btn a {
+  position: absolute;
+  bottom: 10px;
+  left: 4rem;
+  right: 4rem;
+  border-radius: 3px;
+  border: 1px solid #f02d00;
+  background-color: #ffffff;
+  color: #004d79;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 /***********
@@ -533,7 +561,7 @@ header .child-attributes-header .widget_text .title-icon-date {
 
 .wrap-contacts .icon-contacts h4 {
   font-size: 2.5rem;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
 
 @media (max-width: 425px) {
@@ -553,7 +581,7 @@ footer {
   background-color: #363636;
   color: #ffffff;
   text-align: center;
-  padding: .6rem 0;
+  padding: 0.6rem 0;
   font-size: 1.6rem;
 }
 /*# sourceMappingURL=list-courses.css.map */
