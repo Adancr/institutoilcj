@@ -39,13 +39,13 @@
 
 
 
-// back color header
-$(window).on("scroll", function() {
-  if($(window).scrollTop() > 50) {
-      $(".header").addClass("active");
-  } else {
-      //remove the background property so it comes transparent again (defined in your css)
-     $(".logo-navegation").removeClass("active");
-  }
-});
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 500) {
+      $('logo-navigation').addClass('bg-logo');
+    } else {
+      $('logo-navigation').removeClass('bg-logo');
+    }
+  })
 
+});
