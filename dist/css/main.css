@@ -105,6 +105,10 @@ input {
   width: 100px;
 }
 
+.header .logo-navegation .active {
+  background-color: red;
+}
+
 @media (max-width: 768px) {
   .header {
     height: 428px;
@@ -332,6 +336,12 @@ input {
   }
 }
 
+@media (max-width: 425px) {
+  .benefits {
+    display: none;
+  }
+}
+
 /* couses */
 .bg-courses {
   background-color: #f1f1f1;
@@ -348,6 +358,18 @@ input {
   text-align: left;
   padding: 1.5rem 0;
   font-size: 3rem;
+}
+
+.courses-title-virtual span:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  background-color: #004d79;
+  height: 2rem;
+  width: .8rem;
+}
+
+.courses-title-virtual span:nth-child(2) {
+  font-weight: 400;
 }
 
 .container-courses {
@@ -395,8 +417,9 @@ input {
   line-height: 1.2;
 }
 
-.container-courses .firt-ul {
-  margin-bottom: 0;
+.container-courses .date-price {
+  position: absolute;
+  bottom: 6rem;
 }
 
 .container-courses ul {
@@ -433,6 +456,7 @@ input {
 .container-courses .precio .valor-actual {
   font-weight: 500;
   font-size: 1.8rem;
+  color: #f02d00;
 }
 
 .container-courses .precio .valor-anterior {
