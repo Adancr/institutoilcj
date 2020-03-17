@@ -3,7 +3,8 @@
 *********************/
 
 .header {
-  
+  display: flex;
+  justify-content: center;
 
   .logo-navegation {
     display: flex;
@@ -62,6 +63,21 @@
         font-size: 3rem;
         color: $color-white;
         padding: 0 1rem;
+      }
+    }
+    @media (max-width: 425px) {
+      & {
+        max-height: 80px;
+             margin-top: 1rem; 
+      }
+      .logo-header  {
+        height: 80px;
+        display: flex;
+        align-items: center; 
+        img {
+          max-height: 70px;
+          max-width: 70px;
+        }
       }
     }
   }

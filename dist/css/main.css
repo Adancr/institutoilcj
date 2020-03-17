@@ -67,6 +67,15 @@ input {
 /********************
 **** HEADER 
 *********************/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header .logo-navegation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +138,26 @@ input {
     font-size: 3rem;
     color: #ffffff;
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header .logo-navegation {
+    max-height: 80px;
+    margin-top: 1rem;
+  }
+  .header .logo-navegation .logo-header {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .logo-navegation .logo-header img {
+    max-height: 70px;
+    max-width: 70px;
   }
 }
 
