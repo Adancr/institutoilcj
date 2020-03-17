@@ -285,6 +285,7 @@
  
  .row-staff-teacher {
      padding: 2rem 0;
+     
  }
  
  section .staff-teacher-title,
@@ -293,12 +294,91 @@
      background-color: $color-primary-lab;
      color: $color-white;
      padding: .4rem 0;
+     margin-bottom: 2rem ;
  }
  
  section .row-staff-teacher img {
      border-radius: 50%;
      box-shadow: 0 5px 5px 0 rgba(0, 123, 255, .25);
  }
+
+//  section modalidades de estudio
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* ACORDION */
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    width: 100%;
+    // text-align: left;
+    border-bottom: solid 1px #ddd;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/* div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+} */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/* icons */
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
  /*  investment  */
  
  section {
@@ -387,6 +467,7 @@
  .btn-mas-info {
      text-align: center;
      padding: 2rem 0;
+     margin: 3rem 0;
  }
 
  .btn-infoFooter {
