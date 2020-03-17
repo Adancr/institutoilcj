@@ -22,7 +22,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../../dist/css/reset.css">
-  <link rel="stylesheet" href="../../dist/css/lp-courses-civil.css">
+  <link rel="stylesheet" href="../../dist/css/lp-courses-violencia-contra-mujer.css">
   <script src="https://kit.fontawesome.com/4f57ccf18e.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Roboto:400,500,700,900&display=swap"
@@ -115,16 +115,25 @@
           </div>
 
           <div id="contact" class="col-md-5">
-            <form class="form-contact ml-block-form" action="https://app.mailerlite.com/webforms/submit/a6c7p1"
-              data-code="a6c7p1" method="post">
-              <h2>Separa tu vacante con <span><strong>30%</strong></span> descuento</h2>
+            <form class="form-contact ml-block-form" action="https://app.mailerlite.com/webforms/submit/b6u7s6"
+              data-code="b6u7s6" method="post">
+              <h2>Dejanos tu datos para reservar su vacante con un <span><strong>30%</strong></span> de descuento en el
+                diplomado</h2>
               <hr>
               <div class=" form-group ">
                 <div class=" input-group-prepend ">
                   <span class=" input-group-text "><i class=" fas fa-user "></i></span>
                 </div>
-                <input type=" text" class=" form-control p-height-50" data-inputmask="" name=" fields[name]" id="name"
-                  placeholder="Nombre Completo" autocomplete="name" required pattern="[A-Za-z]+">
+                <input type=" text" class=" form-control p-height-50" data-inputmask="" name="fields[name]" id="name"
+                  placeholder="Nombre" autocomplete="name" required pattern="[A-Za-z]+">
+                <div class="error-nombre "></div>
+              </div>
+              <div class=" form-group ">
+                <div class=" input-group-prepend ">
+                  <span class=" input-group-text "><i class=" fas fa-user "></i></span>
+                </div>
+                <input type=" text" class=" form-control p-height-50" data-inputmask="" name="fields[last_name]"
+                  id="name" placeholder="Apellido" autocomplete="name" required pattern="[A-Za-z]+">
                 <div class="error-nombre "></div>
               </div>
               <div class="form-group ">
@@ -143,13 +152,23 @@
                   placeholder="Número Celular" autocomplete="" required minlenght="9">
                 <div class="error-phone "></div>
               </div>
+              <div class="form-group ">
+                <div class="input-group-prepend ">
+                  <span class="input-group-text "><i class="fas fa-laptop"></i></span>
+                </div>
+                <input class="form-control p-height-50" type="text" data-inputmask=""
+                  name="fields[modalidad_presencial_o_virtual]" placeholder="Modalidad (Presencial o Virtual)"
+                  autocomplete="">
+                <div class="error-phone "></div>
+              </div>
+
               <input type="hidden" name="ml-submit" value="1">
 
               <!-- <input type="hidden " name="ml-submit " value="1 "> -->
 
               <div class="form-group ">
                 <button type="submit" class="primary btn btn-primary btn-block btn-lg" name="submit"
-                  id="btn-ingresar">Enviar</button>
+                  id="btn-ingresar">Reserva tu vacante </button>
                 <button disabled="disabled" style="display:none " type="button" class="loading ">
                   <div class="ml-form-embedSubmitLoad ">
                     <div></div>
@@ -237,7 +256,7 @@
               contenido normativo de la Ley de Violencia Familiar y conocer sus diversas situaciones jurídicas.</p>
           </div>
           <div class="col-md-5 ">
-            <img src="../../images/derecho-civil-y-procesal-civil.jpg" alt=" ">
+            <img src="../../images/familia.jpg" alt=" ">
           </div>
         </div>
       </div>
@@ -348,19 +367,19 @@
       <div class="container ">
         <div class="row row-staff-teacher ">
           <div class="col-12 col-md-6 ">
-            <img src="../../images/elmer-rodriguez.jpg" alt="Daivi Emerson Farfan Sulcahuaman ">
+            <img src="../../images/miguel-angel-alegre-rubina.png" alt="Daivi Emerson Farfan Sulcahuaman ">
             <h3>DR. Miguel Algel Alegre Rubina</h3>
             <p>Abogado por la UNSMP, Especialistas en Derecho de Familia, Violencia Familiar.</p>
           </div>
 
           <div class="col-12 col-md-6 ">
-            <img src="../../images/wlter-martinez.jpg" alt="Noelia Mengoa Quispe ">
+            <img src="../../images/juan-carlos-del-aguila.png" alt="Noelia Mengoa Quispe ">
             <h3>Dr. Juan Carlos del Aguila</h3>
             <p>Estudios de Maestría en la UMSM-FDCP, Especialista en Derecho de Familia y Sucesiones.</p>
           </div>
 
           <div class="col-12 col-md-6 ">
-            <img src="../../images/lenadro-martin.jpg" alt="Jesus Javier Salcedo Guerrero ">
+            <img src="../../images/noelia.jpg" alt="Jesus Javier Salcedo Guerrero ">
             <h3>Dra. NOELIA MENGOA QUISPE</h3>
             <p>Abogado y Docente Universitario en la UNMSM, FDCP y la UNFV. Ex Magistrado del Poder Judicial, Especialista en Derecho Civil y Procesal Civil.</p>
           </div>
@@ -377,7 +396,45 @@
       </div>
     </section>
     <!-- section inversion  -->
-    <section class="investment " id="investment">
+    <section class="investment" id="investment">
+      <h2 class="investment-title p-3 mb-4">CERTIFICACIÓN Y MODALIDDES DE ESTUDIO</h2>
+      <div class="container ">
+        <div class="container ">
+          <button class="accordion"><h3>CERTIFICACIÓN</h3></button>
+          <div class="panel">
+            <p>Al finalizar el Diplomado especializado, el participante obtendrá una certificado a nombre del Instituto
+              Latiamericano de Capacitaciones Júricas S.A.C. con una aculación de 240 horas académicas válido para
+              concursos publicos y privados.</p>
+          </div>
+          <button class="accordion"><h3>ENTREGA DE DIPLOMAS</h3></button>
+            <div class="panel">
+              <p>En la oficina del Instituto Latinoamericano de Capacitaciones Juridicas - ILCJ | ubicado en Jr. Manuel
+                Segura 142 Ofiina 304 - Lince - Lima. <br>En caso que sea para interior del país, se remitirá los diplomados vía las agencias de correos Olva
+                Currier. El costo del envío queda por cuenta del participante (pago en destino al momento del recojo).</p>
+            </div>
+          <button class="accordion"> <h4>MODALIDADES DE ESTUDIO: PRESENCIAL</h4></button>
+            <div class="panel">
+              <p>El participante que se inscriba en la modalidad presencial, asiste a las sesiones de clase en nuestro
+                auditorio, en el horario establecido tendrá todos los materiales académicos impreso y digital que cada
+                profesor utilizará en sus respectivas clases, así mismo recibirá los vídeos grabados de las sesiones luego
+                de 48 horas por medio de correo electrónico. Tiene la opción de rendir el examen presencial o virtual.</p>
+            </div>
+          <button class="accordion"> <h4>MODALIDADES DE ESTUDIO: VIRTUAL</h4></button>
+            <div class="panel">
+              <p>El participante que se inscriba en la modalidad virtual, tendrá acceso a través de nuestra plataforma
+                virtual todos los materiales académicos que cada profesor utilizará en sus respectivas clases, así mismo
+                tendrán acceso a los vídeos grabados de las sesiones presenciales las 24 horas, participará en debates a
+                través de un foro virtual y otras herramientas. Si adicionalmente desea participar en algunas de la
+                sesiones presenciales puede asistir con normalidad, previa coordinación. Rendirá examen mediante la
+                plataforma virtual. El diploma tiene el mismo valor académico que la modalidad presencial.</p>
+            </div>
+      </div>
+      <div class="btn-mas-info">
+        <a class="btn-infoFooter" href="#contact">Click Aquí y Separe su Diplomado</a>
+      </div>
+    </section>
+    
+    <!-- <section class="investment " id="investment">
       <h2 class="investment-title ">INVERSIÓN</h2>
       <div class="container ">
         <div class="row row-investment ">
@@ -410,7 +467,7 @@
             </div>
           </div>
           <div class="col-md-1 gap">
-            <!-- gap entre columnas -->
+            gap entre columnas 
           </div>
           <div class="col-md-4 ">
             <div class="single-table text-center ">
@@ -444,7 +501,34 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- section .contacts  -->
+
+    <div class="title-contacts">
+      <h2>Contáctanos</h2>
+      <h4>Estamos listos para atenderte</h4>
+    </div>
+    <section class="contacs">
+      <div class="wrap-contacts">
+        <div class="icon-contacts">
+          <i class="fas fa-phone-alt"></i></i>
+          <h4>Teléfonos</h4>
+          <p>989 830 042</p>
+          <p>912 757 657</p>
+        </div>
+        <div class="icon-contacts">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Dirección</h4>
+          <p>Jr. Manuel Segura 142 Ofic. 304 Lince</p>
+        </div>
+        <div class="icon-contacts">
+          <i class="fas fa-envelope"></i>
+          <h4>Correo:</h4>
+          <a href="mailto:ilcj@institutojuridico.edu.pe">ilcj@institutojuridico.edu.pe</a>
+        </div>
+      </div>
+
     <footer class="footer ">
       <div class="container ">
         <div class="row ">
@@ -457,7 +541,8 @@
 
   </div>
   <!-- end scroll  -->
-  <script src="../../dist/js/main.js"></script>
+  <!-- <script src="../../dist/js/main.js"></script> -->
+  <script src="../../dist/js/courses.js"></script>
 
 
 

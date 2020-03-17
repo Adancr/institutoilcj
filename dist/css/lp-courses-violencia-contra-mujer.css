@@ -165,16 +165,6 @@ nav .logo img {
   width: 100%;
 }
 
-nav .wp-header::before {
-  font-family: 'Font Awesome 5 brands';
-  font-weight: 900;
-  content: "\f232";
-  position: relative;
-  left: -4px;
-  top: 1px;
-  color: #25D366;
-}
-
 nav .wp {
   background: #25D366;
   color: #ffffff !important;
@@ -186,7 +176,7 @@ nav .wp {
 *section principal
 *****************/
 .title-p {
-  background-image: url(../../images/bg-laboral.jpg);
+  background-image: url(../../images/back-penal.jpg);
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -197,8 +187,7 @@ nav .wp {
 }
 
 .title-p .pt-contact h1 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.5rem;
 }
 
 .title-p .pt-contact h3 {
@@ -253,7 +242,7 @@ nav .wp {
 .form-contact h2 {
   font-size: 2.2rem !important;
   text-align: center;
-  color: #202020;
+  color: #1C130E;
 }
 
 .form-contact .fas {
@@ -325,22 +314,22 @@ nav .wp {
 }
 
 .form-contact .btn-primary {
-  background-color: #85340D;
+  background-color: #950101;
   padding: 1.2rem 0;
   font-size: 1.6rem;
   font-weight: 500;
-  border-color: #85340D;
+  border-color: #950101;
 }
 
 .form-contact .btn-primary:hover {
   color: #000000;
   font-weight: 500;
-  border-color: #85340D;
+  border-color: #950101;
 }
 
 section .row-start-date-title {
   padding: 1.6rem 0;
-  background-color: #202020;
+  background-color: #1C130E;
   color: #ffffff;
 }
 
@@ -359,7 +348,7 @@ div .start-date-details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #85340D;
+  border: 1px solid #950101;
   padding: .8rem;
   text-align: center;
 }
@@ -370,12 +359,12 @@ div .start-date-details h6 {
 
 div .start-date-details .fas {
   padding-bottom: 1.8rem;
-  color: #85340D;
+  color: #950101;
   font-size: 4rem;
 }
 
 div .start-date-details .date-details {
-  background-color: #202020;
+  background-color: #1C130E;
   padding: .5rem 6rem;
   color: #ffffff;
   font-size: 1.3rem;
@@ -407,14 +396,14 @@ div .start-date-details .date-details {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  color: #202020;
+  color: #1C130E;
   font-size: 2.6rem;
 }
 
 .presentation-course h3::before {
   content: "";
   display: block;
-  background-color: #202020;
+  background-color: #1C130E;
   height: 1.8rem;
   width: .8rem;
   margin-right: .6rem;
@@ -428,7 +417,7 @@ section .curriculum-wraper {
 }
 
 section .curriculum-wraper h4 {
-  color: #202020;
+  color: #1C130E;
   font-size: 2rem;
 }
 
@@ -462,14 +451,14 @@ section .curriculum-wraper ul li {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  color: #202020;
+  color: #1C130E;
   font-size: 2.6rem;
 }
 
 .curriculum-heading h3::before {
   content: "";
   display: block;
-  background-color: #202020;
+  background-color: #1C130E;
   height: 1.8rem;
   width: .8rem;
   margin-right: .6rem;
@@ -487,7 +476,7 @@ section .curriculum-wraper ul li {
 }
 
 .benefits .benefits-title {
-  background-color: #202020;
+  background-color: #1C130E;
   color: #ffffff;
   padding: .6rem 0;
   text-align: center;
@@ -499,7 +488,7 @@ section .curriculum-wraper ul li {
 }
 
 .benefits .benefits-items {
-  border: 1px solid #202020;
+  border: 1px solid #1C130E;
   padding: .8rem;
   border-radius: 3px;
 }
@@ -518,42 +507,15 @@ section .curriculum-wraper ul li {
 section .staff-teacher-title,
 section .investment-title {
   text-align: center;
-  background-color: #202020;
+  background-color: #1C130E;
   color: #ffffff;
   padding: .4rem 0;
-  margin-bottom: 2rem;
 }
 
 section .row-staff-teacher img {
   border-radius: 50%;
   -webkit-box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
           box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /* ACORDION */
@@ -614,6 +576,37 @@ button.accordion.active:after {
   /* Unicode character for "minus" sign (-) */
 }
 
+/*  btn mas info  */
+.btn-mas-info {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+.btn-infoFooter {
+  background-color: #950101;
+  color: #ffffff;
+  padding: 1.2rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 3px;
+}
+
+.btn-infoFooter:hover {
+  color: #ffffff;
+}
+
+.btn-infoFooter:after {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f054";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
 /*  investment  */
 section .row-investment {
   display: -webkit-box;
@@ -637,7 +630,7 @@ section .single-table {
 
 section .single-table h3 {
   padding: .8rem 0;
-  background-color: #202020;
+  background-color: #1C130E;
   color: #ffffff;
   margin-bottom: 0;
 }
@@ -645,7 +638,7 @@ section .single-table h3 {
 section .single-table .plan-header-offer {
   position: absolute;
   width: 120px;
-  background-color: #85340D;
+  background-color: #950101;
   top: 12px;
   right: -32px;
   -webkit-transform: rotate(45deg);
@@ -666,15 +659,15 @@ section .single-table ul {
 }
 
 section .single-table .btn-primary {
-  background-color: #85340D;
+  background-color: #950101;
   font-size: 1.4rem;
-  border: 1px solid #85340D;
+  border: 1px solid #950101;
 }
 
 section .single-table .btn-primary:hover {
   color: #000000;
   font-weight: bold;
-  border: 1px solid #85340D;
+  border: 1px solid #950101;
 }
 
 section .single-table h3 {
@@ -682,7 +675,7 @@ section .single-table h3 {
 }
 
 section .plan-header-price {
-  background-color: #202020;
+  background-color: #1C130E;
   color: #ffffff;
   padding: .8rem 0;
 }
@@ -714,45 +707,12 @@ section .info-wp a {
   font-weight: bold;
 }
 
-.btn-mas-info {
-  text-align: center;
-  padding: 2rem 0;
-  margin: 3rem 0;
-}
-
-.btn-infoFooter {
-  background-color: #85340D;
-  color: #ffffff;
-  padding: 1.2rem 2.5rem;
-  font-weight: 600;
-  font-size: 1.8rem;
-  border-radius: 3px;
-}
-
-.btn-infoFooter:hover {
-  color: #ffffff;
-}
-
-.btn-infoFooter:after {
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 900;
-  content: "\f054";
-  position: relative;
-  left: 3px;
-  top: 0.1rem;
-  -webkit-transition: left 0.3s ease;
-  transition: left 0.3s ease;
-}
-
+/*  section contact */
 .title-contacts {
   background-color: #202020;
   color: #ffffff;
   text-align: center;
   padding: 1rem 0;
-}
-
-.title-contacts h2 {
-  font-size: 3.5rem;
 }
 
 .wrap-contacts {
@@ -769,7 +729,7 @@ section .info-wp a {
 
 .wrap-contacts .icon-contacts .fas {
   font-size: 5rem;
-  color: #85340D;
+  color: #950101;
   padding-bottom: 1.2rem !important;
 }
 
@@ -802,4 +762,4 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=lp-courses-laboral.css.map */
+/*# sourceMappingURL=lp-courses-violencia-contra-mujer.css.map */

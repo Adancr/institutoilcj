@@ -5,7 +5,7 @@
 ** HEADER
 *********************/
  
- body {
+ body { 
      overflow: hidden;
      overflow-y: scroll;
  }
@@ -26,17 +26,6 @@
              width: 100%;
          }
      }
-     .wp-header {
-         &::before {
-            font-family: 'Font Awesome 5 brands';
-            font-weight: 900;
-            content: "\f232";
-            position: relative;
-            left: -4px;
-            top: 1px;
-            color: $color-wp;
-         }
-     }
      .wp {
          background: $color-wp;
          color: $color-white !important;
@@ -49,14 +38,13 @@
 *****************/
  
  .title-p {
-     background-image: url(../../images/bg-laboral.jpg);
+     background-image: url(../../images/back-penal.jpg);
      background-size: cover;
      object-fit: cover;
      .pt-contact {
          padding-top: 8rem;
          h1 {
-             font-size: 4rem;
-             font-weight: 600;
+             font-size: 3.5rem;
          }
          h3 {
              font-size: 2.2rem;
@@ -68,8 +56,6 @@
          flex-direction: column;
          justify-content: center;
      }
-
-
      .certifica {
          display: flex;
          justify-content: center;
@@ -93,7 +79,7 @@
      h2 {
          font-size: 2.2rem !important;
          text-align: center;
-         color: $color-primary-lab;
+         color: $color-primary-fam;
      }
      .fas {
          font-size: 1.6rem;
@@ -138,22 +124,22 @@
          }
      }
      .btn-primary {
-         background-color: $color-secondary-lab;
+         background-color: $color-secondary-fam;
          padding: 1.2rem 0;
          font-size: 1.6rem;
          font-weight: 500;
-         border-color: $color-secondary-lab;
+         border-color: $color-secondary-fam;
          &:hover {
              color: $color-black;
              font-weight: 500;
-             border-color: $color-secondary-lab;
+             border-color: $color-secondary-fam;
          }
      }
  }
  
  section .row-start-date-title {
      padding: 1.6rem 0;
-     background-color: $color-primary-lab;
+     background-color: $color-primary-fam;
      color: $color-white;
      h2 {
          font-size: 3.2rem !important;
@@ -165,7 +151,7 @@
      justify-content: center;
      flex-direction: column;
      // align-items: center;
-     border: 1px solid $color-secondary-lab;
+     border: 1px solid $color-secondary-fam;
      padding: .8rem;
      text-align: center;
      h6 {
@@ -173,11 +159,11 @@
      }
      .fas {
          padding-bottom: 1.8rem;
-         color: $color-secondary-lab;
+         color: $color-secondary-fam;
          font-size: 4rem;
      }
      .date-details {
-         background-color: $color-primary-lab;
+         background-color: $color-primary-fam;
          padding: .5rem 6rem;
          color: $color-white;
          font-size: 1.3rem;
@@ -200,12 +186,12 @@
          justify-content: flex-start;
          align-items: baseline;
          position: relative;
-         color: $color-primary-lab;
+         color: $color-primary-fam;
          font-size: 2.6rem;
          &::before {
              content: "";
              display: block;
-             background-color: $color-primary-lab;
+             background-color: $color-primary-fam;
              height: 1.8rem;
              width: .8rem;
              margin-right: .6rem;
@@ -219,7 +205,7 @@
      padding: 1rem 1rem;
      border-radius: 4px;
      h4 {
-         color: $color-primary-lab;
+         color: $color-primary-fam;
          font-size: 2rem;
      }
      ul {
@@ -240,12 +226,12 @@
          justify-content: flex-start;
          align-items: baseline;
          position: relative;
-         color: $color-primary-lab;
+         color: $color-primary-fam;
          font-size: 2.6rem;
          &::before {
              content: "";
              display: block;
-             background-color: $color-primary-lab;
+             background-color: $color-primary-fam;
              height: 1.8rem;
              width: .8rem;
              margin-right: .6rem;
@@ -260,7 +246,7 @@
  .benefits {
      margin: .8rem 0;
      .benefits-title {
-         background-color: $color-primary-lab;
+         background-color: $color-primary-fam;
          color: $color-white;
          padding: .6rem 0;
          text-align: center;
@@ -270,7 +256,7 @@
          text-align: center;
      }
      .benefits-items {
-         border: 1px solid $color-primary-lab;
+         border: 1px solid $color-primary-fam;
          padding: .8rem;
          // height: 17rem;
          border-radius: 3px;
@@ -285,50 +271,20 @@
  
  .row-staff-teacher {
      padding: 2rem 0;
-     
  }
  
  section .staff-teacher-title,
  section .investment-title {
      text-align: center;
-     background-color: $color-primary-lab;
+     background-color: $color-primary-fam;
      color: $color-white;
      padding: .4rem 0;
-     margin-bottom: 2rem ;
  }
  
  section .row-staff-teacher img {
      border-radius: 50%;
      box-shadow: 0 5px 5px 0 rgba(0, 123, 255, .25);
  }
-
-//  section modalidades de estudio
-
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
 
 /* ACORDION */
 /* Style the buttons that are used to open and close the accordion panel */
@@ -378,6 +334,33 @@ button.accordion:after {
 button.accordion.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+/*  btn mas info  */
+.btn-mas-info {
+     text-align: center;
+     padding: 2rem 0;
+     margin: 3rem 0;
+ }
+
+ .btn-infoFooter {
+     background-color: $color-secondary-fam;
+     color: $color-white;
+     padding: 1.2rem 2.5rem;
+     font-weight: 600;
+     font-size: 1.8rem;
+     border-radius: 3px;
+     &:hover {
+         color: $color-white;
+     }
+     &:after {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        content: "\f054";
+        position: relative;
+        left: 3px;
+        top: 0.1rem;
+        transition: left 0.3s ease;
+     }
+ }
 
  /*  investment  */
  
@@ -396,7 +379,7 @@ button.accordion.active:after {
          overflow: hidden;
          h3 {
              padding: .8rem 0;
-             background-color: $color-primary-lab;
+             background-color: $color-primary-fam;
              color: $color-white;
              margin-bottom: 0;
          }
@@ -404,7 +387,7 @@ button.accordion.active:after {
              //  display: none;
              position: absolute;
              width: 120px;
-             background-color: $color-secondary-lab;
+             background-color: $color-secondary-fam;
              top: 12px;
              right: -32px;
              transform: rotate(45deg);
@@ -421,13 +404,13 @@ button.accordion.active:after {
              margin-bottom: 0;
          }
          .btn-primary {
-             background-color: $color-secondary-lab;
+             background-color: $color-secondary-fam;
              font-size: 1.4rem;
-             border: 1px solid $color-secondary-lab;
+             border: 1px solid $color-secondary-fam;
              &:hover {
                  color: $color-black;
                  font-weight: bold;
-                 border: 1px solid $color-secondary-lab;
+                 border: 1px solid $color-secondary-fam;
              }
          }
          h3 {
@@ -435,7 +418,7 @@ button.accordion.active:after {
          }
      }
      .plan-header-price {
-         background-color: $color-primary-lab;
+         background-color: $color-primary-fam;
          color: $color-white;
          padding: .8rem 0;
          h4 {
@@ -464,42 +447,12 @@ button.accordion.active:after {
      font-weight: bold;
  }
 
- .btn-mas-info {
-     text-align: center;
-     padding: 2rem 0;
-     margin: 3rem 0;
- }
-
- .btn-infoFooter {
-     background-color: $color-secondary-lab;
-     color: $color-white;
-     padding: 1.2rem 2.5rem;
-     font-weight: 600;
-     font-size: 1.8rem;
-     border-radius: 3px;
-     &:hover {
-         color: $color-white;
-     }
-     &:after {
-        font-family: 'Font Awesome 5 Pro';
-        font-weight: 900;
-        content: "\f054";
-        position: relative;
-        left: 3px;
-        top: 0.1rem;
-        transition: left 0.3s ease;
-     }
- }
-
-//  contact 
+/*  section contact */
 .title-contacts {
-    background-color: $color-primary-lab;
-    color: $color-white;
+    background-color: #202020;
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
-    h2 {
-        font-size: 3.5rem;
-    }
 }
 .wrap-contacts {
     margin: auto;
@@ -510,7 +463,7 @@ button.accordion.active:after {
     .icon-contacts {
         .fas {
             font-size: 5rem;
-            color: $color-secondary-lab;
+            color: $color-secondary-fam;
             padding-bottom: 1.2rem !important;
         }
         h4 {
@@ -527,7 +480,6 @@ button.accordion.active:after {
         }
     }
 }
-
  /* footer  */
  
  footer {
