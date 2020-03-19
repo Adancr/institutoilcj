@@ -35,7 +35,7 @@
  }
  /***************
 *section principal
-*****************/
+*****************/ 
  
  .title-p {
      background-image: url(../../images/back-penal.jpg);
@@ -79,7 +79,7 @@
      h2 {
          font-size: 2.2rem !important;
          text-align: center;
-         color: $color-primary;
+         color: $color-primary-penal;
      }
      .fas {
          font-size: 1.6rem;
@@ -137,7 +137,7 @@
  
  section .row-start-date-title {
      padding: 1.6rem 0;
-     background-color: $color-primary;
+     background-color: $color-primary-penal;
      color: $color-white;
      h2 {
          font-size: 3.2rem !important;
@@ -161,7 +161,7 @@
          font-size: 4rem;
      }
      .date-details {
-         background-color: $color-primary;
+         background-color: $color-primary-penal;
          padding: .5rem 6rem;
          color: $color-white;
          font-size: 1.3rem;
@@ -175,7 +175,7 @@
      padding: 1.6rem 0;
      p {
          text-align: justify;
-     }
+     } 
      img {
          width: 100%;
      }
@@ -184,12 +184,12 @@
          justify-content: flex-start;
          align-items: baseline;
          position: relative;
-         color: $color-primary;
+         color: $color-primary-penal;
          font-size: 2.6rem;
          &::before {
              content: "";
              display: block;
-             background-color: $color-primary;
+             background-color: $color-primary-penal;
              height: 1.8rem;
              width: .8rem;
              margin-right: .6rem;
@@ -203,7 +203,7 @@
      padding: 1rem 1rem;
      border-radius: 4px;
      h4 {
-         color: $color-primary;
+         color: $color-primary-penal;
          font-size: 2rem;
      }
      ul {
@@ -224,12 +224,12 @@
          justify-content: flex-start;
          align-items: baseline;
          position: relative;
-         color: $color-primary;
+         color: $color-primary-penal;
          font-size: 2.6rem;
          &::before {
              content: "";
              display: block;
-             background-color: $color-primary;
+             background-color: $color-primary-penal;
              height: 1.8rem;
              width: .8rem;
              margin-right: .6rem;
@@ -241,7 +241,7 @@
  .benefits {
      margin: .8rem 0;
      .benefits-title {
-         background-color: $color-primary;
+         background-color: $color-primary-penal;
          color: $color-white;
          padding: .6rem 0;
          text-align: center;
@@ -271,7 +271,7 @@
  section .staff-teacher-title,
  section .investment-title {
      text-align: center;
-     background-color: $color-primary;
+     background-color: $color-primary-penal;
      color: $color-white;
      padding: .4rem 0;
  }
@@ -297,7 +297,7 @@
          overflow: hidden;
          h3 {
              padding: .8rem 0;
-             background-color: $color-primary;
+             background-color: $color-primary-penal;
              color: $color-white;
              margin-bottom: 0;
          }
@@ -335,7 +335,7 @@
          }
      }
      .plan-header-price {
-         background-color: $color-primary;
+         background-color: $color-primary-penal;
          color: $color-white;
          padding: .8rem 0;
          h4 {

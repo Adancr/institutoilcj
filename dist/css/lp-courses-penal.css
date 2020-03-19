@@ -541,7 +541,7 @@ section .single-table h3 {
 section .single-table .plan-header-offer {
   position: absolute;
   width: 120px;
-  background-color: #c6cf52;
+  background-color: green;
   top: 12px;
   right: -32px;
   -webkit-transform: rotate(45deg);
