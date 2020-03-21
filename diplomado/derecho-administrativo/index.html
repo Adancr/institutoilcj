@@ -117,18 +117,31 @@
           </div>
 
           <div id="contact" class="col-md-5">
-            <form class="form-contact ml-block-form" action="https://app.mailerlite.com/webforms/submit/a6c7p1"
-              data-code="a6c7p1" method="post">
-              <h2>Separa tu vacante con <span><strong>30%</strong></span> descuento</h2>
+            <form class="form-contact ml-block-form" action="https://app.mailerlite.com/webforms/submit/u7p4s5"
+              data-code="u7p4s5" method="post">
+              <h2>Déjanos tu datos para reservar su vacante con un <span><strong>30%</strong></span> de descuento en el
+                diplomado</h2>
               <hr>
+
+              <!-- datos  -->
               <div class=" form-group ">
                 <div class=" input-group-prepend ">
                   <span class=" input-group-text "><i class=" fas fa-user "></i></span>
                 </div>
-                <input type="text" class=" form-control p-height-50" data-inputmask="" name=" fields[name]" id="name"
-                  placeholder="Nombre Completo" autocomplete="name" required pattern="[A-Za-z]+">
+                <input type=" text" class=" form-control p-height-50" data-inputmask="" name="fields[name]" id="name"
+                  placeholder="Primer nombre" autocomplete="name" required pattern="[A-Za-z]+">
                 <div class="error-nombre "></div>
               </div>
+
+              <div class=" form-group ">
+                <div class=" input-group-prepend ">
+                  <span class=" input-group-text "><i class=" fas fa-user "></i></span>
+                </div>
+                <input type=" text" class=" form-control p-height-50" data-inputmask="" name="fields[last_name]"
+                  id="name" placeholder="Apellido" autocomplete="name" required pattern="[A-Za-z]+">
+                <div class="error-nombre "></div>
+              </div>
+
               <div class="form-group ">
                 <div class="input-group-prepend ">
                   <span class="input-group-text "><i class="fas fa-envelope "></i></span>
@@ -137,6 +150,7 @@
                   placeholder="Correo Electrónico" autocomplete="email" required>
                 <div class="error-mail"></div>
               </div>
+
               <div class="form-group ">
                 <div class="input-group-prepend ">
                   <span class="input-group-text "><i class="fas fa-phone-alt "></i></i></span>
@@ -145,6 +159,18 @@
                   placeholder="Número Celular" autocomplete="" required minlenght="9">
                 <div class="error-phone "></div>
               </div>
+
+              <div class="form-group ">
+                <div class="input-group-prepend ">
+                  <span class="input-group-text "><i class="fas fa-laptop"></i></span>
+                </div>
+                <input class="form-control p-height-50" type="text" data-inputmask=""
+                  name="fields[modalidad_presencial_o_virtual]" placeholder="Modalidad (Presencial o Virtual)"
+                  autocomplete="">
+                <div class="error-phone "></div>
+              </div>
+              <!-- fin datos  -->
+
               <input type="hidden" name="ml-submit" value="1">
 
               <!-- <input type="hidden " name="ml-submit " value="1 "> -->
@@ -456,13 +482,10 @@
 
   <!-- Script subscriber mailerte  -->
   <script>
-    function ml_webform_success_1774216() { try { window.top.location.href = "https://institutojuridico.edu.pe/dcc-gracias" } catch (t) { window.location.href = "https://institutojuridico.edu.pe/dcc-gracias" } }
+    function ml_webform_success_1853782(){try{window.top.location.href="https://institutojuridico.edu.pe/admin-gracias/"}catch(i){window.location.href="https://institutojuridico.edu.pe/admin-gracias/"}}
   </script>
-  <img src="https://track.mailerlite.com/webforms/o/1774216/a6c7p1?v53cae9d473694604508d13feaac0545b" width="1"
-    height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="."
-    border="0">
-  <script src="https://static.mailerlite.com/js/w/webforms.min.js?v53cae9d473694604508d13feaac0545b"
-    type="text/javascript"></script>
+  <img src="https://track.mailerlite.com/webforms/o/1853782/u7p4s5?v53cae9d473694604508d13feaac0545b" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+  <script src="https://static.mailerlite.com/js/w/webforms.min.js?v53cae9d473694604508d13feaac0545b" type="text/javascript"></script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -59,6 +59,13 @@ input {
   margin: auto;
 }
 
+@media (max-width: 425px) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -176,7 +183,7 @@ nav .wp {
 *section principal
 *****************/
 .title-p {
-  background-image: url(../../images/back-penal.jpg);
+  background-image: url(../../images/bg-familia.jpg);
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -497,6 +504,11 @@ section .curriculum-wraper ul li {
   margin-top: 1.2rem;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.benefits .benefits-items .fas {
+  font-size: 6rem;
+  color: #950101;
 }
 
 /* Staff docentes  */

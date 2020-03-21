@@ -58,6 +58,12 @@ input {
 %container {
     max-width: 1140px;
     margin: auto;
+    @media (max-width: 425px) {
+        & {
+            padding-left: 0 !important;
+            padding-right: 0 !important; 
+        }
+    }
 }
 
 .container {

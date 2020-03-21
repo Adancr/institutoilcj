@@ -15,7 +15,7 @@
          position: absolute;
          background: $color-white !important;
          top: 0;
-         left: 0;
+         left: 0; 
          z-index: 100;
          width: 100%;
          // font-family: "Montserrat", Arial, sans-serif;
@@ -38,7 +38,7 @@
 *****************/
  
  .title-p {
-     background-image: url(../../images/back-penal.jpg);
+     background-image: url(../../images/bg-familia.jpg); 
      background-size: cover;
      object-fit: cover;
      .pt-contact {
@@ -264,6 +264,10 @@
              margin-top: 1.2rem;
              font-size: 1.8rem;
              font-weight: 500;
+         }
+         .fas {
+             font-size: 6rem;
+             color: $color-secondary-fam;
          }
      }
  }

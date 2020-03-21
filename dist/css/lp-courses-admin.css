@@ -59,6 +59,13 @@ input {
   margin: auto;
 }
 
+@media (max-width: 425px) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -326,17 +333,17 @@ nav .wp {
 }
 
 .form-contact .btn-primary {
-  background-color: #AC1B06;
+  background-color: #950101;
   padding: 1.2rem 0;
   font-size: 1.6rem;
   font-weight: 500;
-  border: #AC1B06;
+  border: #950101;
 }
 
 .form-contact .btn-primary:hover {
   color: #000000;
   font-weight: 500;
-  border: 1px solid #AC1B06;
+  border: 1px solid #950101;
 }
 
 section .row-start-date-title {
@@ -360,7 +367,7 @@ div .start-date-details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #AC1B06;
+  border: 1px solid #950101;
   padding: 0.8rem;
   text-align: center;
 }
@@ -371,7 +378,7 @@ div .start-date-details h6 {
 
 div .start-date-details .fas {
   padding-bottom: 1.8rem;
-  color: #AC1B06;
+  color: #950101;
   font-size: 4rem;
 }
 
@@ -498,7 +505,7 @@ section .curriculum-wraper ul li {
 }
 
 .benefits .benefits-items {
-  border: 1px solid #AC1B06;
+  border: 1px solid #950101;
   padding: 0.8rem;
   border-radius: 3px;
 }
@@ -580,9 +587,9 @@ section .single-table ul {
 }
 
 section .single-table .btn-primary {
-  background-color: #AC1B06;
+  background-color: #950101;
   font-size: 1.4rem;
-  border: 1px solid #AC1B06;
+  border: 1px solid #950101;
 }
 
 section .single-table .btn-primary:hover {
