@@ -71,3 +71,21 @@
     width: 130%;
     left: -20px;
 }
+
+/*button call*/ 
+.call {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 15px;
+    .fas {
+        font-size: 3.5rem;
+        padding: .8rem 1rem;
+    }
+    @media (max-width:768px) {
+        display: inline-block;
+    }
+} 

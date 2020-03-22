@@ -127,6 +127,12 @@
     @media (max-width: 768px) {
       height: 480px;
   }
+  @media (max-width: 538px) {
+    height: 565px;
+  }
+  @media (max-width: 480px) {
+    height: 530px;
+  }
 
   @media (max-width: 425px) {
     height: 500px;
