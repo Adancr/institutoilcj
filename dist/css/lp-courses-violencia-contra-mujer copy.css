@@ -1,0 +1,992 @@
+/********************
+**** GLOBALS 
+*********************/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto !important;
+}
+
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.3rem !important;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+input {
+  font-size: 1.6rem !important;
+}
+
+.bg-inverse {
+  background-color: black;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: Roboto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #006db3;
+  border-color: #006db3;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-color: #006db3;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #006db3;
+  font-weight: 500;
+}
+
+.btn-primary:active {
+  color: #000000;
+  background-color: #006db3;
+  border-color: #006db3;
+  font-weight: 500;
+}
+
+.btn-primary:focus {
+  background-color: #006db3;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 155, 255, 0.5);
+}
+
+.btn-primary:after {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f054";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:active:after,
+.btn-primary:focus:after {
+  left: 0.3rem;
+}
+
+/* Insertar caja blanaca del boton principal */
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: skew(45deg, 0);
+          transform: skew(45deg, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:before {
+  width: 130%;
+  left: -20px;
+}
+
+/*button call*/
+.call {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  background-color: #004d79;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.call .fas {
+  font-size: 3.5rem;
+  padding: .8rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .call {
+    display: inline-block;
+  }
+}
+
+/******************
+**SUPPORT WHTASAPP
+******************/
+a {
+  text-decoration: none;
+}
+
+.box-perfil-one,
+.box-perfil-two {
+  text-align: center;
+}
+
+.item-date::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f232";
+  position: relative;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  font-size: 2.8rem;
+  width: 10px;
+  padding: 0.8rem;
+  color: #22c15e;
+}
+
+.main-box-wasap {
+  display: none;
+  --main-color: #22c15e;
+  --main-color-dark: #1fa752;
+  width: 200px;
+  position: fixed;
+  bottom: 2%;
+  left: 1%;
+  z-index: 10;
+}
+
+.main-box-wasap img {
+  max-width: 50%;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .main-box-wasap {
+    display: inline-block;
+  }
+}
+
+.box-list-chat-wasap {
+  background-color: #fff;
+  -webkit-transform: scaley(0);
+          transform: scaley(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+  margin: 0.5rem 0 1rem;
+  /*   border: 2px solid red; */
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box-list-chat-wasap .title-list-wasap {
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: var(--main-color);
+  font-size: 1.6rem;
+}
+
+.btn-close-wasap {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  margin-left: auto;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+  -webkit-transform-origin: botttom;
+          transform-origin: botttom;
+}
+
+.btn-active-list-chat-wasap {
+  background-color: var(--main-color);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.btn-active-list-chat-wasap .fab {
+  font-size: 4rem;
+}
+
+.btn-active-list-chat-wasap:hover,
+.btn-close-wasap:hover {
+  background-color: var(--main-color-dark);
+}
+
+.item-wasap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 0.5rem;
+  margin: 0.8rem;
+}
+
+.item-wasap:hover {
+  background-color: #f5f5f5;
+}
+
+.box-perfil {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 20%;
+  width: 50px;
+  height: 50px;
+}
+
+.item-date {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2rem;
+}
+
+.item-date > div {
+  padding-bottom: 0.2rem;
+}
+
+.item-name {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.item-rol {
+  font-weight: bold;
+  color: #000;
+  font-size: 1.7rem;
+}
+
+.item-dis {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* activadores */
+.view-lis-chat {
+  -webkit-transform: scaley(1);
+          transform: scaley(1);
+}
+
+.view-btn-none {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/********************
+** HEADER
+*********************/
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+nav .pb-navbar {
+  position: absolute;
+  background: #ffffff !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+nav .logo {
+  max-width: 6rem;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .wp {
+  background: #25D366;
+  color: #ffffff !important;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/***************
+*section principal
+*****************/
+.title-p {
+  background-image: url(../../images/bg-familia.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title-p .pt-contact {
+  padding-top: 8rem;
+}
+
+.title-p .pt-contact h1 {
+  font-size: 3.5rem;
+}
+
+.title-p .pt-contact h3 {
+  font-size: 2.2rem;
+}
+
+.title-p .title-p-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title-p .certifica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-p .certifica span {
+  font-size: 1.8rem;
+}
+
+.title-p .certifica img {
+  width: 100px;
+}
+
+/*************
+** form contact
+***************/
+.form-contact {
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 6px;
+}
+
+.form-contact h2 {
+  font-size: 2.2rem !important;
+  text-align: center;
+  color: #1C130E;
+}
+
+.form-contact .fas {
+  font-size: 1.6rem;
+  padding: .3rem;
+}
+
+.form-contact .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-contact .form-group input {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.form-contact .form-group input::-webkit-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group input:-ms-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group input::-ms-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group input::placeholder {
+  font-size: 1.3rem;
+}
+
+.form-contact .form-group .form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 500 !important;
+  line-height: 1.5;
+  color: #363636;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.form-contact .form-group .p-height-50 {
+  height: 4rem !important;
+}
+
+.form-contact .form-group .input-group-prepend {
+  margin-right: -1px;
+}
+
+.form-contact .btn-primary {
+  background-color: #950101;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-color: #950101;
+}
+
+.form-contact .btn-primary:hover {
+  color: #000000;
+  font-weight: 500;
+  border-color: #950101;
+}
+
+section .row-start-date-title {
+  padding: 1.6rem 0;
+  background-color: #1C130E;
+  color: #ffffff;
+}
+
+section .row-start-date-title h2 {
+  font-size: 3.2rem !important;
+}
+
+div .start-date-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #950101;
+  padding: .8rem;
+  text-align: center;
+}
+
+div .start-date-details h6 {
+  font-size: 1.4rem;
+}
+
+div .start-date-details .fas {
+  padding-bottom: 1.8rem;
+  color: #950101;
+  font-size: 4rem;
+}
+
+div .start-date-details .date-details {
+  background-color: #1C130E;
+  padding: .5rem 6rem;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+/******************
+*presentacion curso
+*******************/
+.presentation-course {
+  padding: 1.6rem 0;
+}
+
+.presentation-course p {
+  text-align: justify;
+}
+
+.presentation-course img {
+  width: 100%;
+}
+
+.presentation-course h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+  color: #1C130E;
+  font-size: 2.6rem;
+}
+
+.presentation-course h3::before {
+  content: "";
+  display: block;
+  background-color: #1C130E;
+  height: 1.8rem;
+  width: .8rem;
+  margin-right: .6rem;
+}
+
+/* temary course */
+section .curriculum-wraper {
+  border: 1px solid #ced4da70;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+}
+
+section .curriculum-wraper h4 {
+  color: #1C130E;
+  font-size: 2rem;
+}
+
+section .curriculum-wraper ul {
+  margin-bottom: .6rem;
+}
+
+section .curriculum-wraper ul li {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: .5rem 0;
+}
+
+.curriculum-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.curriculum-heading h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+  color: #1C130E;
+  font-size: 2.6rem;
+}
+
+.curriculum-heading h3::before {
+  content: "";
+  display: block;
+  background-color: #1C130E;
+  height: 1.8rem;
+  width: .8rem;
+  margin-right: .6rem;
+}
+
+@media (max-width: 426px) {
+  .curriculum-heading h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* section beneficios  */
+.benefits {
+  margin: .8rem 0;
+}
+
+.benefits .benefits-title {
+  background-color: #1C130E;
+  color: #ffffff;
+  padding: .6rem 0;
+  text-align: center;
+}
+
+.benefits .row-benefits {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.benefits .benefits-items {
+  border: 1px solid #1C130E;
+  padding: .8rem;
+  border-radius: 3px;
+}
+
+.benefits .benefits-items h4 {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.benefits .benefits-items .fas {
+  font-size: 6rem;
+  color: #950101;
+}
+
+/* Staff docentes  */
+.row-staff-teacher {
+  padding: 2rem 0;
+}
+
+section .staff-teacher-title,
+section .investment-title {
+  text-align: center;
+  background-color: #1C130E;
+  color: #ffffff;
+  padding: .4rem 0;
+}
+
+section .row-staff-teacher img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+          box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+}
+
+/* ACORDION */
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  width: 100%;
+  border-bottom: solid 1px #ddd;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/* div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+} */
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+/* icons */
+button.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+/*  btn mas info  */
+.btn-mas-info {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+.btn-infoFooter {
+  background-color: #950101;
+  color: #ffffff;
+  padding: 1.2rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 3px;
+}
+
+.btn-infoFooter:hover {
+  color: #ffffff;
+}
+
+.btn-infoFooter:after {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f054";
+  position: relative;
+  left: 3px;
+  top: 0.1rem;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+/*  investment  */
+section .row-investment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0;
+}
+
+section .row-investment ul li h5 {
+  font-weight: bold;
+}
+
+section .single-table {
+  border: 1px solid #72B7DB;
+  position: relative;
+  overflow: hidden;
+}
+
+section .single-table h3 {
+  padding: .8rem 0;
+  background-color: #1C130E;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+section .single-table .plan-header-offer {
+  position: absolute;
+  width: 120px;
+  background-color: #950101;
+  top: 12px;
+  right: -32px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+section .single-table .plan-header-offer p {
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+section .single-table ul {
+  padding: 1.2rem 0;
+  margin-bottom: 0;
+}
+
+section .single-table .btn-primary {
+  background-color: #950101;
+  font-size: 1.4rem;
+  border: 1px solid #950101;
+}
+
+section .single-table .btn-primary:hover {
+  color: #000000;
+  font-weight: bold;
+  border: 1px solid #950101;
+}
+
+section .single-table h3 {
+  font-size: 2.3rem;
+}
+
+section .plan-header-price {
+  background-color: #1C130E;
+  color: #ffffff;
+  padding: .8rem 0;
+}
+
+section .plan-header-price h4 {
+  font-size: 2.5rem;
+}
+
+section .plan-header-price h5 {
+  font-size: 2rem;
+}
+
+section .plan-header-price ul li h5 {
+  font-weight: bold;
+}
+
+@media (max-width: 766px) {
+  section .gap {
+    height: 2rem;
+  }
+}
+
+/*  butoon compra  */
+section .buy a,
+section .info-wp a {
+  width: 70%;
+  margin: .8rem 0;
+  padding: .8rem 0;
+  font-weight: bold;
+}
+
+/*  section contact */
+.title-contacts {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.wrap-contacts {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.wrap-contacts .icon-contacts .fas {
+  font-size: 5rem;
+  color: #950101;
+  padding-bottom: 1.2rem !important;
+}
+
+.wrap-contacts .icon-contacts h4 {
+  font-size: 2.5rem;
+  padding-bottom: .2rem;
+}
+
+@media (max-width: 425px) {
+  .wrap-contacts {
+    padding: 1.6rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrap-contacts .icon-contacts:nth-child(2) {
+    padding: 2.8rem 0;
+  }
+}
+
+/* footer  */
+footer {
+  background-color: #363636;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=lp-courses-violencia-contra-mujer copy.css.map */

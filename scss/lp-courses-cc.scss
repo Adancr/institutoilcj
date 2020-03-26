@@ -1,13 +1,16 @@
 @import "variables";
 @import "globals";
 @import "buttons";
+@import "wpsupport";
+
 /********************
 ** HEADER
 *********************/
 
+
 body {
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: scroll; 
 }
 
 nav {
@@ -20,7 +23,7 @@ nav {
     width: 100%;
     // font-family: "Montserrat", Arial, sans-serif;
   }
-  .logo {
+  .logo { 
     max-width: 6rem;
     img {
       width: 100%;
