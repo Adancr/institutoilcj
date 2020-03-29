@@ -1,0 +1,42 @@
+.novedades-wrap {
+  background-color: $color-background;
+  padding: 6rem 0;
+  .novedades {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+      color: #000;
+    }
+
+    .send {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      margin-top: 1.5rem;
+      input {
+        width: 90%;
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+        border: none;
+      }
+      button {
+        position: absolute;
+        right: 6%;
+        top: 23%;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        .fa-paper-plane {
+          font-size: 2.8rem;
+          color: #b9b8b8;
+
+
+        }
+      }
+    }
+  }
+  
+}

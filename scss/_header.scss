@@ -3,186 +3,41 @@
 *********************/
 
 .header {
-  display: flex;
-  justify-content: center;
-
-  .logo-navegation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 130px;
-    padding: .5rem 1rem;
-    position: fixed;
-    width: 100%;
-    max-width: 1140px;
-    z-index: 1; 
-
-    .logo-header img {
-      width: 100px;
-    }
-    .header2 {
-      background-color: $color-red;
-    }
-    .toggle-menu {
-      display: none;
-    }
-
-
-    @media (max-width: 768px) {
-      .header {
-        position: relative;
-      }
-      nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        left: 0;
-        // padding: 1rem;
-        background-color: rgba(0, 0, 0, .7);
-        &.show-menu {
-          display: block;
-        }
-        ul {
-          display: block;
-          li {
-            margin-right: 0;
-            border-bottom: 1px solid $color-white;
-            
-          }
-          a {
-            display: block;
-            text-align: center;
-            padding: 1rem;
-            
-          }
-        }
-      }
-      .toggle-menu {
-        display: inline-block;
-        font-size: 3rem;
-        color: $color-white;
-        padding: 0 1rem;
-      }
-    }
-    @media (max-width: 425px) {
-      & {
-        max-height: 80px;
-             margin-top: 1rem; 
-      }
-      .logo-header  {
-        height: 80px;
-        display: flex;
-        align-items: center; 
-        img {
-          max-height: 70px;
-          max-width: 70px;
-        }
-      }
-    }
-  }
-
-  //  RWD 768 
-  @media (max-width: 768px) {
-
-    // height: 428px;
-    .toggle {
-      display: inline-block;
-    }
-    nav {
-      display: none;
-    }
-
-    
-
-  }
-  @media (max-width: 768px) {
-
-    // height: 428px;
-
-    nav {
-      display: none;
-    }
-
-    
-
-  }
-
-  // RWD 425 mobile L
-  
-
-  ul {
-    display: flex;
-
-    li {
-      margin-right: 1.6rem;
-      font-weight: bold;
-      letter-spacing: .02rem;
-      text-shadow: 2px 1px 2px #000000b5;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    li:last-child {
-      margin-right: 0;
-    }
-
-    a {
-      color: $color-white;
-      cursor: pointer;
-
-    }
-
-  }
-}
-
-.banner {
   background-image: url(../../images/back_header.jpg);
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
   height: 600px;
   color: $color-white;
-  display: flex;
-  justify-content: center;
-  // position: fixed;
-
-  @media (max-width: 768px) {
-    .title-p {
-      top: 31%;
-      width: 100%;
-      padding: 0 1rem;
+  position: relative;
+  // display: flex;
+  // justify-content: center;
+  .logo-header {
+    max-height: 7rem;
+    img {
+      height: 6rem;
     }
   }
 
-  @media (max-width: 425px) {
-    .title-p {
-      top: 50%;
-
-      span:first-child {
-        font-size: 3.8rem;
+  .navbar {
+    background-color: transparent !important;
+    .nav-item {
+      margin-right: 1rem;
+      .nav-link {
+        color: $color-white;
+        font-weight: 600;
       }
-
-      .title-h1 {
-        font-size: 2rem;
-      }
-
-      span:last-child {
-        font-size: 3.4rem;
-      }
-
     }
   }
 }
 
 .title-p {
   position: absolute;
-  top: 30%;
-  width: 50%;
-
-
+  top: 40%;
+  // width: 50%;
+  left: 25%;
+  color: $color-white;
+  max-width: 500px;
   h1 {
     text-shadow: 3px 2px 6px #090909ad;
   }
@@ -196,4 +51,43 @@
     text-decoration: underline;
   }
 
+  @media (max-width: 1024px) {
+    & {
+      left: 15%;
+    }
+    @media (max-width: 768px) {
+      & {
+        top: 38%;
+        // width: 100%;
+        padding: 0 1rem;
+        left: 15%;
+      }
+    }
+    @media (max-width: 550px) {
+      & {
+        top: 40%;
+        // width: 100%;
+
+        span:first-child {
+          font-size: 4.5rem;
+        }
+
+        .title-h1 {
+          font-size: 2.5rem;
+        }
+
+        span:last-child {
+          font-size: 3.4rem;
+        }
+      }
+    }
+    @media (max-width: 460px) {
+      top: 60%;
+      left: 7%;
+    }
+    @media (max-width: 460px) {
+      top: 45%;
+      left: 5%;
+    }
+  }
 }
