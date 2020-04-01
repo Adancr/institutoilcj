@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.3rem !important;
+  font-size: 2.3rem;
   font-weight: bold;
   color: #ffffff;
 }
@@ -473,7 +473,7 @@ input {
 }
 
 .container-courses .precio .descuento {
-  background-color: #f02d00;
+  background-color: #FF0000;
   color: #ffffff;
   padding: .4rem .2rem;
   font-size: 1.4rem;
@@ -487,7 +487,7 @@ input {
 .container-courses .precio .valor-actual {
   font-weight: 500;
   font-size: 1.8rem;
-  color: #f02d00;
+  color: #FF0000;
 }
 
 .container-courses .precio .valor-anterior {
@@ -500,7 +500,7 @@ input {
   left: 4rem;
   right: 4rem;
   border-radius: 3px;
-  border: 1px solid #f02d00;
+  border: 1px solid #FF0000;
   background-color: #ffffff;
   color: #004d79;
   font-weight: bold;

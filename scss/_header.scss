@@ -43,14 +43,14 @@
   }
 
   span:first-child {
-    font-size: 5rem;
+    font-size: 5rem; 
   }
 
   span:last-child {
     font-size: 4.5rem;
     text-decoration: underline;
   }
-
+ 
   @media (max-width: 1024px) {
     & {
       left: 15%;

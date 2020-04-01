@@ -50,6 +50,9 @@ nav {
       font-size: 3.2rem;
       text-shadow: 1px 1px $color-primary-cc;
       font-weight: 600;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
     }
     h3 {
       font-size: 2.2rem;
@@ -85,6 +88,9 @@ nav {
     font-size: 2.2rem !important;
     text-align: center;
     color: $color-primary-cc;
+    span {
+      color: $color-red;
+  }
   }
   .fas {
     font-size: 1.6rem;

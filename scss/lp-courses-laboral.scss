@@ -58,6 +58,9 @@
          h1 {
              font-size: 4rem;
              font-weight: 600;
+             @media (max-width: 600px) {
+                font-size: 3rem;
+              }
          }
          h3 {
              font-size: 2.2rem;
@@ -95,6 +98,9 @@
          font-size: 2.2rem !important;
          text-align: center;
          color: $color-primary-lab;
+         span {
+            color: $color-red;
+        }
      }
      .fas {
          font-size: 1.6rem;

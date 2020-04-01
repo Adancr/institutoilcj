@@ -46,6 +46,9 @@
          padding-top: 8rem;
          h1 {
              font-size: 3rem;
+             @media (max-width: 600px) {
+                font-size: 3rem;
+              }
          }
          h3 {
              font-size: 2.2rem;
@@ -81,6 +84,9 @@
          font-size: 2.2rem !important;
          text-align: center;
          color: $color-primary-penal;
+         span {
+            color: $color-red;
+        }
      }
      .fas {
          font-size: 1.6rem;
@@ -281,6 +287,57 @@
      border-radius: 50%;
      box-shadow: 0 5px 5px 0 rgba(0, 123, 255, .25);
  }
+
+/* ACORDION */
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    width: 100%;
+    // text-align: left;
+    border-bottom: solid 1px #ddd;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/* div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+} */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/* icons */
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
  /*  investment  */
  
  section {
