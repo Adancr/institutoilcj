@@ -89,3 +89,21 @@
         display: inline-block;
     }
 } 
+
+.btn-callme {
+    border: $color-white;
+    background-color: $color-red;
+    padding: 1rem 1.6rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    display: inline-block;
+    span {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 2rem;
+        &:first-child {
+            margin-right: .5rem;
+        }
+        
+    }
+}

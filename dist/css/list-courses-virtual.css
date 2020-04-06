@@ -169,6 +169,25 @@ input {
   }
 }
 
+.btn-callme {
+  border: #ffffff;
+  background-color: #FF0000;
+  padding: 1rem 1.6rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.btn-callme span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.btn-callme span:first-child {
+  margin-right: .5rem;
+}
+
 /******************
 **SUPPORT WHTASAPP
 ******************/
@@ -307,7 +326,7 @@ header .child-attributes-header .widget_text .title-icon-date {
 
 /* section slider */
 .blok-slider {
-  background-image: url(../../images/diplo-virtual/bg-dvirtual.jpg);
+  background-image: url(../../images/diplo-virtual/bg-virtual-2-1.jpg);
   height: 600px;
   padding-top: 10rem;
   background-size: cover;

@@ -1,0 +1,67 @@
+// style="margin-top: 5rem; margin-bottom: 10rem; max-width: 80rem;"
+.wrap-gracias {
+  background-color: #f1f1f1;
+  background-image: url(../../images/bg-gracias.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5) ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  @media (max-width: 768px) {
+    background-position-x: -400px;
+  }
+  @media (max-width: 600px) {
+    background-position-x: -450px;
+  }
+  @media (max-width: 500px) {
+    background-position-x: -600px;
+  }
+}
+
+.cgracias {
+  // background-color: red;
+  box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+  border-radius: .5rem;
+  margin: 0 1rem;
+  background-color: $color-white;
+  padding: 2rem 1rem;
+
+  .info {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    span {
+      color: $color-red;
+      font-weight: bold;
+    }
+  }
+  p:nth-child(1) {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 2rem;
+    
+  }
+  p:nth-child(2),
+  p:nth-child(3),
+  p:nth-child(4), 
+  p:nth-child(5){
+   line-height: 1.1;
+   font-size: 1.7rem;
+   span {
+     font-weight: bold;
+   }
+  }
+
+  h3 {
+    padding-top: 2.5rem;
+    margin-bottom: 0;
+  }
+}
