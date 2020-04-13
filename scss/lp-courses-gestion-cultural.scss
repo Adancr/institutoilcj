@@ -286,6 +286,8 @@
      background-color: $color-primary-fam;
      color: $color-white;
      padding: .4rem 0;
+     margin-top: 2rem;
+     padding: .8rem 0;
  }
  
  section .row-staff-teacher img {
@@ -308,6 +310,7 @@ button.accordion {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

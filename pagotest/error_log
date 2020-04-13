@@ -1,0 +1,32 @@
+[06-Apr-2020 02:54:18 America/New_York] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER) in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 2
+[06-Apr-2020 03:00:01 America/New_York] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER) in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 2
+[06-Apr-2020 03:30:25 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:30:25 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:30:25 America/New_York] PHP Fatal error:  require(): Failed opening required 'culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:35:22 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:35:22 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:35:22 America/New_York] PHP Fatal error:  require(): Failed opening required 'culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:39:46 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:39:46 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:39:46 America/New_York] PHP Fatal error:  require(): Failed opening required 'culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:40:26 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:40:26 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:40:26 America/New_York] PHP Fatal error:  require(): Failed opening required 'culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:44:44 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:44:44 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:44:44 America/New_York] PHP Fatal error:  require(): Failed opening required 'culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:49:06 America/New_York] PHP Warning:  include_once(/home/yupkaypv/institutojuridico.edu.pe/pagotest./requests/library/Requests.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 4
+[06-Apr-2020 03:49:06 America/New_York] PHP Warning:  include_once(): Failed opening '/home/yupkaypv/institutojuridico.edu.pe/pagotest./requests/library/Requests.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 4
+[06-Apr-2020 03:49:06 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Requests' not found in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 5
+[06-Apr-2020 03:52:37 America/New_York] PHP Warning:  require(./culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 03:52:37 America/New_York] PHP Warning:  require(./culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 03:52:37 America/New_York] PHP Fatal error:  require(): Failed opening required './culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 10:40:12 America/New_York] PHP Warning:  require(./culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 10:40:12 America/New_York] PHP Warning:  require(./culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 10:40:12 America/New_York] PHP Fatal error:  require(): Failed opening required './culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 10:42:45 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 10:42:45 America/New_York] PHP Warning:  require(culqi/lib/culqi.php): failed to open stream: No such file or directory in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6
+[06-Apr-2020 10:42:45 America/New_York] PHP Fatal error:  require(): Failed opening required 'culqi/lib/culqi.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/yupkaypv/institutojuridico.edu.pe/pagotest/proceso.php on line 6

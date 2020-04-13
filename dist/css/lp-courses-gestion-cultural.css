@@ -593,6 +593,8 @@ section .investment-title {
   background-color: #1C130E;
   color: #ffffff;
   padding: .4rem 0;
+  margin-top: 2rem;
+  padding: .8rem 0;
 }
 
 section .row-staff-teacher img {
