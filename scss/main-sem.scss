@@ -77,7 +77,7 @@
       color: $color-white;
       font-size: 2.8rem;
       span {
-        background-color: $color-secondary-fam;
+        background-color: $color-red;
         padding: 0.5rem;
         border-radius: 5px;
       }
@@ -140,7 +140,7 @@
     }
   }
   .btn-primary {
-    background-color: $color-secondary-ad;
+    background-color: $color-red;
     padding: 1.2rem 0;
     font-size: 1.6rem;
     font-weight: 500;
@@ -148,10 +148,11 @@
     &:hover {
       color: $color-black;
       font-weight: 500;
-      border: 1px solid $color-secondary-ad;
+      border: 1px solid $color-red;
     }
   }
 }
+
 
 
 
@@ -206,6 +207,7 @@
       padding: .5rem 2rem;
       &:hover {
         color: black;
+        border: 1px solid $color-red;
       }
     }
     
@@ -253,7 +255,7 @@
 
   .programs {
 
-    height: 280px;
+    height: 300px;
   }
   a {
     text-decoration: none;
@@ -308,12 +310,16 @@
      padding: .5rem .4rem;
      color: $color-black;
      li {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 500;
      }
     }
     .fas {
       margin-right: .2rem;
+    }
+    span {
+      border: solid 1px $color-red;
+      padding: .2rem;
     }
   }
   .descuento {
@@ -331,6 +337,7 @@
       font-size: 1.6rem;
       &:hover {
         color: $color-black;
+        border: 1px solid $color-red;
       }
     }
   }

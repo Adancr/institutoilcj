@@ -622,7 +622,7 @@ body {
 }
 
 .form-contact .date .clock span {
-  background-color: #950101;
+  background-color: #FF0000;
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -711,7 +711,7 @@ body {
 }
 
 .form-contact .btn-primary {
-  background-color: #950101;
+  background-color: #FF0000;
   padding: 1.2rem 0;
   font-size: 1.6rem;
   font-weight: 500;
@@ -721,7 +721,7 @@ body {
 .form-contact .btn-primary:hover {
   color: #000000;
   font-weight: 500;
-  border: 1px solid #950101;
+  border: 1px solid #FF0000;
 }
 
 .container-benefits {
@@ -792,6 +792,7 @@ body {
 
 .capacidad-limitada .item a:hover {
   color: black;
+  border: 1px solid #FF0000;
 }
 
 .ponente {
@@ -839,7 +840,7 @@ body {
 }
 
 .swiper-slide .programs {
-  height: 280px;
+  height: 300px;
 }
 
 .swiper-slide a {
@@ -884,12 +885,17 @@ body {
 }
 
 .swiper-slide .date-price ul li {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .swiper-slide .date-price .fas {
   margin-right: .2rem;
+}
+
+.swiper-slide .date-price span {
+  border: solid 1px #FF0000;
+  padding: .2rem;
 }
 
 .swiper-slide .descuento {
@@ -916,6 +922,7 @@ body {
 
 .swiper-slide .box-btn .btn:hover {
   color: #000000;
+  border: 1px solid #FF0000;
 }
 
 .footer {
