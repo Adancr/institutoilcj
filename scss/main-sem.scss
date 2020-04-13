@@ -321,6 +321,10 @@
       border: solid 1px $color-red;
       padding: .2rem;
     }
+
+    @media (max-width: 667px) {
+      display: none;
+    }
   }
   .descuento {
     color: $color-red;

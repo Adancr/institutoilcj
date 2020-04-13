@@ -898,6 +898,12 @@ body {
   padding: .2rem;
 }
 
+@media (max-width: 667px) {
+  .swiper-slide .date-price {
+    display: none;
+  }
+}
+
 .swiper-slide .descuento {
   color: #FF0000;
   font-weight: 600;
