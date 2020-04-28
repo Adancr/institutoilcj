@@ -1,313 +1,492 @@
- @import "variables";
- @import "globals";
- @import "buttons";
- @import "wpsupport";
- /********************
+@import "variables";
+@import "globals";
+@import "buttons";
+@import "wpsupport";
+/********************
 ** HEADER
 *********************/
- 
- body {
-     overflow: hidden;
-     overflow-y: scroll;
- }
- 
- nav {
-     .pb-navbar {
-         position: absolute;
-         background: $color-white !important;
-         top: 0;
-         left: 0;
-         z-index: 100;
-         width: 100%;
-         // font-family: "Montserrat", Arial, sans-serif;
-     }
-     .logo {
-         max-width: 6rem;
-         img {
-             width: 100%;
-         }
-     }
-     .wp {
-         background: $color-wp;
-         color: $color-white !important;
-         font-weight: bold;
-         border-radius: 2px;
-     }
- }
- /***************
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+nav {
+  .pb-navbar {
+    position: absolute;
+    background: $color-white !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    // font-family: "Montserrat", Arial, sans-serif;
+  }
+  .logo {
+    max-width: 6rem;
+    img {
+      width: 100%;
+    }
+  }
+  .wp {
+    background: $color-wp;
+    color: $color-white !important;
+    font-weight: bold;
+    border-radius: 2px;
+  }
+}
+/***************
 *section principal
-*****************/ 
- 
- .title-p {
-     background-image: url(../../images/back-penal.jpg);
-     background-size: cover;
-     object-fit: cover;
-     .pt-contact {
-         padding-top: 8rem;
-         h1 {
-             font-size: 3rem;
-             @media (max-width: 600px) {
-                font-size: 3rem;
-              }
-         }
-         h3 {
-             font-size: 2.2rem;
-         }
-     }
-     .title-p-child {
-         align-items: center;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-     }
-     .certifica {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         span {
-             font-size: 1.8rem;
-         }
-         img {
-             width: 100px;
-         }
-     }
- }
- /*************
+*****************/
+
+.title-p {
+  background-image: url(../../images/curso-teoria-del-delito.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center center;
+  .pt-contact {
+    padding-top: 8rem;
+    h1 {
+      font-size: 3rem;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+    h3 {
+      font-size: 2.2rem;
+    }
+  }
+  .title-p-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .certifica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-size: 1.8rem;
+    }
+    img {
+      width: 100px;
+    }
+  }
+}
+.title-p2 {
+  background-image: url(../../images/bg_curso_penal.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, .5);
+  }
+  .pt-contact {
+    padding-top: 8rem;
+    
+    h1 {
+      font-size: 3rem;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+    h3 {
+      font-size: 2.2rem;
+    }
+  }
+  .title-p-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .certifica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-size: 1.8rem;
+    }
+    img {
+      width: 100px;
+    }
+  }
+}
+/*************
 ** form contact
 ***************/
- 
- .form-contact {
-     background-color: $color-white;
-     padding: 1.8rem;
-     border-radius: 6px;
-     h2 {
-         font-size: 2.2rem !important;
-         text-align: center;
-         color: $color-primary-penal;
-         span {
-            color: $color-red;
+
+.form-contact {
+  background-color: #ffffff9c;
+  padding: 1.8rem;
+  border-radius: 6px;
+  h2 {
+    font-size: 2.2rem !important;
+    text-align: center;
+    color: #000;
+    span {
+      color: #007bff;
+    }
+  }
+  .fas {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+  }
+  .form-group {
+    display: flex;
+    input {
+      position: relative;
+      flex: 1 1 auto;
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      &::placeholder {
+        font-size: 1.3rem;
+      }
+    }
+    .form-control {
+      display: block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 500 !important;
+      line-height: 1.5;
+      color: $color-footer;
+      background-color: $color-white;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .p-height-50 {
+      height: 4rem !important;
+    }
+    .input-group-prepend {
+      margin-right: -1px;
+    }
+  }
+  .btn-primary {
+    background-color: #007bff;
+    padding: 1.2rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    &:hover {
+      color: $color-black;
+      font-weight: 500;
+    }
+  }
+}
+
+section .row-start-date-title {
+  padding: 1.6rem 0;
+  background-color: #007bff;
+  color: $color-white;
+  h2 {
+    font-size: 3.2rem !important;
+  }
+}
+
+div .start-date-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // align-items: center;
+  border: 1px solid #007bff;
+  padding: 0.8rem;
+  text-align: center;
+  h6 {
+    font-size: 1.4rem;
+  }
+  .fas {
+    padding-bottom: 1.8rem;
+    color: #007bff;
+    font-size: 4rem;
+  }
+  .date-details {
+    background-color: #007bff;
+    padding: 0.5rem 6rem;
+    color: $color-white;
+    font-size: 1.3rem;
+  }
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+/*****************************
+*landing curso ley comunidades
+******************************/
+.bg {
+  background-color: #f1f1f1;
+}
+.title-curso {
+  background-color: #ffffff9c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  h2 {
+    color: black;
+    font-size: 2.4rem;
+  }
+  .h3 {
+    margin-top: 1.2rem;
+  }
+  ol li {
+    font-size: 1.7rem;
+  }
+  ol p {
+    border: 1px solid #007bff;
+    display: inline-block;
+    padding: 2px 3px;
+  }
+  @media (max-width: 667px) {
+    margin: 0 15px;
+  }
+}
+
+.acerca {
+  margin-top: 2rem;
+  h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}
+
+.wrap-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem 1rem;
+  margin: 20px 0;
+  .fas {
+    color: #007bff;
+  }
+  .item-info {
+    background-color: white;
+    padding: 10px 10px;
+    h3 {
+      margin-bottom: 10px;
+    }
+    .cuentas-banco {
+      margin-top: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+    .cuenta-bcp {
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .tarjeta {
+    margin: 5px 0;
+    .btn-card {
+      display: flex;
+      justify-content: center;
+      a {
+        display: inline-block;
+        background-color: #007bff;
+        font-size: 1.6rem;
+        text-align: center;
+        border: none;
+        margin: 0 5px;
+        &:hover {
+          color: black;
+          border: 1px solid #007bff;
         }
-     }
-     .fas {
-         font-size: 1.6rem;
-         padding: .3rem;
-     }
-     .form-group {
-         display: flex;
-         input {
-             position: relative;
-             flex: 1 1 auto;
-             border-top-right-radius: 5px !important;
-             border-bottom-right-radius: 5px !important;
-             border-top-left-radius: 0 !important;
-             border-bottom-left-radius: 0 !important;
-             &::placeholder {
-                font-size: 1.3rem;
-             }
-         }
-         .form-control {
-             display: block;
-             width: 100%;
-             height: calc(2.25rem + 2px);
-             padding: .375rem .75rem;
-             font-size: 1rem;
-             font-weight: 500 !important;
-             line-height: 1.5;
-             color: $color-footer;
-             background-color: $color-white;
-             background-clip: padding-box;
-             border: 1px solid #ced4da;
-             border-top-right-radius: .25rem;
-             border-bottom-right-radius: .25rem;
-             border-bottom-left-radius: 0 !important;
-             border-top-left-radius: 0 !important;
-             transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-         }
-         .p-height-50 {
-             height: 4rem !important;
-         }
-         .input-group-prepend {
-             margin-right: -1px;
-         }
-     }
-     .btn-primary {
-         background-color: $color-secondary;
-         padding: 1.2rem 0;
-         font-size: 1.6rem;
-         font-weight: 500;
-         &:hover {
-             color: $color-black;
-             font-weight: 500;
-         }
-     }
- }
- 
- section .row-start-date-title {
-     padding: 1.6rem 0;
-     background-color: $color-primary-penal;
-     color: $color-white;
-     h2 {
-         font-size: 3.2rem !important;
-     }
- }
- 
- div .start-date-details {
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     // align-items: center;
-     border: 1px solid $color-secondary;
-     padding: .8rem;
-     text-align: center;
-     h6 {
-         font-size: 1.4rem;
-     }
-     .fas {
-         padding-bottom: 1.8rem;
-         color: $color-secondary;
-         font-size: 4rem;
-     }
-     .date-details {
-         background-color: $color-primary-penal;
-         padding: .5rem 6rem;
-         color: $color-white;
-         font-size: 1.3rem;
-     }
- }
- /******************
+      }
+    }
+  }
+}
+
+.cpanel {
+  padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+}
+
+/******************
 *presentacion curso
 *******************/
- 
- .presentation-course {
-     padding: 1.6rem 0;
-     p {
-         text-align: justify;
-     } 
-     img {
-         width: 100%;
-     }
-     h3 {
-         display: flex;
-         justify-content: flex-start;
-         align-items: baseline;
-         position: relative;
-         color: $color-primary-penal;
-         font-size: 2.6rem;
-         &::before {
-             content: "";
-             display: block;
-             background-color: $color-primary-penal;
-             height: 1.8rem;
-             width: .8rem;
-             margin-right: .6rem;
-         }
-     }
- }
- /* temary course */
- 
- section .curriculum-wraper {
-     border: 1px solid #ced4da70;
-     padding: 1rem 1rem;
-     border-radius: 4px;
-     h4 {
-         color: $color-primary-penal;
-         font-size: 2rem;
-     }
-     ul {
-         margin-bottom: .6rem;
-         li {
-             background-color: #f4f4f4;
-             padding: 1rem;
-             margin: .5rem 0;
-         }
-     }
- }
- 
- .curriculum-heading {
-     display: flex;
-     justify-content: space-between;
-     h3 {
-         display: flex;
-         justify-content: flex-start;
-         align-items: baseline;
-         position: relative;
-         color: $color-primary-penal;
-         font-size: 2.6rem;
-         &::before {
-             content: "";
-             display: block;
-             background-color: $color-primary-penal;
-             height: 1.8rem;
-             width: .8rem;
-             margin-right: .6rem;
-         }
-     }
- }
- /* section beneficios  */
- 
- .benefits {
-     margin: .8rem 0;
-     .benefits-title {
-         background-color: $color-primary-penal;
-         color: $color-white;
-         padding: .6rem 0;
-         text-align: center;
-     }
-     .row-benefits {
-         margin: 3rem 0;
-         text-align: center;
-     }
-     .benefits-items {
-         border: 1px solid #72B7DB;
-         padding: .8rem;
-         // height: 17rem;
-         border-radius: 3px;
-         h4 {
-             margin-top: 1.2rem;
-             font-size: 1.8rem;
-             font-weight: 500;
-         }
-     }
- }
- /* Staff docentes  */
- 
- .row-staff-teacher {
-     padding: 2rem 0;
- }
- 
- section .staff-teacher-title,
- section .investment-title {
-     text-align: center;
-     background-color: $color-primary-penal;
-     color: $color-white;
-     padding: .4rem 0;
- }
- 
- section .row-staff-teacher img {
-     border-radius: 50%;
-     box-shadow: 0 5px 5px 0 rgba(0, 123, 255, .25);
- }
+
+.presentation-course {
+  padding: 1.6rem 0;
+  p {
+    text-align: justify;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    color: #007bff;
+    font-size: 2.6rem;
+    &::before {
+      content: "";
+      display: block;
+      background-color: #007bff;
+      height: 1.8rem;
+      width: 0.8rem;
+      margin-right: 0.6rem;
+    }
+  }
+}
+/* temary course */
+
+section .curriculum-wraper {
+  border: 1px solid #ced4da70;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  h4 {
+    color: #007bff;
+    font-size: 2rem;
+  }
+  ul {
+    margin-bottom: 0.6rem;
+    li {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.curriculum-heading {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    color: #007bff;
+    font-size: 2.6rem;
+    &::before {
+      content: "";
+      display: block;
+      background-color: #007bff;
+      height: 1.8rem;
+      width: 0.8rem;
+      margin-right: 0.6rem;
+    }
+  }
+}
+/* section beneficios  */
+
+.benefits {
+  margin: 0.8rem 0;
+  .benefits-title {
+    background-color: #007bff;
+    color: $color-white;
+    padding: 0.6rem 0;
+    text-align: center;
+  }
+  .row-benefits {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  .benefits-items {
+    border: 1px solid #72b7db;
+    padding: 0.8rem;
+    // height: 17rem;
+    border-radius: 3px;
+    h4 {
+      margin-top: 1.2rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}
+/* Staff docentes  */
+
+.row-staff-teacher {
+  padding: 2rem 0;
+}
+
+section .staff-teacher-title,
+section .investment-title {
+  text-align: center;
+  background-color: #007bff;
+  color: $color-white;
+  padding: 0.4rem 0;
+}
+
+section .row-staff-teacher img {
+  border-radius: 50%;
+  box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+}
 
 /* ACORDION */
 /* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 1rem 1rem;
-    width: 100%;
-    // text-align: left;
-    border-bottom: solid 1px #ddd;
-    outline: none;
-    transition: 0.4s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  width: 100%;
+  // text-align: left;
+  border-bottom: solid 1px #ddd;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fas {
+  color: #007bff;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+button.accordion.active,
+button.accordion:hover {
+  background-color: #ddd;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -318,109 +497,144 @@ button.accordion.active, button.accordion:hover {
 } */
 
 div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 /* icons */
 button.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f067";
+  position: relative; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  color: #007bff;
+  float: right;
+  margin-left: 5px;
 }
 
 button.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\f7a4"; /* Unicode character for "minus" sign (-) */
 }
 
+/*  investment  */
 
- /*  investment  */
- 
- section {
-     .row-investment {
-         display: flex;
-         justify-content: center;
-         margin: 3rem 0;
-         ul li h5 {
-             font-weight: bold;
-         }
-     }
-     .single-table {
-         border: 1px solid #72B7DB;
-         position: relative;
-         overflow: hidden;
-         h3 {
-             padding: .8rem 0;
-             background-color: $color-primary-penal;
-             color: $color-white;
-             margin-bottom: 0;
-         }
-         .plan-header-offer {
-             //  display: none;
-             position: absolute;
-             width: 120px;
-             background-color: $color-offer;
-             top: 12px;
-             right: -32px;
-             transform: rotate(45deg);
-             font-size: 1.4rem;
-             font-weight: bold;
-             color: $color-white;
-             p {
-                 margin: 0;
-                 text-shadow: 1px 1px 1px #000;
-             }
-         }
-         ul {
-             padding: 1.2rem 0;
-             margin-bottom: 0;
-         }
-         .btn-primary {
-             background-color: $color-secondary;
-             font-size: 1.4rem;
-             border: 1px solid $color-secondary;
-             &:hover {
-                 color: $color-black;
-                 font-weight: bold;
-             }
-         }
-         h3 {
-             font-size: 2.3rem;
-         }
-     }
-     .plan-header-price {
-         background-color: $color-primary-penal;
-         color: $color-white;
-         padding: .8rem 0;
-         h4 {
-             font-size: 2.5rem;
-         }
-         h5 {
-             font-size: 2rem;
-         }
-         ul li h5 {
-             font-weight: bold;
-         }
-     }
- }
- /*  butoon compra  */
- 
- section .buy a,
- section .info-wp a {
-     width: 70%;
-     margin: .8rem 0;
-     padding: .8rem 0;
-     font-weight: bold;
- }
- /* footer  */
- 
- footer {
-     background-color: $color-footer;
-     color: $color-white;
-     display: flex;
-     align-items: center;
- }
+section {
+  .row-investment {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    ul li h5 {
+      font-weight: bold;
+    }
+  }
+  .single-table {
+    border: 1px solid #72b7db;
+    position: relative;
+    overflow: hidden;
+    h3 {
+      padding: 0.8rem 0;
+      background-color: #007bff;
+      color: $color-white;
+      margin-bottom: 0;
+    }
+    .plan-header-offer {
+      //  display: none;
+      position: absolute;
+      width: 120px;
+      background-color: $color-offer;
+      top: 12px;
+      right: -32px;
+      transform: rotate(45deg);
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $color-white;
+      p {
+        margin: 0;
+        text-shadow: 1px 1px 1px #000;
+      }
+    }
+    ul {
+      padding: 1.2rem 0;
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      font-size: 1.4rem;
+      border: 1px solid #007bff;
+      &:hover {
+        color: $color-black;
+        font-weight: bold;
+      }
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
+  }
+  .plan-header-price {
+    background-color: #007bff;
+    color: $color-white;
+    padding: 0.8rem 0;
+    h4 {
+      font-size: 2.5rem;
+    }
+    h5 {
+      font-size: 2rem;
+    }
+    ul li h5 {
+      font-weight: bold;
+    }
+  }
+}
+/*  butoon compra  */
+
+section .buy a,
+section .info-wp a {
+  width: 70%;
+  margin: 0.8rem 0;
+  padding: 0.8rem 0;
+  font-weight: bold;
+}
+/* footer  */
+/*  section contact */
+.title-contacts {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+.wrap-contacts {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  text-align: center;
+  .icon-contacts {
+    .fas {
+      font-size: 5rem;
+      color: #007bff;
+      padding-bottom: 1.2rem !important;
+    }
+    h4 {
+      // font-weight: bold;
+      font-size: 2.5rem;
+      padding-bottom: 0.2rem;
+    }
+  }
+  @media (max-width: 425px) {
+    padding: 1.6rem 0;
+    flex-direction: column;
+    .icon-contacts:nth-child(2) {
+      padding: 2.8rem 0;
+    }
+  }
+}
+
+footer {
+  background-color: $color-footer;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+}

@@ -85,7 +85,7 @@ input {
   border-color: #006db3;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   border-color: #006db3;
 }
 
@@ -353,6 +353,11 @@ header .child-attributes-header .widget_text .title-icon-date {
 
 .blok-slider h1 {
   font-size: 4rem;
+}
+
+.blok-slider h2 {
+  line-height: 1.3;
+  text-align: center;
 }
 
 .blok-slider h4,

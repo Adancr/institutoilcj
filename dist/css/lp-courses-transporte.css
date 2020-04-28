@@ -85,7 +85,7 @@ input {
   border-color: #006db3;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   border-color: #006db3;
 }
 
