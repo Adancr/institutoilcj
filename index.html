@@ -20,28 +20,32 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./dist/css/reset.css">
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="icon" type="image/png" href="./images/favicon_32.png" zizes="32x32">
+  <link rel="icon" type="image/png" href="./images/favicon_64.png" zizes="32x32">
+  <link rel="stylesheet" href="./dist/css/main.css?v1.2">
   <script src="https://kit.fontawesome.com/4f57ccf18e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
   <title>Diplomados en Derecho Administrativo penal civil | Instituto ILCJ</title>
 
   <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1060880320944459');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1060880320944459&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1060880320944459');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1060880320944459&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
   <!-- <script src="./dist/js/main.js"></script> -->
 </head>
 
@@ -63,20 +67,23 @@
               <li class="nav-item active">
                 <a class="nav-link" href="">INICIO</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item active">
+                <a class="nav-link" href="#cursos">CURSOS</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   NOSOTROS
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">¿Quienes Somos?</a>
+                  <a class="dropdown-item" href="./nosotros/">¿Quienes Somos?</a>
                   <a class="dropdown-item" href="#">Convenios</a>
-                  <!-- <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a> -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="./diplomado/">DIPLOMADOS</a>
+                <a class="nav-link" href="#70descuento">DIPLOMADOS</a>
               </li>
               <!-- <li>
                 <a href="">SERVICIOS</a>
@@ -116,38 +123,6 @@
       </div>
     </div>
     <div class="container">
-      <!-- servicios  -->
-      <!-- <section class="services">
-        <article>
-          <figure>
-            <img src="./images/img_diplomados.jpg" alt="">
-          </figure>
-          <h3>Diplomado Especilaizados</h3>
-          <p>Los Diplomados son programas de alta especialización
-            que duran 8 semanas, la certificación es por 240 horas
-            y se desarrollan en forma presencial y Virtual
-            (transmisión en vivo HD).</p>
-          <a class="btn" href="">Más información</a>
-        </article>
-        <article>
-          <figure>
-            <img src="./images/img_diplomados.jpg" alt="">
-          </figure>
-          <h3>Cursos Especilaizados</h3>
-          <p>Nuestros cursos se desarrollan en forma presencial y virtual y tiene un duración de 2 a 4 semanas
-            (transmisión en Vivo HD).</p>
-          <a class="btn" href="">Más información</a>
-        </article>
-        <article>
-          <figure>
-            <img src="./images/img_diplomados.jpg" alt="">
-          </figure>
-          <h3>Semianrios Especilaizados</h3>
-          <p>Nuestros seminarios se desarrollan en forma presencial ingreso libre, certificacion opcional y virtual
-            tiene un costo obligatorio, Certificación con 12hrs acad (transmisión en Vivo HD)</p>
-          <a class="btn" href="">Más información</a>
-        </article>
-      </section> -->
 
       <!-- beneficos  -->
       <section class="benefits">
@@ -196,24 +171,203 @@
     <div class="bg-courses">
       <div class="container">
         <section class="courses">
-          <h2 class="courses-title courses-title-virtual">DIPLOMADOS <span></span> <span>Presencial y Virtual
-              ¡Inscríbete ahora!</span></h2>
+          <!-- <h2 class="courses-title courses-title-virtual">DIPLOMADOS <span></span> <span>Presencial y Virtual
+              ¡Inscríbete ahora!</span></h2> -->
 
+          <!-- inicio cursos online  -->
+          <h2 id="cursos" class="courses-title courses-title-virtual">CURSOS <span></span> <span>100% Online, Sin
+              Horarios
+              ¡Inscríbete ahora!</span></h2>
+          <div class="container-courses">
+
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL (vivo)</span>
+              </div>
+              <figure>
+                <img src="./images/pt-saneamiento-comunidades.jpg" alt="">
+              </figure>
+              <h3>Curso de Alta Especialización:
+                Saneamiento Físico Legal de Predios - Comunidades Campesinas</h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <li><i class="fas fa-calendar-alt"></i>Inicio: 21 de Mayo [04:00pm]</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>en [Vivo por ZOOM]</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 60hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">50% descuento</span></p>
+                  <p><span class="valor-actual"> S/100.00 </span> <span class="valor-anterior">S/200.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/saneamiento-fisico-legal-predios-comunidades-campesinas/" class="btn">Más
+                información</a>
+            </article>
+
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL (vivo)</span>
+              </div>
+              <figure>
+                <img src="./images/pt-ncpp.jpg" alt="">
+              </figure>
+              <h3>Curso: Ley de Comunidades Campesinas, Saneamiento Físico Legal, Recursos Naturales y el C169 de la OIT
+              </h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <li><i class="fas fa-calendar-alt"></i>Inicio: 14 mayo [03:00pm]</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>en [Vivo por ZOOM]</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 60hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">20% descuento</span></p>
+                  <p><span class="valor-actual"> S/80.00 </span> <span class="valor-anterior">S/100.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/ley-comunidades-campesinas/" class="btn">Más información</a>
+            </article>
+
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL (vivo)</span>
+              </div>
+              <figure>
+                <img src="./images/ps-curso-prescripcion.jpg" alt="">
+              </figure>
+              <h3>Curso Especializado: Prescripción Adquisitiva de Dominio</h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <li><i class="fas fa-calendar-alt"></i>Inicio: 14 mayo [05:00pm]</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>en [Vivo por ZOOM]</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 24hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">50% descuento</span></p>
+                  <p><span class="valor-actual"> S/50.00 </span> <span class="valor-anterior">S/100.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/prescripcion-adquisitiva-dominio/" class="btn">Más información</a>
+            </article>
+
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL (vivo)</span>
+              </div>
+              <figure>
+                <img src="./images/pt-posesion.jpg" alt="">
+              </figure>
+              <h3>Curso Especializado: Posesión, Propiedad y Desalojo</h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <li><i class="fas fa-calendar-alt"></i>Inicio: 12 mayo [06:30pm]</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>en [Vivo por ZOOM]</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 24hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">50% descuento</span></p>
+                  <p><span class="valor-actual"> S/50.00 </span> <span class="valor-anterior">S/100.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/posesion-propiedad-desalojo/" class="btn">Más información</a>
+            </article>
+
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL (vivo)</span>
+              </div>
+              <figure>
+                <img src="./images/pt-ncpp.jpg" alt="">
+              </figure>
+              <h3>Curso:
+                La Teoría del Delito y la Litigación Oral en el NCPP
+              </h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <li><i class="fas fa-calendar-alt"></i>Inicio: 18 mayo [06:30pm]</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>en [Vivo por ZOOM]</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 24hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">40% descuento</span></p>
+                  <p><span class="valor-actual"> S/60.00 </span> <span class="valor-anterior">S/100.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/teoria-delito-y-litigacion-oral-en-el-ncpp/" class="btn">Más
+                información</a>
+            </article>
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
+              <figure>
+                <img src="./images/pt-ncpp.jpg" alt="">
+              </figure>
+              <h3>Curso:
+                Actualización en el Nuevo Código Procesal Penal
+              </h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Duracion: 2 di</li> -->
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 24hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">60% descuento</span></p>
+                  <p><span class="valor-actual"> S/40.00 </span> <span class="valor-anterior">S/100.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/actualizacion-en-el-nuevo-codigo-procesal-penal/" class="btn">Más
+                información</a>
+            </article>
+            <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
+              <figure>
+                <img src="./images/pt-curso-litigacion.jpg" alt="">
+              </figure>
+              <h3>Curso de Especialización en:
+                Técnicas de Litigación Oral en el NCPP</h3>
+              <div class="date-price">
+                <ul class="firt-ul">
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: 04 de mayo [05:00pm]</li> -->
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-award"></i>Certificación: 24hrs académicas</li>
+                </ul>
+                <div class="precio">
+                  <p><span class="descuento">50% descuento</span></p>
+                  <p><span class="valor-actual"> S/50.00 </span> <span class="valor-anterior">S/100.00</span></p>
+                </div>
+              </div>
+              <a target="_blank" href="./curso/tecnicas-de-litigacion-oral-en-el-ncpp/" class="btn">Más información</a>
+            </article>
+          </div>
+
+          <!-- fin cursos online  -->
+
+
+
+          <h2 id="70descuento" class="courses-title courses-title-virtual">DIPLOMADOS <span></span> <span>100% Online,
+              Sin Horarios
+              ¡Inscríbete ahora!</span></h2>
           <div class="container-courses">
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-comunidades.jpg" alt="">
               </figure>
               <h3>Ley de Comunidades Campesinas, Saneamiento Físico Legal, Recursos Naturales y el C169 de la OIT</h3>
               <div class="date-price">
                 <ul class="firt-ul">
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: 02 de Abril 2020</li>
-                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Presencial y Virtual</li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">30% descuento</span></p>
-                  <p><span class="valor-actual"> S/350.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/ley-de-comunidades-campesinas-saneamiento-fisico-legal-recursos-naturales-y-el-c169-de-la-oit/"
@@ -221,248 +375,272 @@
             </article>
             <article>
               <figure>
+                <div class="modalidad">
+                  <span>VIRTUAL</span>
+                </div>
                 <img src="./images/d-familia.jpg" alt="">
               </figure>
               <h3>Violencia Contra la Mujer, Integrantes del Grupo Familiar y Feminicidio</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: 06 de Abril 2020</li>
-                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Presencial y Virtual</li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: 06 de Abril 2020</li> -->
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">30% descuento</span></p>
-                  <p><span class="valor-actual"> S/350.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/violencia-contra-mujer-integrantes-grupo-familiar/" class="btn">Más información</a>
             </article>
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-administrativo.jpg" alt="">
               </figure>
               <h3>Derecho Administrativo y Procedimiento Administrativo Sancionador </h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: 11 de Abril 2020</li>
-                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Presencial y Virtual</li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: 11 de Abril 2020</li> -->
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">30% descuento</span></p>
-                  <p><span class="valor-actual"> S/350.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/derecho-administrativo/" class="btn">Más información</a>
             </article>
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-intercultural.jpg" alt="">
               </figure>
               <h3>Gestión Pública Intercultural </h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: 14 de Abril 2020</li>
-                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Presencial y Virtual</li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: 14 de Abril 2020</li> -->
+                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">30% descuento</span></p>
-                  <p><span class="valor-actual"> S/350.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/gestion-publica-intercultural/" class="btn">Más información</a>
             </article>
-            <!-- <article>
-
-              <figure>
-                <img src="./images/d-fabrica.jpg" alt="">
-              </figure>
-              <h3>Habilitaciones Urbanas y Declaratoria de Fábrica </h3>
-              <div class="date-price">
-                <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: 17 de Abril 2020</li>
-                  <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Presencial y Virtual</li>
-                  <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
-                </ul>
-                <div class="precio">
-                  <p><span class="descuento">30% descuento</span></p>
-                  <p><span class="valor-actual"> S/350.00 </span> <span class="valor-anterior">S/500.00</span></p>
-                </div>
-              </div>
-              <a href="" class="btn">Más información</a>
-            </article> -->
-
-          </div>
-          <h2 class="courses-title courses-title-virtual">DIPLOMADOS <span></span> <span>100% Online, Sin Horarios
-              ¡Inscríbete ahora!</span></h2>
-          <div class="container-courses">
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-transporte.jpg" alt="">
               </figure>
               <h3>Derecho de Transporte y PAS en Infrancciones de Tránsito</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/derecho-transporte-accidentes-transito/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-penal.jpg" alt="">
               </figure>
               <h3>Derecho Penal y Procesal Penal en el NCPP</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/derecho-penal/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-civil.jpg" alt="">
               </figure>
               <h3>Derecho Civil y Procesal Civil</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/derecho-civil/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-saneamiento.jpg" alt="">
               </figure>
               <h3>Saneamiento Físico Legal de Predios Urbanos y Rurales</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/saneamiento-fisico-legal-predios/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-gestion.jpg" alt="">
               </figure>
               <h3>Gestión Pública y Derecho Municipal</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/gestion-publica-derecho-municipal/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-contrataciones.jpg" alt="">
               </figure>
               <h3>Contrataciones con el Estado</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/contrataciones-con-el-estado/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-tributario.jpg" alt="">
               </figure>
               <h3>Derecho Tributario y Planificación Fiscal</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/derecho-tributario-planificacion-fiscal/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-aduanero.jpg" alt="">
               </figure>
               <h3>Derecho Aduanero y Comercio Exterior</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>Virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/derecho-aduanero-comercio-exterior/" class="btn">Más información</a>
             </article>
 
             <article>
+              <div class="modalidad">
+                <span>VIRTUAL</span>
+              </div>
               <figure>
                 <img src="./images/d-comunidades.jpg" alt="">
               </figure>
               <h3>Ley de Comunidades Campesinas y Recursos Naturales</h3>
               <div class="date-price">
                 <ul>
-                  <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>virtual</strong></li>
+                  <li><i class="fas fa-calendar-alt"></i>Duración: 1 mes</li>
+                  <!-- <li><i class="fas fa-calendar-alt"></i>Inicio: <strong>virtual</strong></li> -->
                   <li><i class="fas fa-chalkboard-teacher"></i>Modalidad: Virtual</li>
                   <li><i class="fas fa-award"></i>Certificación: 240hrs académicas</li>
                 </ul>
                 <div class="precio">
-                  <p><span class="descuento">40% descuento</span></p>
-                  <p><span class="valor-actual"> S/300.00 </span> <span class="valor-anterior">S/500.00</span></p>
+                  <p><span class="descuento">70% descuento</span></p>
+                  <p><span class="valor-actual"> S/150.00 </span> <span class="valor-anterior">S/500.00</span></p>
                 </div>
               </div>
               <a href="./diplomado/ley-comunidades-campesinas/" class="btn">Más información</a>
@@ -471,55 +649,84 @@
           </div>
 
         </section>
+
       </div>
     </div>
+
+    <div class="convenios container">
+      <h2>CONVENIOS INTERINSTITUCIONALES</h2>
+      <p>Nuestros convenios nos ayudan a certificar y avalar nuestras actividades académicas. Asimismo otorgar
+        descuentos especiales.</p>
+      <div class="wrap">
+        <img src="./images/logocac.png" alt="">
+        <img src="./images/logocel.png" alt="">
+      </div>
+    </div>
+
 
   </main>
 
   <!-- footer  -->
   <footer class="footer">
-    <div class="container-footer">
-      <div class="footer-social">
-        <h3>SOCIAL</h3>
-        <div class="icons-social">
-          <p>Nos puede Seguir en: </p>
-          <div class="container-icons">
-            <div>
-              <a href="https://www.facebook.com/instituto.ilcj/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/instituto.ilcj/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div>
-              <a href="https://twitter.com/instituto_ilcj" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div>
-              <a href="https://www.youtube.com/channel/UCP9dWycDvV8UNvhvtuvKhNQ?view_as=subscriber" target="_blank"><i
-                  class="fab fa-youtube"></i></a>
+    <div class="container">
+      <div class="container-footer">
+
+        <div class="footer-logo">
+          <img src="./images/logo-ilcj-white.png" style="width: 140px;" alt="logo ilcj">
+          <p class="title-ilcj">Instituto Latinoamericano de Capacitaciones Jurídicas (ILCJ)</p>
+        </div>
+        <div class="footer-contact">
+          <h3>CONTACTO</h3>
+          <p><span class="flaticon-map"></span> Jr. Manuel Segura 142 - Lince</p>
+          <p><span class="flaticon-phone"></span> 989 830 042 / 01 6993990</p>
+          <p><span class="flaticon-mail"></span> ilcj@institutojuridico.edu.pe</p>
+        </div>
+        <div class="footer-navegation">
+          <h3>NAVEGACIÓN</h3>
+          <ul>
+            <li>
+              <a href="#70descuento">Diplomados</a>
+            </li>
+            <li>
+              <a href="#70descuento">Servicios</a>
+            </li>
+            <li>
+              <a href="#cursos">Cursos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>SOCIAL</h3>
+          <div class="icons-social">
+            <p>Nos puede Seguir en: </p>
+            <div class="container-icons">
+              <div>
+                <a href="https://www.facebook.com/instituto.ilcj/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/instituto.ilcj/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div>
+                <a href="https://twitter.com/instituto_ilcj" target="_blank"><i class="fab fa-twitter"></i></a>
+              </div>
+              <div>
+                <a href="https://www.youtube.com/channel/UCP9dWycDvV8UNvhvtuvKhNQ?view_as=subscriber" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-      <div class="footer-navegation">
-        <h3>NAVEGACIÓN</h3>
-        <ul>
-          <li>
-            <a href="">Diplomados</a>
-          </li>
-          <li>
-            <a href="">Servicios</a>
-          </li>
-          <li>
-            <a href="">Cursos</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h3>CONTACTO</h3>
-        <p><span class="flaticon-map"></span> Jr Manuel Segura 142</p>
-        <p><span class="flaticon-phone"></span> 989 830 042 / 01 6993990</p>
-        <p><span class="flaticon-mail"></span> ilcj@institutojuridico.edu.pe</p>
-      </div>
+    </div>
+
+    <div class="medios-pago">
+      <p>Medios de pago:</p>
+      <img src="./images/visa.jpg" alt="logo visa">
+      <img src="./images/mastercard.jpg" alt="logo mastercard">
+      <img src="./images/amex.png" alt="logo american express">
+      <img src="./images/pago.jpg" alt="logo pago efectivo">
+      <img src="./images/ssl.jpg" alt="logo certficado de ssl">
     </div>
     <div class="copyright container">
       <p><small>© Copyright 2020 ILCJ - Todos los derechos reservados.</small></p>

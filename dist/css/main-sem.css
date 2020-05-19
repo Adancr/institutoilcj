@@ -209,7 +209,7 @@ input {
 }
 
 .btn-primary:after {
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f054";
   position: relative;
@@ -259,7 +259,7 @@ input {
 
 .call .fas {
   font-size: 3.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 @media (max-width: 768px) {
@@ -270,7 +270,7 @@ input {
 
 .btn-callme {
   border: #ffffff;
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1rem 1.6rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -284,7 +284,7 @@ input {
 }
 
 .btn-callme span:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /********************
@@ -309,12 +309,12 @@ input {
 
 .services article h3,
 .services article p {
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 .services article a {
   position: absolute;
-  bottom: .8rem;
+  bottom: 0.8rem;
   right: 0;
   background-color: #ffffff;
   color: #004d79;
@@ -329,6 +329,25 @@ input {
   .services {
     padding: 0 1rem;
   }
+}
+
+.about {
+  margin: 30px 0;
+}
+
+.wrap-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.about-item {
+  border: 1px solid #cdcdcd;
+  -webkit-box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+          box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+  padding: 15px 10px;
 }
 
 /* benefits */
@@ -365,7 +384,7 @@ input {
 .benefits .container-benefits img,
 .benefits .container-benefits h3,
 .benefits .container-benefits p {
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -383,11 +402,12 @@ input {
 /* couses */
 .bg-courses {
   background-color: #f1f1f1;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1024px) {
   .bg-courses {
-    padding: 0 1rem;
+    padding: 10px 1rem;
   }
 }
 
@@ -403,7 +423,7 @@ input {
   display: inline-block;
   background-color: #004d79;
   height: 2rem;
-  width: .8rem;
+  width: 0.8rem;
 }
 
 .courses-title-virtual span:nth-child(2) {
@@ -427,6 +447,17 @@ input {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
           box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
+}
+
+.container-courses article .modalidad {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 4px 5px;
+  font-size: 1.4rem;
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {
@@ -492,21 +523,21 @@ input {
 }
 
 .container-courses .precio .descuento {
-  background-color: #FF0000;
+  background-color: #ff0000;
   color: #ffffff;
-  padding: .4rem .2rem;
+  padding: 0.4rem 0.2rem;
   font-size: 1.4rem;
   border-radius: 4px;
 }
 
 .container-courses .precio p {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .container-courses .precio .valor-actual {
   font-weight: 500;
   font-size: 1.8rem;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .container-courses .precio .valor-anterior {
@@ -519,11 +550,35 @@ input {
   left: 4rem;
   right: 4rem;
   border-radius: 3px;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   background-color: #ffffff;
   color: #004d79;
   font-weight: bold;
   font-size: 1.6rem;
+}
+
+.convenios {
+  padding: 30px 0;
+}
+
+.convenios h2 {
+  color: #004d79;
+  text-align: center;
+}
+
+.convenios p {
+  text-align: center;
+}
+
+.convenios .wrap {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body {
@@ -627,7 +682,7 @@ body {
 }
 
 .form-contact .date .clock span {
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -716,7 +771,7 @@ body {
 }
 
 .form-contact .btn-primary {
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1.2rem 0;
   font-size: 1.6rem;
   font-weight: 500;
@@ -726,7 +781,7 @@ body {
 .form-contact .btn-primary:hover {
   color: #000000;
   font-weight: 500;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
 }
 
 .container-benefits {
@@ -797,7 +852,7 @@ body {
 
 .capacidad-limitada .item a:hover {
   color: black;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
 }
 
 .ponente {
@@ -831,7 +886,7 @@ body {
 }
 
 .mas-seminario h2 {
-  color: #FF0000;
+  color: #ff0000;
   font-size: 3rem;
 }
 
@@ -899,7 +954,7 @@ body {
 }
 
 .swiper-slide .date-price span {
-  border: solid 1px #FF0000;
+  border: solid 1px #ff0000;
   padding: .2rem;
 }
 
@@ -910,7 +965,7 @@ body {
 }
 
 .swiper-slide .descuento {
-  color: #FF0000;
+  color: #ff0000;
   font-weight: 600;
   padding: 0 .4rem;
 }
@@ -926,14 +981,14 @@ body {
 }
 
 .swiper-slide .box-btn .btn {
-  background-color: #FF0000;
+  background-color: #ff0000;
   border: none;
   font-size: 1.6rem;
 }
 
 .swiper-slide .box-btn .btn:hover {
   color: #000000;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
 }
 
 .footer {

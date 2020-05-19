@@ -110,7 +110,7 @@ input {
 }
 
 .btn-primary:after {
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f054";
   position: relative;
@@ -160,7 +160,7 @@ input {
 
 .call .fas {
   font-size: 3.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +171,7 @@ input {
 
 .btn-callme {
   border: #ffffff;
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1rem 1.6rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -185,7 +185,7 @@ input {
 }
 
 .btn-callme span:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /******************
@@ -198,12 +198,13 @@ input {
   bottom: 2%;
   left: 1%;
   color: #ffffff;
-  background-color: #25D366;
+  background-color: #25d366;
+  z-index: 100;
   border-radius: 1rem;
 }
 
 .wp-left .fa-whatsapp {
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   font-size: 3.5rem;
 }
 
@@ -239,7 +240,7 @@ nav .logo img {
 }
 
 nav .wp {
-  background: #25D366;
+  background: #25d366;
   color: #ffffff !important;
   font-weight: bold;
   border-radius: 2px;
@@ -325,7 +326,7 @@ nav .wp {
 }
 
 .form-contact h2 span {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .form-contact .fas {

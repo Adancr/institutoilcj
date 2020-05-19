@@ -36,7 +36,7 @@
 }
 
 .btn-primary:after {
-    font-family: 'Font Awesome 5 Pro';
+    font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     content: "\f054";
     position: relative;
@@ -50,7 +50,6 @@
 .btn-primary:focus:after {
     left: 0.3rem;
 }
-
 
 /* Insertar caja blanaca del boton principal */
 
@@ -72,7 +71,7 @@
     left: -20px;
 }
 
-/*button call*/ 
+/*button call*/
 .call {
     display: none;
     position: fixed;
@@ -83,12 +82,12 @@
     border-radius: 15px;
     .fas {
         font-size: 3.5rem;
-        padding: .8rem 1rem;
+        padding: 0.8rem 1rem;
     }
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
         display: inline-block;
     }
-} 
+}
 
 .btn-callme {
     border: $color-white;
@@ -102,8 +101,7 @@
         font-weight: bold;
         font-size: 2rem;
         &:first-child {
-            margin-right: .5rem;
+            margin-right: 0.5rem;
         }
-        
     }
 }

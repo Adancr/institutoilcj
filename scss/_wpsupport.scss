@@ -48,9 +48,8 @@
 //     // display: block;
 //     border-radius: 50%;
 //   }
-  
-// }
 
+// }
 
 // .box-list-chat-wasap {
 //   background-color: #fff;
@@ -184,13 +183,14 @@
   left: 1%;
   color: $color-white;
   background-color: $color-wp;
-  
+  z-index: 100;
+
   border-radius: 1rem;
-  
+
   // padding: 0 0;
-  
+
   .fa-whatsapp {
-    padding: .5rem .9rem;
+    padding: 0.5rem 0.9rem;
     font-size: 3.5rem;
     // font-weight: 700;
   }
@@ -198,5 +198,4 @@
   @media (max-width: 768px) {
     display: inline-block;
   }
-
 }

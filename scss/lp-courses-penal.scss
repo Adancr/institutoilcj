@@ -86,11 +86,11 @@ nav {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color:rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .pt-contact {
     padding-top: 8rem;
-    
+
     h1 {
       font-size: 3rem;
       @media (max-width: 600px) {
@@ -324,16 +324,27 @@ div .start-date-details {
   }
   .tarjeta {
     margin: 5px 0;
+    border: 1px dashed #007bff;
+    border-radius: 5px;
     .btn-card {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      .buy {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+      }
       a {
         display: inline-block;
-        background-color: #007bff;
+        background-color: #3e5902;
         font-size: 1.6rem;
         text-align: center;
         border: none;
         margin: 0 5px;
+        margin: 0 5px;
+        padding: 0.8rem 1rem;
         &:hover {
           color: black;
           border: 1px solid #007bff;
@@ -345,8 +356,8 @@ div .start-date-details {
 
 .cpanel {
   padding: 1.5rem 1rem;
-    margin-bottom: 1rem;
-    background-color: #ffffff;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
 }
 
 /******************

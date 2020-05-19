@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
  
  function labnolIframe() {
   var iframe = document.createElement("iframe");
-  var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+  var embed = "https://www.youtube.com/embed/ID?autoplay=1&amp;start=10";
   iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
   iframe.setAttribute("controls", "0");
   iframe.setAttribute("frameborder", "0");

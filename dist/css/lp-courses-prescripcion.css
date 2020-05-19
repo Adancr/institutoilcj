@@ -110,7 +110,7 @@ input {
 }
 
 .btn-primary:after {
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f054";
   position: relative;
@@ -160,7 +160,7 @@ input {
 
 .call .fas {
   font-size: 3.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +171,7 @@ input {
 
 .btn-callme {
   border: #ffffff;
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1rem 1.6rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -185,7 +185,7 @@ input {
 }
 
 .btn-callme span:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /******************
@@ -198,12 +198,13 @@ input {
   bottom: 2%;
   left: 1%;
   color: #ffffff;
-  background-color: #25D366;
+  background-color: #25d366;
+  z-index: 100;
   border-radius: 1rem;
 }
 
 .wp-left .fa-whatsapp {
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   font-size: 3.5rem;
 }
 
@@ -239,7 +240,7 @@ nav .logo img {
 }
 
 nav .wp {
-  background: #25D366;
+  background: #25d366;
   color: #ffffff !important;
   font-weight: bold;
   border-radius: 2px;
@@ -248,6 +249,44 @@ nav .wp {
 /*************** 
 *section principal
 *****************/
+.title-p3 {
+  background-image: url(../../images/bg-curso-posesion.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  position: relative;
+  padding-top: 25px;
+}
+
+.title-p3::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.title-p3 .pt-contact {
+  padding-top: 8rem;
+}
+
+.title-p3 .pt-contact h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  .title-p3 .pt-contact h1 {
+    font-size: 3rem;
+  }
+}
+
+.title-p3 .pt-contact h3 {
+  font-size: 2.2rem;
+}
+
 .title-p {
   background-image: url(../../images/bg_curso_prescripcion.jpg);
   background-size: cover;
@@ -381,6 +420,12 @@ nav .wp {
 
 .title-p2 .certifica img {
   width: 100px;
+}
+
+.date p {
+  border: 1px dashed blue;
+  display: inline-block;
+  padding: 2px;
 }
 
 /*************

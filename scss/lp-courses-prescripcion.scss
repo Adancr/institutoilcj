@@ -39,6 +39,35 @@ nav {
 /*************** 
 *section principal
 *****************/
+.title-p3 {
+  background-image: url(../../images/bg-curso-posesion.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center center;
+  position: relative;
+  padding-top: 25px;
+  &::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .pt-contact {
+    padding-top: 8rem;
+    h1 {
+      font-size: 3rem;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+    h3 {
+      font-size: 2.2rem;
+    }
+  }
+}
 
 .title-p {
   background-image: url(../../images/bg_curso_prescripcion.jpg);
@@ -88,11 +117,11 @@ nav {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color:rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .pt-contact {
     padding-top: 8rem;
-    
+
     h1 {
       font-size: 3rem;
       @media (max-width: 600px) {
@@ -119,6 +148,13 @@ nav {
     img {
       width: 100px;
     }
+  }
+}
+.date {
+  p {
+    border: 1px dashed blue;
+    display: inline-block;
+    padding: 2px;
   }
 }
 /*************
@@ -347,8 +383,8 @@ div .start-date-details {
 
 .cpanel {
   padding: 1.5rem 1rem;
-    margin-bottom: 1rem;
-    background-color: #ffffff;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
 }
 
 /******************

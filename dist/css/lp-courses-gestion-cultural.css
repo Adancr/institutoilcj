@@ -110,7 +110,7 @@ input {
 }
 
 .btn-primary:after {
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f054";
   position: relative;
@@ -160,7 +160,7 @@ input {
 
 .call .fas {
   font-size: 3.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +171,7 @@ input {
 
 .btn-callme {
   border: #ffffff;
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1rem 1.6rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -185,7 +185,7 @@ input {
 }
 
 .btn-callme span:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /******************
@@ -198,12 +198,13 @@ input {
   bottom: 2%;
   left: 1%;
   color: #ffffff;
-  background-color: #25D366;
+  background-color: #25d366;
+  z-index: 100;
   border-radius: 1rem;
 }
 
 .wp-left .fa-whatsapp {
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   font-size: 3.5rem;
 }
 
@@ -239,7 +240,7 @@ nav .logo img {
 }
 
 nav .wp {
-  background: #25D366;
+  background: #25d366;
   color: #ffffff !important;
   font-weight: bold;
   border-radius: 2px;
@@ -381,11 +382,11 @@ nav .wp {
 .form-contact h2 {
   font-size: 2.2rem !important;
   text-align: center;
-  color: #1C130E;
+  color: #1c130e;
 }
 
 .form-contact h2 span {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .form-contact .fas {
@@ -472,7 +473,7 @@ nav .wp {
 
 section .row-start-date-title {
   padding: 1.6rem 0;
-  background-color: #1C130E;
+  background-color: #1c130e;
   color: #ffffff;
 }
 
@@ -507,7 +508,7 @@ div .start-date-details .fas {
 }
 
 div .start-date-details .date-details {
-  background-color: #1C130E;
+  background-color: #1c130e;
   padding: 0.5rem 6rem;
   color: #ffffff;
   font-size: 1.3rem;
@@ -696,14 +697,14 @@ div .start-date-details .date-details {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  color: #1C130E;
+  color: #1c130e;
   font-size: 2.6rem;
 }
 
 .presentation-course h3::before {
   content: "";
   display: block;
-  background-color: #1C130E;
+  background-color: #1c130e;
   height: 1.8rem;
   width: 0.8rem;
   margin-right: 0.6rem;
@@ -717,7 +718,7 @@ section .curriculum-wraper {
 }
 
 section .curriculum-wraper h4 {
-  color: #1C130E;
+  color: #1c130e;
   font-size: 2rem;
 }
 
@@ -751,14 +752,14 @@ section .curriculum-wraper ul li {
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  color: #1C130E;
+  color: #1c130e;
   font-size: 2.6rem;
 }
 
 .curriculum-heading h3::before {
   content: "";
   display: block;
-  background-color: #1C130E;
+  background-color: #1c130e;
   height: 1.8rem;
   width: 0.8rem;
   margin-right: 0.6rem;
@@ -776,7 +777,7 @@ section .curriculum-wraper ul li {
 }
 
 .benefits .benefits-title {
-  background-color: #1C130E;
+  background-color: #1c130e;
   color: #ffffff;
   padding: 0.6rem 0;
   text-align: center;
@@ -788,7 +789,7 @@ section .curriculum-wraper ul li {
 }
 
 .benefits .benefits-items {
-  border: 1px solid #1C130E;
+  border: 1px solid #1c130e;
   padding: 0.8rem;
   border-radius: 3px;
 }
@@ -807,7 +808,7 @@ section .curriculum-wraper ul li {
 section .staff-teacher-title,
 section .investment-title {
   text-align: center;
-  background-color: #1C130E;
+  background-color: #1c130e;
   color: #ffffff;
   padding: 0.4rem 0;
   margin-top: 2rem;
@@ -933,7 +934,7 @@ section .single-table {
 
 section .single-table h3 {
   padding: 0.8rem 0;
-  background-color: #1C130E;
+  background-color: #1c130e;
   color: #ffffff;
   margin-bottom: 0;
 }
@@ -978,7 +979,7 @@ section .single-table h3 {
 }
 
 section .plan-header-price {
-  background-color: #1C130E;
+  background-color: #1c130e;
   color: #ffffff;
   padding: 0.8rem 0;
 }

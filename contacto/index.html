@@ -20,7 +20,10 @@
 	<!-- Bootstrap CSS -->
 	<!-- <link rel="stylesheet" href="./dist/css/reset.css"> -->
 	<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../dist/css/main.css">
+
+	<link rel="stylesheet" href="../dist/css/main.css?v1.2">
+	<link rel="icon" type="image/png" href="../images/favicon_32.png" zizes="32x32">
+	<link rel="icon" type="image/png" href="../images/favicon_64.png" zizes="32x32">
 	<script src="https://kit.fontawesome.com/4f57ccf18e.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
 	<title>Diplomados en Derecho Administrativo penal civil | Instituto ILCJ</title>
@@ -28,7 +31,7 @@
 	<!-- Facebook Pixel Code -->
 	<script>
 		!function (f, b, e, v, n, t, s) {
-			if (f.fbq) return; n = f.fbq = function () { 
+			if (f.fbq) return; n = f.fbq = function () {
 				n.callMethod ?
 					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			};
@@ -155,20 +158,20 @@
 					<div class="item-form">
 						<h2>Deja tus datos</h2>
 						<p>Completa los campos para poder ayudarlo</p>
-						<form action="">
+						<form method="post" action="sendbymail.php">
 							<div class="form">
 								<div class="name">
-									<input type="text" placeholder="Nombre">
-									<input type="text" placeholder="Apellido">
+									<input name="first_name" type="text" placeholder="Nombre">
+									<input name="last_name" type="text" placeholder="Apellido">
 								</div>
 
 								<div class="email">
-									<input type="email" placeholder="Correo">
-									<input type="text" placeholder="Celular">
+									<input name="email" type="email" placeholder="Correo">
+									<input name="telephone" type="text" placeholder="Celular">
 								</div>
 
 								<div class="textarea">
-									<textarea placeholder="Mensaje" name="" id="" rows="5"></textarea>
+									<textarea name="comments" placeholder="Mensaje" name="" id="" rows="5"></textarea>
 								</div>
 								<div class="boton">
 									<button type="submit">Enviar</button>
@@ -209,48 +212,65 @@
 
 	<!-- footer  -->
 	<footer class="footer">
-		<div class="container-footer">
-			<div class="footer-social">
-				<h3>SOCIAL</h3>
-				<div class="icons-social">
-					<p>Nos puede Seguir en: </p>
-					<div class="container-icons">
-						<div>
-							<a href="https://www.facebook.com/instituto.ilcj/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-						</div>
-						<div>
-							<a href="https://www.instagram.com/instituto.ilcj/" target="_blank"><i class="fab fa-instagram"></i></a>
-						</div>
-						<div>
-							<a href="https://twitter.com/instituto_ilcj" target="_blank"><i class="fab fa-twitter"></i></a>
-						</div>
-						<div>
-							<a href="https://www.youtube.com/channel/UCP9dWycDvV8UNvhvtuvKhNQ?view_as=subscriber" target="_blank"><i
-									class="fab fa-youtube"></i></a>
+		<div class="container">
+			<div class="container-footer">
+
+				<div class="footer-logo">
+					<img src="../images/logo-ilcj-white.png" style="width: 140px;" alt="logo ilcj">
+					<p class="title-ilcj">Instituto Latinoamericano de Capacitaciones Jurídicas (ILCJ)</p>
+				</div>
+				<div class="footer-contact">
+					<h3>CONTACTO</h3>
+					<p><span class="flaticon-map"></span> Jr. Manuel Segura 142 - Lince</p>
+					<p><span class="flaticon-phone"></span> 989 830 042 / 01 6993990</p>
+					<p><span class="flaticon-mail"></span> ilcj@institutojuridico.edu.pe</p>
+				</div>
+				<div class="footer-navegation">
+					<h3>NAVEGACIÓN</h3>
+					<ul>
+						<li>
+							<a href="#70descuento">Diplomados</a>
+						</li>
+						<li>
+							<a href="#70descuento">Servicios</a>
+						</li>
+						<li>
+							<a href="#cursos">Cursos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h3>SOCIAL</h3>
+					<div class="icons-social">
+						<p>Nos puede Seguir en: </p>
+						<div class="container-icons">
+							<div>
+								<a href="https://www.facebook.com/instituto.ilcj/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div>
+								<a href="https://www.instagram.com/instituto.ilcj/" target="_blank"><i class="fab fa-instagram"></i></a>
+							</div>
+							<div>
+								<a href="https://twitter.com/instituto_ilcj" target="_blank"><i class="fab fa-twitter"></i></a>
+							</div>
+							<div>
+								<a href="https://www.youtube.com/channel/UCP9dWycDvV8UNvhvtuvKhNQ?view_as=subscriber" target="_blank"><i
+										class="fab fa-youtube"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
-			<div class="footer-navegation">
-				<h3>NAVEGACIÓN</h3>
-				<ul>
-					<li>
-						<a href="">Diplomados</a>
-					</li>
-					<li>
-						<a href="">Servicios</a>
-					</li>
-					<li>
-						<a href="">Cursos</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer-contact">
-				<h3>CONTACTO</h3>
-				<p><span class="flaticon-map"></span> Jr Manuel Segura 142</p>
-				<p><span class="flaticon-phone"></span> 989 830 042 / 01 6993990</p>
-				<p><span class="flaticon-mail"></span> ilcj@institutojuridico.edu.pe</p>
-			</div>
+		</div>
+
+		<div class="medios-pago">
+			<p>Medios de pago:</p>
+			<img src="../images/visa.jpg" alt="logo visa">
+			<img src="../images/mastercard.jpg" alt="logo mastercard">
+			<img src="../images/amex.png" alt="logo american express">
+			<img src="../images/pago.jpg" alt="logo pago efectivo">
+			<img src="../images/ssl.jpg" alt="logo certficado de ssl">
 		</div>
 		<div class="copyright container">
 			<p><small>© Copyright 2020 ILCJ - Todos los derechos reservados.</small></p>

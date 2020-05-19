@@ -1,0 +1,718 @@
+@import "variables";
+@import "globals";
+@import "buttons";
+@import "wpsupport";
+/********************
+** HEADER
+*********************/
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+nav {
+  .pb-navbar {
+    position: absolute;
+    background: $color-white !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    // font-family: "Montserrat", Arial, sans-serif;
+  }
+  .logo {
+    max-width: 6rem;
+    img {
+      width: 100%;
+    }
+  }
+  .wp {
+    background: $color-wp;
+    color: $color-white !important;
+    font-weight: bold;
+    border-radius: 2px;
+  }
+}
+/***************
+*section principal
+*****************/
+
+.title-p {
+  background-image: url(../../images/bg_curso-saneamiento.jpg);
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+  .pt-contact {
+    padding-top: 8rem;
+    h1 {
+      font-size: 3.5rem;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
+    }
+    h3 {
+      font-size: 2.2rem;
+      @media (max-width: 667px) {
+        text-align: center;
+      }
+    }
+  }
+  .date {
+    p {
+      border: 1px dashed red;
+      display: inline-block;
+      padding: 2px;
+    }
+  }
+
+  .precio {
+    background-color: $color-white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0;
+    h2 {
+      @media (max-width: 667px) {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+  .off {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 1rem 1rem;
+    img {
+      max-width: 100px;
+    }
+    .off-item {
+      display: inline-block;
+      text-align: center;
+      margin: 0 0 0 10px;
+
+      .ahora {
+        font-size: 4rem;
+        font-weight: 800;
+        display: block;
+        margin-bottom: -10px;
+      }
+      .antes {
+        font-size: 2.5rem;
+        font-weight: 800;
+        display: block;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+/*************
+** form contact
+***************/
+
+.form-contact {
+  background-color: #ffffffb3;
+  padding: 1.8rem;
+  border-radius: 4px;
+
+  h2 {
+    font-size: 2.2rem !important;
+    text-align: center;
+    color: $color-primary-cc;
+    span {
+      color: $color-red;
+    }
+  }
+  .fas {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+  }
+  .form-group {
+    display: flex;
+    input {
+      position: relative;
+      flex: 1 1 auto;
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      &::placeholder {
+        font-size: 1.3rem;
+      }
+    }
+    .form-control {
+      display: block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 500 !important;
+      line-height: 1.5;
+      color: $color-footer;
+      background-color: $color-white;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .p-height-50 {
+      height: 4rem !important;
+    }
+    .input-group-prepend {
+      margin-right: -1px;
+    }
+  }
+  .btn-primary {
+    background-color: $color-secondary-cc;
+    padding: 1.2rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-color: $color-secondary-cc;
+    &:hover {
+      color: $color-black;
+      font-weight: 500;
+      border-color: $color-secondary-cc;
+    }
+  }
+}
+
+// section .row-start-date-title {
+//   padding: 1.6rem 0;
+//   background-color: $color-primary-cc;
+//   color: $color-white;
+//   h2 {
+//     font-size: 3.2rem !important;
+//   }
+// }
+
+// div .start-date-details {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   // align-items: center;
+//   border: 1px solid $color-secondary-cc;
+//   padding: 0.8rem;
+//   text-align: center;
+//   h6 {
+//     font-size: 1.4rem;
+//   }
+//   .fas {
+//     padding-bottom: 1.8rem;
+//     color: $color-secondary-cc;
+//     font-size: 4rem;
+//   }
+//   .date-details {
+//     background-color: $color-primary-cc;
+//     padding: 0.5rem 6rem;
+//     color: $color-white;
+//     font-size: 1.3rem;
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .start-hour {
+//     display: none;
+//   }
+// }
+
+/*****************************
+*landing curso ley comunidades
+******************************/
+// .back {
+//   background-image: url(../../images/bg-curso-bamba.jpg);
+//   // height: 100vh;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: relative;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-color: red;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     z-index: 10;
+//   }
+// }
+.bg {
+  background-color: #f1f1f1;
+}
+.title-curso {
+  background-color: #ffffffb3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  h2 {
+    color: black;
+    font-size: 2.4rem;
+  }
+  h3 {
+    margin-top: 1.8rem;
+  }
+  ol li {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  ol p {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 667px) {
+    margin: 0 15px;
+    padding: 15px 0 0 0;
+  }
+  .mb-0 span {
+    border: 1px solid red;
+    padding: 2px 2px;
+    i {
+      color: red;
+    }
+  }
+}
+
+.acerca {
+  margin-top: 2rem;
+  h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}
+
+.wrap-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem 1rem;
+  margin: 20px 0;
+  .fas {
+    color: $color-primary-cc;
+  }
+  .item-info {
+    background-color: white;
+    padding: 10px 10px;
+    h3 {
+      margin-bottom: 10px;
+    }
+    .cuentas-banco {
+      margin-top: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+    .cuenta-bcp {
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .tarjeta {
+    margin: 5px 0;
+    border: 1px dashed red;
+    border-radius: 5px;
+    .btn-card {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .buy {
+        margin-bottom: 7px;
+        a {
+          display: inline-block;
+          background-color: $color-secondary-cc;
+          font-size: 1.6rem;
+          text-align: center;
+          border: none;
+          margin: 0 5px;
+          margin: 0 5px;
+          padding: 0.8rem 1rem;
+          &:hover {
+            color: black;
+            border: 1px solid $color-secondary-cc;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cpanel {
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: $color-white;
+}
+
+/******************
+*presentacion curso
+*******************/
+
+.presentation-course {
+  padding: 1.6rem 0;
+  p {
+    text-align: justify;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    color: $color-primary-cc;
+    font-size: 2.6rem;
+    &::before {
+      content: "";
+      display: block;
+      background-color: $color-primary-cc;
+      height: 1.8rem;
+      width: 0.8rem;
+      margin-right: 0.6rem;
+    }
+  }
+}
+/* temary course */
+
+section .curriculum-wraper {
+  background-color: $color-primary-cc;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  h4 {
+    color: $color-primary-cc;
+    font-size: 2rem;
+  }
+  li {
+    font-size: 1.7rem;
+  }
+  .box-item-temario {
+    .item-temario {
+      margin-bottom: 10px;
+      padding: 5px 5px;
+      background-color: $color-white;
+      .modulo {
+        border-bottom: 1px dashed $color-secondary-cc;
+        display: inline-block;
+        padding-bottom: 3px;
+      }
+    }
+    margin-bottom: 12px;
+    ul {
+      margin-left: 6px;
+    }
+  }
+  .expositor-name {
+    margin: 5px 0 10px 0;
+  }
+}
+
+.curriculum-heading {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    color: $color-white;
+    font-size: 2.6rem;
+    &::before {
+      content: "";
+      display: block;
+      background-color: $color-white;
+      height: 1.8rem;
+      width: 0.8rem;
+      margin-right: 0.6rem;
+    }
+    @media (max-width: 426px) {
+      font-size: 2.4rem;
+    }
+  }
+  .duracion {
+    color: $color-white;
+  }
+}
+/* section beneficios  */
+
+.benefits {
+  margin: 0.8rem 0;
+  .benefits-title {
+    background-color: $color-primary-cc;
+    color: $color-white;
+    padding: 0.6rem 0;
+    text-align: center;
+  }
+  .row-benefits {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  .benefits-items {
+    border: 1px solid $color-primary-cc;
+    padding: 0.8rem;
+    // height: 17rem;
+    border-radius: 3px;
+    h4 {
+      margin-top: 1.2rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    .fas {
+      font-size: 6rem;
+      color: $color-secondary-cc;
+    }
+  }
+}
+/* Staff docentes  */
+
+.row-staff-teacher {
+  padding: 2rem 0;
+  @media (max-width: 768px) {
+    text-align: center;
+    p {
+      margin-bottom: 1.8rem;
+    }
+  }
+}
+
+section .staff-teacher-title,
+section .investment-title {
+  text-align: center;
+  background-color: $color-primary-cc;
+  color: $color-white;
+  padding: 0.4rem 0;
+}
+
+section .row-staff-teacher img {
+  border-radius: 50%;
+  box-shadow: 0 5px 5px 0 rgba(0, 123, 255, 0.25);
+  @media (max-width: 600px) {
+    max-width: 220px;
+    margin-bottom: 0.7rem;
+  }
+}
+
+/* ACORDION */
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  width: 100%;
+  // text-align: left;
+  border-bottom: solid 1px #ddd;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active,
+button.accordion:hover {
+  background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/* div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+} */
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* icons */
+button.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/*  btn mas info  */
+.btn-mas-info {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+.btn-infoFooter {
+  background-color: $color-secondary-cc;
+  color: $color-white;
+  padding: 1.2rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 3px;
+  &:hover {
+    color: $color-white;
+  }
+  &:after {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f054";
+    position: relative;
+    left: 3px;
+    top: 0.1rem;
+    transition: left 0.3s ease;
+  }
+}
+
+/*  investment  */
+
+section {
+  .row-investment {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    ul li h5 {
+      font-weight: bold;
+    }
+  }
+  .single-table {
+    border: 1px solid #72b7db;
+    position: relative;
+    overflow: hidden;
+    h3 {
+      padding: 0.8rem 0;
+      background-color: $color-primary-cc;
+      color: $color-white;
+      margin-bottom: 0;
+    }
+    .plan-header-offer {
+      //  display: none;
+      position: absolute;
+      width: 120px;
+      background-color: $color-secondary-cc;
+      top: 12px;
+      right: -32px;
+      transform: rotate(45deg);
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $color-white;
+      p {
+        margin: 0;
+        text-shadow: 1px 1px 1px #000;
+      }
+    }
+    ul {
+      padding: 1.2rem 0;
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      background-color: $color-secondary-cc;
+      font-size: 1.4rem;
+      border: 1px solid $color-secondary-cc;
+      &:hover {
+        color: $color-black;
+        font-weight: bold;
+        border: 1px solid $color-secondary-cc;
+      }
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
+  }
+  .plan-header-price {
+    background-color: $color-primary-cc;
+    color: $color-white;
+    padding: 0.8rem 0;
+    h4 {
+      font-size: 2.5rem;
+    }
+    h5 {
+      font-size: 2rem;
+    }
+    ul li h5 {
+      font-weight: bold;
+    }
+  }
+  .gap {
+    @media (max-width: 766px) {
+      height: 2rem;
+    }
+  }
+}
+/*  butoon compra  */
+
+section .buy a,
+section .info-wp a {
+  // width: 70%;
+  margin: 0.8rem 0;
+  padding: 0.8rem 0;
+  font-weight: bold;
+}
+
+/*  section contact */
+.title-contacts {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+.wrap-contacts {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  text-align: center;
+  .icon-contacts {
+    .fas {
+      font-size: 5rem;
+      color: $color-secondary-cc;
+      padding-bottom: 1.2rem !important;
+    }
+    h4 {
+      // font-weight: bold;
+      font-size: 2.5rem;
+      padding-bottom: 0.2rem;
+    }
+  }
+  @media (max-width: 425px) {
+    padding: 1.6rem 0;
+    flex-direction: column;
+    .icon-contacts:nth-child(2) {
+      padding: 2.8rem 0;
+    }
+  }
+}
+/* footer  */
+
+footer {
+  background-color: $color-footer;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+}

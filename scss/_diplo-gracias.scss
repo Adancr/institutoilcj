@@ -10,7 +10,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, .5) ;
+    background-color: rgba(0, 0, 0, 0.5);
     left: 0;
     right: 0;
     bottom: 0;
@@ -30,7 +30,7 @@
 .cgracias {
   // background-color: red;
   box-shadow: 0 1px 6px rgba(31, 31, 31, 0.12), 0 1px 4px rgba(31, 31, 31, 0.12);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 0 1rem;
   background-color: $color-white;
   padding: 2rem 1rem;
@@ -44,24 +44,33 @@
     }
   }
   p:nth-child(1) {
-    font-weight: bold;
-    font-size: 2rem;
+    // font-weight: bold;
+    font-size: 1.6rem;
     padding-top: 2rem;
-    
   }
   p:nth-child(2),
   p:nth-child(3),
-  p:nth-child(4), 
-  p:nth-child(5){
-   line-height: 1.1;
-   font-size: 1.7rem;
-   span {
-     font-weight: bold;
-   }
+  p:nth-child(4),
+  p:nth-child(5) {
+    line-height: 1.1;
+    font-size: 1.7rem;
+    span {
+      font-weight: bold;
+    }
   }
 
   h3 {
     padding-top: 2.5rem;
     margin-bottom: 0;
+  }
+
+  .import {
+    border: 4px dotted $color-red;
+    P {
+      span {
+        font-weight: 500;
+        color: $color-red;
+      }
+    }
   }
 }

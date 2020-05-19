@@ -110,7 +110,7 @@ input {
 }
 
 .btn-primary:after {
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f054";
   position: relative;
@@ -160,7 +160,7 @@ input {
 
 .call .fas {
   font-size: 3.5rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +171,7 @@ input {
 
 .btn-callme {
   border: #ffffff;
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1rem 1.6rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -185,7 +185,7 @@ input {
 }
 
 .btn-callme span:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /******************
@@ -198,12 +198,13 @@ input {
   bottom: 2%;
   left: 1%;
   color: #ffffff;
-  background-color: #25D366;
+  background-color: #25d366;
+  z-index: 100;
   border-radius: 1rem;
 }
 
 .wp-left .fa-whatsapp {
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   font-size: 3.5rem;
 }
 
@@ -263,7 +264,7 @@ header .child-attributes-header .wp_header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #25D366;
+  color: #25d366;
 }
 
 @media (max-width: 769px) {
@@ -435,7 +436,7 @@ header .child-attributes-header .widget_text .title-icon-date {
 }
 
 .blok-slider .block-items h2 span {
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 0.2rem 0.3rem;
   font-size: 3rem;
   border-radius: 0.3rem;
@@ -606,7 +607,7 @@ header .child-attributes-header .widget_text .title-icon-date {
   position: absolute;
   right: 5px;
   top: 5px;
-  background-color: #FF0000;
+  background-color: #ff0000;
   color: #ffffff;
   padding: 4px 5px;
   font-size: 1.4rem;
@@ -653,7 +654,7 @@ header .child-attributes-header .widget_text .title-icon-date {
 }
 
 .wrap-programs article .date-price li span {
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   padding: 0.2rem 0.2rem;
 }
 
@@ -662,7 +663,7 @@ header .child-attributes-header .widget_text .title-icon-date {
 }
 
 .wrap-programs article .date-price .precio .descuento {
-  background-color: #FF0000;
+  background-color: #ff0000;
   color: #ffffff;
   padding: 0.4rem 0.2rem;
   font-size: 1.4rem;
@@ -676,7 +677,7 @@ header .child-attributes-header .widget_text .title-icon-date {
 .wrap-programs article .date-price .precio .valor-actual {
   font-weight: 500;
   font-size: 1.8rem;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .wrap-programs article .date-price .precio .valor-anterior {
